@@ -13,10 +13,3 @@ yarn-error.log*
 .DS_Store
 Thumbs.db
 
-# Ignore specific image file types
-    *.jpg
-    *.jpeg
-    *.png
-    *.gif
-    *.bmp
-    *.svg
