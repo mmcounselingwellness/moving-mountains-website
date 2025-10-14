@@ -6,10 +6,13 @@
 
   <meta name="robots" content="index">
 
-  <title>Therapists in Central MA | Moving Mountains Counseling</title>
-  <meta name="description" content="Meet our therapists in Princeton, MA. Moving Mountains Counseling & Wellness offers expert therapy for anxiety, grief, and life transitions.">
+  <title>About Us | Moving Mountains Counseling & Wellness</title>
+  <meta name="description" content="Learn about Moving Mountains Counseling & Wellness - a compassionate therapy practice in Princeton, MA offering in-person, telehealth, and nature-based counseling.">
   <link href="dist/output.css" rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
 
   <!-- Google Font: Fraunces -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,17 +22,17 @@
 </head>
 
 <body class="font-raleway bg-custom">
-  
+
   <!-- site-wide banner -->
     <div class="flex items-center gap-x-6 bg-secondary px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
       <p class="text-sm/6 text-white">
         <a href="#contact">
-          <strong class="font-semibold">Now welcoming new clients</strong><svg viewBox="0 0 2 2" aria-hidden="true" class="mx-2 inline size-0.5 fill-current"><circle r="1" cx="1" cy="1" /></svg>let’s begin your journey together.&nbsp;<span aria-hidden="true">&rarr;</span> 
+          <strong class="font-semibold">Now welcoming new clients</strong><svg viewBox="0 0 2 2" aria-hidden="true" class="mx-2 inline size-0.5 fill-current"><circle r="1" cx="1" cy="1" /></svg>let's begin your journey together.&nbsp;<span aria-hidden="true">&rarr;</span>
         </a>
       </p>
        <div class="flex flex-1 justify-end">
-       
-      </div> 
+
+      </div>
     </div>
   <!-- end site-wide banner-->
 
@@ -59,13 +62,13 @@
       </a>
       <div class="flex flex-1 justify-end">
         <a href="#contact" class="text-sm/6 font-semibold text-secondary hidden md:flex">Connect with us <span aria-hidden="true">&rarr;</span></a>
-      </div>  
+      </div>
     </nav>
     <el-dialog>
       <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
         <div tabindex="0" class="fixed inset-0 focus:outline-none">
           <el-dialog-panel class="fixed inset-y-0 left-0 z-10 w-full overflow-y-auto bg-white px-6 py-6">
-            <div class="flex items-center justify-between"> 
+            <div class="flex items-center justify-between">
               <div class="flex flex-1">
                 <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-700">
                   <span class="sr-only">Close menu</span>
@@ -78,7 +81,7 @@
                 <span class="sr-only">Moving Mountains Counseling & Wellness</span>
                 <img src="src/logo-tall.jpg" alt="" class="h-8 w-auto" />
               </a>
-          
+
             </div>
             <div class="mt-6 space-y-2">
               <a href="#about" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">About us</a>
@@ -94,37 +97,60 @@
 
   <!-- end main nav -->
 
-  <!-- out team -->
-  <div class="bg-white py-24 md:py-32">
-  <div class="mx-auto grid max-w-7xl grid-cols-1 gap-20 px-6 lg:px-8 xl:grid-cols-5">
-    <div class="max-w-2xl xl:col-span-2">
-      <h2 class="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">Meet our team</h2>
-      <p class="mt-6 text-lg/8 text-gray-600">We’re a team of therapists who believe in real conversations, genuine connection, and practical tools for change. Meet the clinicians who will walk alongside you on your path toward healing and growth.</p>
+  <!-- About us content -->
+  <div class="overflow-hidden bg-white py-24 sm:py-32">
+    <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+      <div class="max-w-4xl">
+        <p class="text-base/7 font-semibold text-primary">About Moving Mountains Counseling & Wellness</p>
+        <h1 class="mt-2 text-4xl font-fraunces tracking-tight text-pretty text-heading sm:text-5xl">Transforming Challenges Into Growth, One Step at a Time</h1>
+        <p class="mt-6 text-xl/8 text-balance text-gray-700">At Moving Mountains Counseling & Wellness, we believe healing is a journey—one that doesn't have to be taken alone. Whether you're sitting across from us in our office in Princeton, joining us virtually from your home anywhere in Massachusetts, or walking side by side on a wooded trail, our role is to meet you where you are and help guide you forward.
+    </p>
+      </div>
+      <section class="mt-20 grid grid-cols-1 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16">
+        <div class="lg:pr-8">
+
+          <p class="mt-6 text-base/7 text-gray-600">We created this practice to be more than just a therapy office. We wanted to build a space—indoors, online, and outdoors—that feels safe, compassionate, and deeply human. A place where your story is heard, your struggles are honored, and your strengths are celebrated.
+    </p>
+          <p class="mt-8 text-base/7 text-gray-600">Our name, Moving Mountains, comes from the belief that while life's challenges can feel overwhelming, they are not immovable. With the right support, even the heaviest burdens can shift. Sometimes that means exploring painful experiences. Sometimes it means finding clarity in the quiet of nature. And often, it means taking one small step at a time toward a lighter, freer way of being.
+    </p>
+
+    <p class="mt-8 text-base/7 text-gray-600">We work with clients experiencing anxiety, depression, stress, life transitions, grief, relationship challenges, and those simply seeking greater balance and meaning. We offer:
+    </p>
+    <ul class="list-disc pl-6 mt-4 text-base/7 text-gray-600">
+            <li>In-Person Therapy in Princeton, MA</li>
+            <li>Telehealth Counseling across Massachusetts</li>
+            <li>Nature-Based Therapy including walk &amp; talk sessions and seated outdoor sessions</li>
+          </ul>
+
+     <p class="italic mt-8 text-base/7 text-gray-600">At the heart of our work is one simple promise: we're here to listen, and we're here to walk with you.</p>
+
+     <div class="mt-12 flex items-center gap-x-6">
+              <a href="services.html" class="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Explore our services</a>
+              <a href="our-team.html" class="text-sm/6 font-semibold text-secondary">Meet our team <span aria-hidden="true">&rarr;</span></a>
+            </div>
+
+        </div>
+        <div class="pt-16 lg:row-span-2 lg:-mr-16 xl:mr-auto">
+          <div class="-mx-8 grid grid-cols-2 gap-4 sm:-mx-16 sm:grid-cols-4 lg:mx-0 lg:grid-cols-2 xl:gap-8">
+            <div class="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
+              <img src="src/kate-heather-in-office.jpg" alt="" class="block size-full object-cover" />
+            </div>
+            <div class="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40">
+              <img src="src/outside-view-of-office.jpg" alt="" class="block size-full object-cover" />
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
+              <img src="src/insidve-view-of-the-office2-600x600.jpg" alt="" class="block size-full object-cover" />
+            </div>
+            <div class="-mt-8 overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40">
+              <img src="src/outside-laughing-600x900.jpg" alt="" class="block size-full object-cover" />
+            </div>
+          </div>
+        </div>
+
+      </section>
     </div>
-    <ul role="list" class="divide-y divide-gray-200 xl:col-span-3">
-      <li class="flex flex-col gap-10 py-12 first:pt-0 last:pb-0 sm:flex-row">
-        <img src="src/heather-outside.jpg" alt="" class="aspect-4/5 w-52 flex-none rounded-2xl object-cover outline-1 -outline-offset-1 outline-black/5" />
-        <div class="max-w-xl flex-auto">
-          <h3 class="text-lg/8 font-semibold tracking-tight text-gray-900">Heather Carcia, LICSW</h3>
-          <p class="text-base/7 text-gray-600">Clinical Social Work/Therapist</p>
-          <p class="mt-6 text-base/7 text-gray-600">Heather helps clients move from burnout and overwhelm to balance and connection through humor, compassion, and evidence-based care. Accepting new clients now.</p>
-          <a href="heather-bio.html" class="text-sm/6 font-semibold text-secondary hidden md:flex">Learn more <span aria-hidden="true">&rarr;</span></a>
-         
-        </div>
-      </li>
-      <li class="flex flex-col gap-10 py-12 first:pt-0 last:pb-0 sm:flex-row">
-        <img src="src/kate-outside.jpg" alt="" class="aspect-4/5 w-52 flex-none rounded-2xl object-cover outline-1 -outline-offset-1 outline-black/5" />
-        <div class="max-w-xl flex-auto">
-          <h3 class="text-lg/8 font-semibold tracking-tight text-gray-900">Kate Allain, LICSW</h3>
-          <p class="text-base/7 text-gray-600">Clinical Social Work/Therapist</p>
-          <p class="mt-6 text-base/7 text-gray-600">Kate supports clients through grief, trauma, and life transitions, helping them heal and grow with empathy and self-compassion. Currently full; join the waitlist.</p>
-          <a href="kate-bio.html" class="text-sm/6 font-semibold text-secondary hidden md:flex">Learn more <span aria-hidden="true">&rarr;</span></a>
-        </div>
-      </li>
-      
-    </ul>
   </div>
-</div>
+  <!-- end About us content -->
 
 
   <!-- contact section -->
@@ -150,7 +176,7 @@
               </div>
             </div>
             <h2 class="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">Reach out. Relief starts with a conversation.</h2>
-            <p class="mt-6 text-lg/8 text-gray-600">If you’d like to talk through what’s been weighing on you, you’re welcome to call us or send a message using the form. We do our best to reply within one business day. No pressure, no scripts — just a real person ready to listen.</p>
+            <p class="mt-6 text-lg/8 text-gray-600">If you'd like to talk through what's been weighing on you, you're welcome to call us or send a message using the form. We do our best to reply within one business day. No pressure, no scripts — just a real person ready to listen.</p>
             <dl class="mt-10 space-y-4 text-base/7 text-gray-600">
               <div class="flex gap-x-4">
                 <dt class="flex-none">
@@ -217,6 +243,8 @@
               </div>
             </div>
             <div class="mt-8 flex justify-end">
+              <input type="text" name="_honey" style="display:none">
+              <input type="hidden" name="_autoresponse" value="Thank you for your submission">
               <button type="submit" class="rounded-md bg-primary px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary">Send message</button>
             </div>
           </div>
@@ -224,6 +252,7 @@
       </div>
     </div>
   <!-- end contact section -->
+
 
   <!-- footer-->
     <footer class="bg-white">

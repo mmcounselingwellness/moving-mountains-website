@@ -1,11 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html"],
+  content: ["./*.html"],
   theme: {
     extend: {
       fontFamily: {
         raleway: ["Raleway", "sans-serif"],
-        fraunces: ["Fraunces", "serif"], 
+        fraunces: ["Fraunces", "serif"],
       },
       colors: {
         custom: "#FFF9F0",

@@ -1,4 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@tailwindplus/elements;
+@import "tailwindcss";
+
+@source "./*.html";
+
+@theme {
+  --font-raleway: "Raleway", sans-serif;
+  --font-fraunces: "Fraunces", serif;
+
+  --color-custom: #FFF9F0;
+  --color-heading: #406B6A;
+  --color-primary: #D36139;
+  --color-secondary: #DE9278;
+}
