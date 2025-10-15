@@ -1,0 +1,22 @@
+[
+  {
+    "id": "heather-carcia",
+    "name": "Heather Carcia, LICSW",
+    "title": "Clinical Social Work/Therapist",
+    "bio": "Heather helps clients move from burnout and overwhelm to balance and connection through humor, compassion, and evidence-based care. Accepting new clients now.",
+    "image": "src/heather-outside.jpg",
+    "bioPage": "heather-bio.html",
+    "status": "accepting",
+    "order": 1
+  },
+  {
+    "id": "kate-allain",
+    "name": "Kate Allain, LICSW",
+    "title": "Clinical Social Work/Therapist",
+    "bio": "Kate supports clients through grief, trauma, and life transitions, helping them heal and grow with empathy and self-compassion. Currently full; join the waitlist.",
+    "image": "src/kate-outside.jpg",
+    "bioPage": "kate-bio.html",
+    "status": "waitlist",
+    "order": 2
+  }
+]
