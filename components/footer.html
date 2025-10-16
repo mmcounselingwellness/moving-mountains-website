@@ -105,11 +105,141 @@
                     <img src="src/Moving-Mountains-logo-RGB_MM-H-W.png" alt="Moving Mountains Counseling & Wellness logo" class="h-15">
                 </div>
                 <nav class="flex gap-6 text-sm">
-                    <a href="about-us.html" class="hover:text-secondary transition-colors">About us</a>
-                    <a href="our-team.html" class="hover:text-secondary transition-colors">Our team</a>
-                    <a href="services.html" class="hover:text-secondary transition-colors">Services</a>
-                    <a href="work-with-us.html" class="hover:text-secondary transition-colors">Work With Us</a>
+                    <a href="about-us" class="hover:text-secondary transition-colors">About us</a>
+                    <a href="our-team" class="hover:text-secondary transition-colors">Our team</a>
+                    <a href="services" class="hover:text-secondary transition-colors">Services</a>
+                    <a href="work-with-us" class="hover:text-secondary transition-colors">Work With Us</a>
                 </nav>
             </div>
         </div>
     </footer>
+
+    <!-- Local Business Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "name": "Moving Mountains Counseling & Wellness",
+      "image": "https://mmcounselingwellness.com/src/Moving-Mountains-logo-RGB_MM-H-FC.jpg",
+      "@id": "https://mmcounselingwellness.com",
+      "url": "https://mmcounselingwellness.com",
+      "email": "info@mmcounselingwellness.com",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "213 Mountain Rd (above Mountain Side Cafe)",
+        "addressLocality": "Princeton",
+        "addressRegion": "MA",
+        "postalCode": "01541",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 42.4471,
+        "longitude": -71.8776
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "17:00"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Princeton",
+          "addressRegion": "MA"
+        },
+        {
+          "@type": "City",
+          "name": "Worcester",
+          "addressRegion": "MA"
+        },
+        {
+          "@type": "City",
+          "name": "Holden",
+          "addressRegion": "MA"
+        },
+        {
+          "@type": "City",
+          "name": "West Boylston",
+          "addressRegion": "MA"
+        },
+        {
+          "@type": "City",
+          "name": "Sterling",
+          "addressRegion": "MA"
+        },
+        {
+          "@type": "City",
+          "name": "Rutland",
+          "addressRegion": "MA"
+        },
+        {
+          "@type": "State",
+          "name": "Massachusetts"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Therapy Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "MedicalTherapy",
+              "name": "Anxiety Therapy"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "MedicalTherapy",
+              "name": "Depression Counseling"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "MedicalTherapy",
+              "name": "Grief Counseling"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "MedicalTherapy",
+              "name": "Trauma Therapy"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "MedicalTherapy",
+              "name": "Burnout Therapy"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "MedicalTherapy",
+              "name": "Telehealth Counseling"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "MedicalTherapy",
+              "name": "Nature-Based Therapy"
+            }
+          }
+        ]
+      }
+    }
+    </script>
