@@ -1,73 +1,65 @@
-<!-- site-wide banner -->
-<div class="flex items-center gap-x-6 bg-secondary px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
-  <p class="text-sm/6 text-white">
-    <a href="#contact">
-      <strong class="font-semibold">Now welcoming new clients</strong><svg viewBox="0 0 2 2" aria-hidden="true" class="mx-2 inline size-0.5 fill-current"><circle r="1" cx="1" cy="1" /></svg>let's begin your journey together.&nbsp;<span aria-hidden="true">&rarr;</span>
-    </a>
-  </p>
-   <div class="flex flex-1 justify-end">
+<!-- Header -->
 
-  </div>
-</div>
+<!-- site-wide banner -->
+    <div class="flex items-center gap-x-6 bg-secondary px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
+      <p class="text-sm/6 text-white">
+        <a href="#contact">
+          Now welcoming new clients - let's begin your journey together.&nbsp;<span aria-hidden="true">&rarr;</span></p>
+        </a>
+      </p>
+       <div class="flex flex-1 justify-end">
+
+      </div>
+    </div>
 <!-- end site-wide banner-->
 
-
-<!-- Main nav -->
-<header class="bg-white">
-  <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
-    <div class="flex flex-1">
-      <div class="hidden lg:flex lg:gap-x-12">
-        <a href="about-us.html" class="text-sm/6 font-semibold text-gray-500">About us</a>
-        <a href="services.html" class="text-sm/6 font-semibold text-gray-500">Services</a>
-        <a href="work-with-us.html" class="text-sm/6 font-semibold text-gray-500">Therapist Opportunities</a>
-        <a href="index.html#contact" class="text-sm/6 font-semibold text-gray-500">Contact us</a>
-      </div>
-      <div class="flex lg:hidden">
-        <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-          <span class="sr-only">Open main menu</span>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
-            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-        </button>
-      </div>
-    </div>
-    <a href="index.html" class="-m-1.5 p-1.5">
-      <span class="sr-only">Moving Mountains Counseling & Wellness</span>
-      <img src="src/logo-tall.jpg " alt="" class="h-20 w-auto" />
-    </a>
-    <div class="flex flex-1 justify-end">
-      <a href="#contact" class="text-sm/6 font-semibold text-secondary hidden md:flex">Connect with us <span aria-hidden="true">&rarr;</span></a>
-    </div>
-  </nav>
-  <el-dialog>
-    <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
-      <div tabindex="0" class="fixed inset-0 focus:outline-none">
-        <el-dialog-panel class="fixed inset-y-0 left-0 z-10 w-full overflow-y-auto bg-white px-6 py-6">
-          <div class="flex items-center justify-between">
-            <div class="flex flex-1">
-              <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-700">
-                <span class="sr-only">Close menu</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
-                  <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-              </button>
+    <header class="bg-white border-b border-gray-200">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-center md:justify-between relative">
+                <button type="button" command="show-modal" commandfor="mobile-menu" class="absolute left-0 -m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 lg:hidden">
+                  <span class="sr-only">Open main menu</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                    <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+                <a href="index.html" class="flex items-center gap-2">
+                    <img src="src/Moving-Mountains-logo-RGB_MM-H-FC.jpg" alt="Moving Mountains Counseling & Wellness" class="h-18 hidden md:block">
+                    <img src="src/Moving-Mountains-logo-RGB_MM-V2-FC.jpg" alt="Moving Mountains Counseling & Wellness" class="h-30 md:hidden sm:block">
+                </a>
+                <nav class="hidden md:flex items-center gap-6">
+                    <a href="about-us.html" class="text-gray-700 hover:text-primary transition-colors">About us</a>
+                    <a href="services.html" class="text-gray-700 hover:text-primary transition-colors">Our approach</a>
+                    <a href="work-with-us.html" class="text-gray-700 hover:text-primary transition-colors">Therapist opportunities</a>
+                    <a href="#contact" class="text-primary font-semibold">Contact us <span aria-hidden="true">&rarr;</span></a>
+                </nav>
             </div>
-            <a href="index.html" class="-m-1.5 p-1.5">
-              <span class="sr-only">Moving Mountains Counseling & Wellness</span>
-              <img src="src/logo-tall.jpg" alt="" class="h-8 w-auto" />
-            </a>
+      <el-dialog>
+        <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+          <div tabindex="0" class="fixed inset-0 focus:outline-none">
+            <el-dialog-panel class="fixed inset-y-0 left-0 z-10 w-full overflow-y-auto bg-white px-6 py-6">
+              <div class="flex items-center justify-between">
+                <div class="flex flex-1">
+                  <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                    <span class="sr-only">Close menu</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                      <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                </div>
+                <a href="index.html" class="-m-1.5 p-1.5">
+                  <span class="sr-only">Moving Mountains Counseling & Wellness</span>
+                  <img src="src/logo-tall.jpg" alt="" class="h-8 w-auto" />
+                </a>
 
+              </div>
+              <div class="mt-6 space-y-2">
+                <a href="about-us.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7  text-gray-900 hover:bg-gray-50">About us</a>
+                <a href="services.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Services</a>
+                <a href="work-with-us.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Therapist opportunities</a>
+                <a href="index.html#contact" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Contact us <span aria-hidden="true">&rarr;</span></a>
+              </div>
+            </el-dialog-panel>
           </div>
-          <div class="mt-6 space-y-2">
-            <a href="about-us.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">About us</a>
-            <a href="services.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Services</a>
-            <a href="work-with-us.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Therapist opportunities</a>
-            <a href="index.html#contact" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Contact us</a>
-          </div>
-        </el-dialog-panel>
-      </div>
-    </dialog>
-  </el-dialog>
-</header>
-
-<!-- end main nav -->
+        </dialog>
+      </el-dialog>
+    </header>
