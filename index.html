@@ -4,118 +4,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="robots" content="noindex">
+  <meta name="robots" content="index">
 
-  <title>Moving Mountains Counseling & Wellness | Princeton MA</title>
-  <meta name="description" content="Therapy and counseling services in Princeton, Central Massachusetts, just north of Worcester. Now accepting new clients. Nature-based, in-person, and telehealth options.">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PY8ER15JZK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-PY8ER15JZK');
+  </script>
+
+  <title>Therapist Princeton MA | Anxiety & Depression Counseling Near Worcester & Holden</title>
+  <meta name="description" content="Licensed therapists in Princeton MA near Wachusett Mountain. Anxiety, depression, grief & trauma counseling. Serving Holden, Worcester, West Boylston, Sterling. In-person & MA telehealth.">
+  <link rel="canonical" href="https://mmcounselingwellness.com" />
+  <link href="dist/output.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
 
   <!-- Google Font: Fraunces -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="dist/output.css" rel="stylesheet">
+
+  <!-- Component Loader -->
+  <script src="js/components.js"></script>
+
 </head>
 
 <body class="font-raleway bg-custom">
-  
-  <!-- site-wide banner -->
-    <div class="flex items-center gap-x-6 bg-secondary px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
-      <p class="text-sm/6 text-white">
-        <a href="#contact">
-          <strong class="font-semibold">Now welcoming new clients</strong><svg viewBox="0 0 2 2" aria-hidden="true" class="mx-2 inline size-0.5 fill-current"><circle r="1" cx="1" cy="1" /></svg>let’s begin your journey together.&nbsp;<span aria-hidden="true">&rarr;</span>
-        </a>
-      </p>
-       <div class="flex flex-1 justify-end">
-       <!-- close button <button type="button" class="-m-3 p-3 focus-visible:-outline-offset-4">
-          <span class="sr-only">Dismiss</span>
-          <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 text-white">
-            <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
-          </svg>
-        </button> -->
-      </div> 
-    </div>
-  <!-- end site-wide banner-->
 
-
-  <!-- Main nav -->
-    <header class="bg-white">
-    <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
-      <div class="flex flex-1">
-        <div class="hidden lg:flex lg:gap-x-12">
-          <a href="index.html#about" class="text-sm/6 font-semibold text-gray-900">About us</a>
-          <a href="services.html" class="text-sm/6 font-semibold text-gray-900">Services</a>
-          <a href="work-with-us.html" class="text-sm/6 font-semibold text-gray-900">Therapist Opportunities</a>
-          <a href="index.html#contact" class="text-sm/6 font-semibold text-gray-900">Contact us</a>
-        </div>
-        <div class="flex lg:hidden">
-          <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-            <span class="sr-only">Open main menu</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
-              <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-          </button>
-        </div>
-      </div>
-      <a href="#" class="-m-1.5 p-1.5">
-        <span class="sr-only">Moving Mountains Counseling & Wellness</span>
-        <img src="src/mm-logo2.png" alt="" class="h-20 w-auto" />
-      </a>
-      <div class="flex flex-1 justify-end">
-        <a href="#" class="text-sm/6 font-semibold text-secondary hidden md:flex">Connect with us <span aria-hidden="true">&rarr;</span></a>
-      </div>  
-    </nav>
-    <el-dialog>
-      <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
-        <div tabindex="0" class="fixed inset-0 focus:outline-none">
-          <el-dialog-panel class="fixed inset-y-0 left-0 z-10 w-full overflow-y-auto bg-white px-6 py-6">
-            <div class="flex items-center justify-between"> 
-              <div class="flex flex-1">
-                <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-700">
-                  <span class="sr-only">Close menu</span>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
-                    <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </button>
-              </div>
-              <a href="#" class="-m-1.5 p-1.5">
-                <span class="sr-only">Moving Mountains Counseling & Wellness</span>
-                <img src="src/logo-tall.jpg" alt="" class="h-8 w-auto" />
-              </a>
-          
-            </div>
-            <div class="mt-6 space-y-2">
-              <a href="#about" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">About us</a>
-              <a href="services.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Services</a>
-              <a href="work-with-us.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Therapist opportunities</a>
-              <a href="#contact" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Contact us</a>
-            </div>
-          </el-dialog-panel>
-        </div>
-      </dialog>
-    </el-dialog>
-  </header>
-
-  <!-- end main nav -->
+  <!-- Header Component -->
+  <div id="header-component"></div>
+  <!-- End Header Component -->
 
 
   <!-- homepage hero -->
-    <div class="relative bg-white">
+    <div class="relative bg-custom pt-2">
       <div class="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
         <div class="px-6 pt-10 pb-24 sm:pb-32 lg:col-span-7 lg:px-0 lg:pt-35 lg:pb-48 xl:col-span-6">
           <div class="mx-auto max-w-lg lg:mx-0 sm:items-center ">
-            <img src="src/icon.jpg" alt="decorative-icon" class="h-11" />
-            <h1 class="mt-24 text-5xl font-fraunces tracking-tight text-pretty text-heading sm:mt-10 sm:text-6xl">Healing begins when you don’t have to carry it alone</h1>
-            <p class="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">Life wasn’t meant to feel like climbing Everest every single day.</p>
-            <p class="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">Between burnout, challenges that come with relationships, grief, chronic illness, parenting chaos, demanding jobs, and endless to-do lists — it’s no wonder you’re exhausted. Therapy gives you a place to rest, reset, and find your footing again.</p>
+            <h1 class="mt-24 text-5xl font-fraunces tracking-tight text-pretty text-heading sm:mt-10 sm:text-6xl"> Healing begins when you don't have to carry it alone</h1>
+            <p class="mt-8 text-lg text-gray-700 sm:text-xl/8">If you're searching for a therapist near Worcester, Holden, or Wachusett Mountain—or found us at Mountain Side Cafe in Princeton—you're in the right place.</p>
+            <p class="mt-8 text-lg text-gray-700 sm:text-xl/8">Between burnout, anxiety, depression, relationship challenges, grief, chronic illness, parenting stress, and demanding jobs — it's no wonder you're exhausted. Our licensed therapists provide counseling that gives you a place to rest, reset, and find your footing again.</p>
             <div class="mt-10 flex items-center gap-x-6">
-              <a href="#contact" class="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">Take your first step</a>
-              <a href="#about" class="text-sm/6 font-semibold text-secondary">Begin here<span aria-hidden="true">→</span></a>
+              <a href="#contact" class="bg-primary text-white hover:bg-secondary transition-colors px-5 py-2.5 text-sm font-medium focus:ring-4 focus:outline-none focus:ring-primary rounded-lg text-center">Take your first step</a>
+              <a href="#about" class="text-sm/6 font-semibold text-heading">Learn more<span aria-hidden="true">→</span></a>
             </div>
           </div>
         </div>
         <div class="relative lg:col-span-5 lg:-mr-8 xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0 ">
-          <img src="src/sunset-mountains.png" alt="" class="aspect-3/2 w-full object-cover lg:absolute lg:inset-0 lg:aspect-auto lg:h-full  [mask-image:linear-gradient(to_bottom,transparent,black_15%,black)] [mask-repeat:no-repeat] [mask-size:100%_100%]" />
+          <img src="src/sunset-mountains.png" alt="" class="aspect-3/2 w-full object-cover lg:absolute lg:inset-0 lg:aspect-auto lg:h-full  [mask-image:linear-gradient(to_bottom,transparent,black_15%,black)] [mask-repeat:no-repeat] [mask-size:100%_100%] hidden md:block" />
         </div>
       </div>
     </div>
@@ -125,15 +66,15 @@
 
   <!-- why mm -->
     <div class="relative isolate overflow-hidden bg-white py-24 sm:py-32">
-      <img src="src/sunbeams.jpg" alt="" class="absolute inset-0 -z-10 size-full object-cover opacity-30" />
+      <img src="src/sunbeams.jpg" alt="" class="absolute inset-0 -z-10 size-full object-cover opacity-15" />
       <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
         <div aria-hidden="true" class="absolute -bottom-8 -left-96 -z-10 transform-gpu blur-3xl sm:-bottom-64 sm:-left-40 lg:-bottom-32 lg:left-8 xl:-left-10">
-          <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" class="aspect-1266/975 w-316.5 bg-linear-to-tr from-[#ff4694] to-[#776fff] opacity-15"></div>
+          <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" class="aspect-1266/975 w-316.5 bg-linear-to-tr from-[#D36139] to-[#DE9278] opacity-15"></div>
         </div>
         <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
-          <h2 class="text-base/8 font-semibold text-primary">Why clients trust us</h2>
+          <h2 class="text-base/8 font-fraunces font-semibold text-primary">Why clients trust us</h2>
           <p class="mt-2 text-4xl font-fraunces tracking-tight text-pretty text-heading sm:text-5xl">A safe place to be seen, heard, and supported</p>
-          <p class="mt-6 text-lg/8 text-gray-700">At Moving Mountains Counseling & Wellness, we believe healing comes from being truly understood. Our compassionate team helps you navigate life’s heaviest moments, whether you’re facing grief, anxiety, or transitions, and supports you in finding your own strength.</p>
+          <p class="mt-6 text-lg/8 text-gray-700">At Moving Mountains Counseling & Wellness in Princeton, MA, we believe healing comes from being truly understood. Our licensed therapists serve clients from Worcester, Holden, West Boylston, Sterling, Rutland, and throughout Central Massachusetts. Whether you're facing anxiety, depression, grief, or life transitions, we support you in finding your own strength through in-person therapy and Massachusetts telehealth counseling.</p>
         </div>
         <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-10 text-gray-900 sm:mt-20 sm:grid-cols-2 sm:gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-4">
           <div class="flex flex-col gap-y-3 border-l border-gray-900/15 pl-6">
@@ -163,46 +104,41 @@
       <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         <div class="max-w-4xl">
           <p class="text-base/7 font-semibold text-primary">About Moving Mountains Counseling & Wellness</p>
-          <h1 class="mt-2 text-4xl font-fraunces tracking-tight text-pretty text-heading sm:text-5xl">Transforming Challenges Into Growth, One Step at a Time</h1>
-          <p class="mt-6 text-xl/8 text-balance text-gray-700">At Moving Mountains Counseling & Wellness, we believe healing is a journey—one that doesn’t have to be taken alone. Whether you’re sitting across from us in our office, located in Princeton, joining us virtually from your home anywhere in Massachusetts, or walking side by side on a wooded trail, our role is to meet you where you are and help guide you forward.
+          <h1 class="mt-2 text-4xl font-fraunces tracking-tight text-pretty text-heading sm:text-5xl">Therapy that meets you where you are</h1>
+          <p class="mt-6 text-xl/8 text-balance text-gray-700">We believe healing is a journey—one that doesn't have to be taken alone. Whether you visit our Princeton office near Wachusett Mountain (just 15 minutes from Worcester and Holden, upstairs at Mountainside Cafe), connect virtually from anywhere in Massachusetts, or walk side by side on a Wachusett trail, we're here to meet you where you are and help guide you forward.
     </p>
         </div>
-        <section class="mt-20 grid grid-cols-1 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16">
+        <section class="mt-6 grid grid-cols-1 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16">
           <div class="lg:pr-8">
-            
-            <p class="mt-6 text-base/7 text-gray-600">We created this practice to be more than just a therapy office. We wanted to build a space—indoors, online, and outdoors—that feels safe, compassionate, and deeply human. A place where your story is heard, your struggles are honored, and your strengths are celebrated.
-    </p>
-            <p class="mt-8 text-base/7 text-gray-600">Our name, Moving Mountains, comes from the belief that while life’s challenges can feel overwhelming, they are not immovable. With the right support, even the heaviest burdens can shift. Sometimes that means exploring painful experiences. Sometimes it means finding clarity in the quiet of nature. And often, it means taking one small step at a time toward a lighter, freer way of being.
-    </p>
 
-    <p class="mt-8 text-base/7 text-gray-600">We work with clients experiencing anxiety, depression, stress, life transitions, grief, relationship challenges, and those simply seeking greater balance and meaning. We offer:
-    <ul class="list-disc pl-6 mb-6 mt-8 text-base/7 text-gray-600">
-            <li>In-Person Therapy in Princeton, MA</li>
-            <li>Telehealth Counseling across Massachusetts</li>
-            <li>Nature-Based Therapy including walk &amp; talk sessions and seated outdoor sessions</li>
-          </ul>
-         
-    </p>
-     <p class="italic mt-8 text-base/7 text-gray-600">At the heart of our work is one simple promise: we’re here to listen, and we’re here to walk with you.</p>
+            <p class="mt-6 text-base/7 text-gray-600">Our name comes from the belief that while life's challenges can feel overwhelming, they are not immovable. With the right support, even the heaviest burdens can shift—one small step at a time.</p>
+
+            <p class="mt-8 text-base/7 text-gray-600">We offer compassionate, evidence-based therapy for anxiety treatment, depression counseling, grief support, life transitions, burnout recovery, and trauma healing. Our Princeton MA office serves Worcester, Holden, West Boylston, Sterling, Rutland, and surrounding Central Massachusetts communities. We also provide telehealth counseling throughout Massachusetts and nature-based therapy sessions near Wachusett Mountain.</p>
+
+            <div class="my-10 flex items-center gap-x-6">
+              <a href="services" class="bg-primary text-white hover:bg-secondary transition-colors px-5 py-2.5 text-sm font-medium focus:ring-4 focus:outline-none focus:heading rounded-lg text-center
+">Explore our services</a>
+              <a href="our-team" class="text-sm/6 font-semibold text-heading">Meet our therapists <span aria-hidden="true">&rarr;</span></a>
+            </div>
 
           </div>
           <div class="pt-16 lg:row-span-2 lg:-mr-16 xl:mr-auto">
             <div class="-mx-8 grid grid-cols-2 gap-4 sm:-mx-16 sm:grid-cols-4 lg:mx-0 lg:grid-cols-2 xl:gap-8">
               <div class="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
-                <img src="src/10-1-1.jpg" alt="" class="block size-full object-cover" />
+                <img src="src/kate-heather-in-office.jpg" alt="" class="block size-full object-cover" />
               </div>
               <div class="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40">
-                <img src="src/outside-view-of-office.JPG" alt="" class="block size-full object-cover" />
+                <img src="src/outside-view-of-office.jpg" alt="" class="block size-full object-cover" />
               </div>
               <div class="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
-                <img src="src/insidve-view-of-the-office2.JPG" alt="" class="block size-full object-cover" />
+                <img src="src/inside-office-square.jpg" alt="" class="block size-full object-cover" />
               </div>
               <div class="-mt-8 overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40">
-                <img src="src/outside-laughing.JPG" alt="" class="block size-full object-cover" />
+                <img src="src/outside-laughing-600x900.jpg" alt="" class="block size-full object-cover" />
               </div>
             </div>
           </div>
-          
+
         </section>
       </div>
     </div>
@@ -210,120 +146,10 @@
   <!-- end about mm-->
 
 
-  <!-- contact section -->
-    <div class="relative isolate bg-white" id="contact">
-      <div class="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
-        <div class="relative px-6 pt-24 pb-20 sm:pt-32 lg:static lg:px-8 lg:py-48">
-          <div class="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
-            <div class="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden bg-gray-100 ring-1 ring-gray-900/10 lg:w-1/2">
-              <svg aria-hidden="true" class="absolute inset-0 size-full mask-[radial-gradient(100%_100%_at_top_right,white,transparent)] stroke-gray-200">
-                <defs>
-                  <pattern id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527" width="200" height="200" x="100%" y="-1" patternUnits="userSpaceOnUse">
-                    <path d="M130 200V.5M.5 .5H200" fill="none" />
-                  </pattern>
-                </defs>
-                <rect width="100%" height="100%" stroke-width="0" class="fill-white" />
-                <svg x="100%" y="-1" class="overflow-visible fill-gray-50">
-                  <path d="M-470.5 0h201v201h-201Z" stroke-width="0" />
-                </svg>
-                <rect width="100%" height="100%" fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" stroke-width="0" />
-              </svg>
-              <div aria-hidden="true" class="absolute top-[calc(100%-13rem)] -left-56 hidden transform-gpu blur-3xl lg:top-[calc(50%-7rem)] lg:left-[max(-14rem,calc(100%-59rem))]">
-                <div style="clip-path: polygon(74.1% 56.1%, 100% 38.6%, 97.5% 73.3%, 85.5% 100%, 80.7% 98.2%, 72.5% 67.7%, 60.2% 37.8%, 52.4% 32.2%, 47.5% 41.9%, 45.2% 65.8%, 27.5% 23.5%, 0.1% 35.4%, 17.9% 0.1%, 27.6% 23.5%, 76.1% 2.6%, 74.1% 56.1%)" class="aspect-1155/678 w-288.75 bg-linear-to-br from-[#80caff] to-[#4f46e5] opacity-10"></div>
-              </div>
-            </div>
-            <h2 class="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">Reach out. Relief starts with a conversation.</h2>
-            <p class="mt-6 text-lg/8 text-gray-600">If you’d like to talk through what’s been weighing on you, you’re welcome to call us or send a message using the form. We do our best to reply within one business day. No pressure, no scripts — just a real person ready to listen.</p>
-            <dl class="mt-10 space-y-4 text-base/7 text-gray-600">
-              <div class="flex gap-x-4">
-                <dt class="flex-none">
-                  <span class="sr-only">Address</span>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="h-7 w-6 text-gray-400">
-                    <path d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </dt>
-                <dd>213 Mountain Rd, <br />Princeton, MA 01541</dd>
-              </div>
-              <!-- <div class="flex gap-x-4">
-                <dt class="flex-none">
-                  <span class="sr-only">Telephone</span>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="h-7 w-6 text-gray-400">
-                    <path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </dt>
-                <dd><a href="tel:+1 (508) xxx-xxxx" class="hover:text-gray-900">+1 (867) 5309</a></dd>
-              </div> -->
-              <div class="flex gap-x-4">
-                <dt class="flex-none">
-                  <span class="sr-only">Email</span>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="h-7 w-6 text-gray-400">
-                    <path d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </dt>
-                <dd><a href="mailto:hello@example.com" class="hover:text-gray-900">info@mmcounselingwellness.com</a></dd>
-              </div>
-            </dl>
-          </div>
-        </div>
-        <form action="#" method="POST" class="px-6 pt-20 pb-24 sm:pb-32 lg:px-8 lg:py-48">
-          <div class="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
-            <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-              <div>
-                <label for="first-name" class="block text-sm/6 font-semibold text-gray-900">First name</label>
-                <div class="mt-2.5">
-                  <input id="first-name" type="text" name="first-name" autocomplete="given-name" class="block w-full rounded-md bg-custom px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600" />
-                </div>
-              </div>
-              <div>
-                <label for="last-name" class="block text-sm/6 font-semibold text-gray-900">Last name</label>
-                <div class="mt-2.5">
-                  <input id="last-name" type="text" name="last-name" autocomplete="family-name" class="block w-full rounded-md bg-custom px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600" />
-                </div>
-              </div>
-              <div class="sm:col-span-2">
-                <label for="email" class="block text-sm/6 font-semibold text-gray-900">Email</label>
-                <div class="mt-2.5">
-                  <input id="email" type="email" name="email" autocomplete="email" class="block w-full rounded-md bg-custom px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600" />
-                </div>
-              </div>
-              <div class="sm:col-span-2">
-                <label for="phone-number" class="block text-sm/6 font-semibold text-gray-900">Phone number</label>
-                <div class="mt-2.5">
-                  <input id="phone-number" type="tel" name="phone-number" autocomplete="tel" class="block w-full rounded-md bg-custom px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600" />
-                </div>
-              </div>
-              <div class="sm:col-span-2">
-                <label for="message" class="block text-sm/6 font-semibold text-gray-900">Message</label>
-                <div class="mt-2.5">
-                  <textarea id="message" name="message" rows="4" class="block w-full rounded-md bg-custom px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"></textarea>
-                </div>
-              </div>
-            </div>
-            <div class="mt-8 flex justify-end">
-              <button type="submit" class="rounded-md bg-primary px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary">Send message</button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  <!-- end contact section -->
 
-  <!-- footer-->
-    <footer class="bg-white">
-  <div class="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
-    <nav aria-label="Footer" class="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm/6">
-      <a href="index.html#about" class="text-gray-600 hover:text-gray-900">About us</a>
-      <a href="services.html" class="text-gray-600 hover:text-gray-900">Our services and approach</a>
-      <a href="work-with-us.html" class="text-gray-600 hover:text-gray-900">Therapist Opportunities</a>
-      <a href="index.html#contact" class="text-gray-600 hover:text-gray-900">Contact us</a>
+  <!-- Footer Component -->
+  <div id="footer-component"></div>
+  <!-- End Footer Component -->
 
-    </nav>
-
-    <p class="mt-10 text-center text-sm/6">Therapy and counseling services in Central Massachusetts near Wachussett Mountain <p>
-      <p class="mt-10 text-center text-sm/6 text-gray-600">&copy; 2025 Moving Mountains Councelling and Wellness<p>
-  </div>
-</footer>
-
-  <script type="module" src="/src/main.js"></script>
 </body>
 </html>

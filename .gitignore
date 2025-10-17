@@ -2,7 +2,7 @@
 node_modules/
 
 # Build outputs
-dist/output.css
+#dist/output.css
 
 # Logs
 npm-debug.log*
