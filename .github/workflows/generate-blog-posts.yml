@@ -1,0 +1,66 @@
+name: Generate Blog Post HTML Files
+
+# Trigger when markdown files in content/blog are added or changed
+on:
+  push:
+    paths:
+      - 'content/blog/**/*.md'
+    branches:
+      - main
+      - gh-pages
+
+jobs:
+  generate-posts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate HTML files for blog posts
+        run: |
+          echo "Generating HTML files for blog posts..."
+
+          # Ensure blog directory exists
+          mkdir -p blog
+
+          # Process each markdown file in content/blog
+          for md_file in content/blog/*.md; do
+            # Skip if no markdown files found
+            [ -e "$md_file" ] || continue
+
+            # Extract slug from frontmatter (line starting with "slug:")
+            slug=$(grep "^slug:" "$md_file" | sed 's/slug: *//' | tr -d '\r' | tr -d '"' | tr -d "'")
+
+            # Skip if no slug found
+            if [ -z "$slug" ]; then
+              echo "Warning: No slug found in $md_file"
+              continue
+            fi
+
+            echo "Processing: $md_file -> blog/${slug}.html"
+
+            # Copy template to create post HTML file
+            cp blog/_post-template.html "blog/${slug}.html"
+
+            echo "Created blog/${slug}.html"
+          done
+
+          echo "Blog post HTML generation complete!"
+
+      - name: Commit generated files
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+          # Add all generated HTML files
+          git add blog/*.html
+
+          # Only commit if there are changes
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Auto-generate blog post HTML files [skip ci]"
+            git push
+          fi

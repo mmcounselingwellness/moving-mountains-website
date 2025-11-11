@@ -32,8 +32,16 @@ The build process compiles `src/input.css` to `dist/output.css` using Tailwind C
   - `our-team.html` - Team listing page with dynamic member loading
   - `kate-bio.html` - Kate Allain's bio page
   - `heather-bio.html` - Heather Carcia's bio page
+  - `blog.html` - Blog listing page with all posts
   - `privacy.html` - Website privacy policy
   - `thank-you-for-contacting-us.html` - Contact form thank you page (placeholder)
+
+- **Blog System**:
+  - **Content** (`content/blog/` directory): Blog posts stored as Markdown files with YAML frontmatter
+  - **Listing Page** (`blog.html`): Dynamically renders all posts from content directory
+  - **Single Post Template** (`blog/post.html`): Renders individual posts via URL parameter (`?slug=post-name`)
+  - **Index File** (`content/blog/index.json`): Lists all available posts (auto-updated by GitHub Action)
+  - **CMS Integration**: Pages CMS for non-technical content management (see PAGES-CMS-SETUP.md)
 
 - **Components** (`components/` directory):
   - `header.html` - Shared navigation header with mobile menu
@@ -41,7 +49,8 @@ The build process compiles `src/input.css` to `dist/output.css` using Tailwind C
   - `cookie-consent.html` - Analytics consent banner
 
 - **JavaScript** (`js/` directory):
-  - `components.js` - Loads header, footer, cookie consent, and team members
+  - `components.js` - Loads header, footer, cookie consent, and team members dynamically
+  - `blog.js` - Fetches and renders blog posts from Markdown files
   - `cookie-consent.js` - Manages analytics consent UI and user preferences
   - `analytics-manager.js` - Controls Google Analytics based on user consent
 
@@ -174,3 +183,84 @@ And before closing `</body>`:
 - Third-party service disclosures (Google Analytics, FormSubmit.co)
 - User rights and opt-out information
 - Disclaimer separating website privacy from HIPAA-protected clinical services
+
+**Blog System (Dynamic)**:
+- **Content Management**: Uses Pages CMS for easy blog post creation by Kate and Heather (see PAGES-CMS-SETUP.md)
+- **Content Storage**: Blog posts stored as Markdown files in `content/blog/` with YAML frontmatter
+- **Dynamic Rendering**: JavaScript (`blog.js`) fetches posts and converts Markdown to HTML using marked.js
+- **Blog Listing** (`blog.html`): Shows all posts in reverse chronological order
+- **Single Post Page** (`blog/post.html`): Template that renders posts based on URL slug parameter
+- **Auto-indexing**: GitHub Action automatically updates `content/blog/index.json` when posts are added/removed
+- **Post Structure**: Each post includes frontmatter (title, date, author, featured image, excerpt, slug) and Markdown body
+- Clean, readable typography with prose styling and proper spacing (`space-y-6` for paragraphs)
+
+## Dynamic Blog System
+
+**Overview:**
+The blog is now dynamic, allowing Kate and Heather to create posts via Pages CMS without touching code.
+
+**Technology Stack:**
+- **Content Format**: Markdown files with YAML frontmatter
+- **Rendering**: marked.js library (client-side Markdown → HTML conversion)
+- **CMS**: Pages CMS (free, GitHub-based)
+- **Automation**: GitHub Actions for index updates
+
+**How It Works:**
+
+1. **Content Creation**:
+   - Kate/Heather login to Pages CMS
+   - Fill out a form (title, author, date, image, body)
+   - Save → commits Markdown file to `content/blog/`
+
+2. **Auto-Indexing**:
+   - GitHub Action detects new `.md` file
+   - Updates `content/blog/index.json` with list of all posts
+   - Runs automatically on every commit
+
+3. **Dynamic Rendering**:
+   - Blog listing page fetches `index.json`
+   - For each post, fetches the Markdown file
+   - Parses frontmatter, converts Markdown to HTML
+   - Renders in existing design system
+
+4. **URL Structure**:
+   - Blog listing: `/blog.html` or `/blog`
+   - Single post: `/blog/post.html?slug=were-officially-open`
+
+**Blog Post Frontmatter Format:**
+```yaml
+---
+title: "Post Title"
+date: 2025-11-11
+author: Heather Carcia
+author_bio_link: heather-bio
+featured_image: src/image.jpg
+image_alt: "Image description"
+excerpt: "Brief summary for SEO"
+slug: url-friendly-title
+gallery_images:
+  - src: src/image1.jpg
+    alt: "Description"
+  - src: src/image2.jpg
+    alt: "Description"
+---
+```
+
+**Markdown Body:**
+- Supports standard Markdown formatting
+- Links: `[text](url)` or `[text](page-name)` for internal links
+- Bold: `**text**`, Italic: `*text*`
+- Images handled via frontmatter (featured + gallery)
+
+**Pages CMS Setup:**
+- Configuration: `.pages/config.yml`
+- Defines blog collection with all required fields
+- Setup guide: PAGES-CMS-SETUP.md
+- Kate and Heather access via GitHub OAuth
+
+**Future Enhancements:**
+- Navigation management via CMS
+- Page creation via CMS
+- Categories/tags for blog posts
+- RSS feed generation
+- Client-side search

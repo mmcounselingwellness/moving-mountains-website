@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="robots" content="index">
+
+  <!-- Analytics Manager - Load BEFORE Google Analytics -->
+  <script src="../js/analytics-manager.js"></script>
+
+  <title>Blog | Moving Mountains Counseling & Wellness</title>
+  <meta name="description" content="Updates, insights, and stories from Moving Mountains Counseling & Wellness in Princeton, MA.">
+  <link rel="canonical" href="https://mmcounselingwellness.com/blog" />
+  <link href="../dist/output.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+
+  <!-- Google Font: Fraunces -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Marked.js for Markdown rendering -->
+  <script src="https://cdn.jsdelivr.net/npm/marked@11.1.1/marked.min.js"></script>
+
+  <!-- Component Loader -->
+  <script src="../js/components.js"></script>
+
+  <!-- Blog Renderer -->
+  <script src="../js/blog.js"></script>
+
+  <!-- Cookie Consent Manager -->
+  <script src="../js/cookie-consent.js"></script>
+
+</head>
+
+<body class="font-raleway bg-custom">
+
+  <!-- Header Component -->
+  <div id="header-component"></div>
+  <!-- End Header Component -->
+
+  <!-- Blog Listing -->
+  <div class="bg-white py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:mx-0">
+        <h1 class="text-4xl font-fraunces tracking-tight text-heading sm:text-5xl">Blog</h1>
+        <p class="mt-6 text-lg/8 text-gray-600">Updates, insights, and stories from our practice.</p>
+      </div>
+      <div id="blog-posts-container" class="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <!-- Blog posts will be dynamically loaded here -->
+        <div class="col-span-full text-center py-12">
+          <p class="text-gray-600">Loading posts...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Blog Listing -->
+
+  <!-- Footer Component -->
+  <div id="footer-component"></div>
+  <!-- End Footer Component -->
+
+  <!-- Cookie Consent Component -->
+  <div id="cookie-consent-component"></div>
+  <!-- End Cookie Consent Component -->
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+# Pages CMS Configuration for Moving Mountains Website
+# https://pagescms.org/docs/
+
+# Site settings
+site:
+  name: Moving Mountains Counseling & Wellness
+  description: Blog & Content Management
+  logo: /src/Moving-Mountains-logo-RGB_MM-H-FC.jpg
+
+# Media settings
+media:
+  folder: src
+  output: src
+
+# Collections define the content types that can be managed
+collections:
+  # Blog Posts Collection
+  - name: blog
+    label: Blog Posts
+    folder: content/blog
+    extension: md
+    format: frontmatter
+    create: true
+    delete: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - label: Title
+        name: title
+        widget: string
+        required: true
+        hint: The title of your blog post
+
+      - label: Publication Date
+        name: date
+        widget: datetime
+        format: YYYY-MM-DD
+        required: true
+        hint: When this post was published
+
+      - label: Author
+        name: author
+        widget: select
+        options:
+          - Kate Allain
+          - Heather Carcia
+        required: true
+        hint: Who wrote this post
+
+      - label: Author Bio Link
+        name: author_bio_link
+        widget: select
+        options:
+          - label: Kate Allain
+            value: kate-bio
+          - label: Heather Carcia
+            value: heather-bio
+        required: true
+        hint: Link to the author's bio page
+
+      - label: Featured Image
+        name: featured_image
+        widget: image
+        required: true
+        hint: Main image for the blog post (appears in listing and at top of post)
+
+      - label: Image Alt Text
+        name: image_alt
+        widget: string
+        required: true
+        hint: Describe the image for accessibility
+
+      - label: Excerpt
+        name: excerpt
+        widget: text
+        required: true
+        hint: Short summary (used for SEO and previews)
+
+      - label: URL Slug
+        name: slug
+        widget: string
+        required: true
+        hint: URL-friendly version of title (e.g., "were-officially-open")
+
+      - label: Body
+        name: body
+        widget: markdown
+        required: true
+        hint: The main content of your blog post (supports Markdown formatting)
+
+      - label: Gallery Images
+        name: gallery_images
+        widget: list
+        required: false
+        hint: Optional photo gallery at the end of the post
+        fields:
+          - label: Image
+            name: src
+            widget: image
+          - label: Alt Text
+            name: alt
+            widget: string
+
+  # Future: Navigation Collection (uncomment when ready to use)
+  # - name: navigation
+  #   label: Navigation
+  #   file: content/navigation.json
+  #   fields:
+  #     - label: Main Navigation
+  #       name: main_nav
+  #       widget: list
+  #       fields:
+  #         - {label: Label, name: label, widget: string}
+  #         - {label: URL, name: url, widget: string}
+  #         - {label: Order, name: order, widget: number}
+
+  # Future: Pages Collection (uncomment when ready to use)
+  # - name: pages
+  #   label: Pages
+  #   folder: content/pages
+  #   extension: md
+  #   create: true
+  #   delete: true
+  #   fields:
+  #     - {label: Title, name: title, widget: string}
+  #     - {label: URL Slug, name: slug, widget: string}
+  #     - {label: Body, name: body, widget: markdown}

@@ -6,16 +6,41 @@
 // Load HTML component into a container
 async function loadComponent(componentName, containerId) {
   try {
-    const response = await fetch(`components/${componentName}.html`);
+    // Detect if we're in a subdirectory and adjust path accordingly
+    const pathDepth = window.location.pathname.split('/').filter(segment => segment && !segment.endsWith('.html')).length;
+    const pathPrefix = pathDepth > 0 ? '../'.repeat(pathDepth) : '';
+
+    const response = await fetch(`${pathPrefix}components/${componentName}.html`);
     if (!response.ok) throw new Error(`Failed to load ${componentName}`);
     const html = await response.text();
     const container = document.getElementById(containerId);
     if (container) {
       container.innerHTML = html;
+      // Fix asset paths in the loaded component
+      fixAssetPaths(container, pathPrefix);
     }
   } catch (error) {
     console.error(`Error loading component ${componentName}:`, error);
   }
+}
+
+// Fix relative asset paths in loaded components
+function fixAssetPaths(container, pathPrefix) {
+  // Fix image paths
+  const images = container.querySelectorAll('img[src^="src/"]');
+  images.forEach(img => {
+    img.src = pathPrefix + img.getAttribute('src');
+  });
+
+  // Fix link paths (for navigation, excluding # anchors and external links)
+  const links = container.querySelectorAll('a[href]');
+  links.forEach(link => {
+    const href = link.getAttribute('href');
+    // Skip anchors, external links, and already-relative paths
+    if (!href.startsWith('#') && !href.startsWith('http') && !href.startsWith('/') && !href.startsWith('.')) {
+      link.href = pathPrefix + href;
+    }
+  });
 }
 
 // Load team members from JSON and render them
@@ -24,7 +49,11 @@ async function loadTeamMembers() {
   if (!container) return; // Only run on pages with team members
 
   try {
-    const response = await fetch('data/team-members.json');
+    // Detect path depth for correct data path
+    const pathDepth = window.location.pathname.split('/').filter(segment => segment && !segment.endsWith('.html')).length;
+    const pathPrefix = pathDepth > 0 ? '../'.repeat(pathDepth) : '';
+
+    const response = await fetch(`${pathPrefix}data/team-members.json`);
     if (!response.ok) throw new Error('Failed to load team members');
     const teamMembers = await response.json();
 

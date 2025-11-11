@@ -1,0 +1,57 @@
+name: Update Blog Index
+
+# Run whenever markdown files in content/blog are changed
+on:
+  push:
+    paths:
+      - 'content/blog/**/*.md'
+    branches:
+      - main
+      - gh-pages
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  update-index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Update blog index
+        run: |
+          # Create list of all markdown files in content/blog
+          cd content/blog
+          POSTS=$(ls -1 *.md 2>/dev/null | sort -r || echo "")
+
+          # Create JSON array
+          JSON_ARRAY=""
+          FIRST=true
+          for post in $POSTS; do
+            if [ "$FIRST" = true ]; then
+              JSON_ARRAY="\"$post\""
+              FIRST=false
+            else
+              JSON_ARRAY="$JSON_ARRAY,\n    \"$post\""
+            fi
+          done
+
+          # Write index.json
+          cat > index.json << EOF
+          {
+            "posts": [
+              $JSON_ARRAY
+            ]
+          }
+          EOF
+
+          echo "Updated index.json with $(echo "$POSTS" | wc -l) posts"
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add content/blog/index.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "Auto-update blog index [skip ci]"
+          git push
