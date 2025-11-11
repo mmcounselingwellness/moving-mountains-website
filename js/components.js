@@ -55,6 +55,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   await loadComponent('header', 'header-component');
   await loadComponent('footer', 'footer-component');
 
+  // Load cookie consent banner
+  await loadComponent('cookie-consent', 'cookie-consent-component');
+
   // Load team members if on team page
   await loadTeamMembers();
 });

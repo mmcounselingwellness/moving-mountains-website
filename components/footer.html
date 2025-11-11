@@ -109,8 +109,26 @@
                     <a href="our-team" class="hover:text-secondary transition-colors">Our team</a>
                     <a href="services" class="hover:text-secondary transition-colors">Services</a>
                     <a href="work-with-us" class="hover:text-secondary transition-colors">Work With Us</a>
+                    <a href="privacy" class="hover:text-secondary transition-colors">Privacy</a>
                 </nav>
             </div>
+            <div class="mt-6 pt-6 border-t border-white/20 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-xs text-white/90">
+                    &copy; <span id="current-year"></span> Moving Mountains Counseling & Wellness. All rights reserved.
+                </p>
+                <div class="flex gap-4 text-xs">
+                    <a href="privacy" class="text-white/90 hover:text-secondary transition-colors underline underline-offset-2">
+                        Privacy Policy
+                    </a>
+                    <button id="privacy-settings-link" type="button" class="text-white/90 hover:text-secondary transition-colors underline underline-offset-2">
+                        Privacy Settings
+                    </button>
+                </div>
+            </div>
+            <script>
+                // Set current year for copyright
+                document.getElementById('current-year').textContent = new Date().getFullYear();
+            </script>
         </div>
     </footer>
 

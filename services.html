@@ -6,15 +6,8 @@
 
   <meta name="robots" content="index">
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PY8ER15JZK"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-PY8ER15JZK');
-  </script>
+  <!-- Analytics Manager - Load BEFORE Google Analytics -->
+  <script src="js/analytics-manager.js"></script>
 
   <title>Therapy Services Near Worcester & Holden MA | Anxiety, Depression, Trauma Counseling</title>
   <meta name="description" content="Therapy near Worcester MA: anxiety treatment, depression counseling, trauma therapy, grief support. Princeton office serves Holden, West Boylston. In-person & MA telehealth.">
@@ -35,6 +28,9 @@
 
   <!-- Component Loader -->
   <script src="js/components.js"></script>
+
+  <!-- Cookie Consent Manager -->
+  <script src="js/cookie-consent.js"></script>
 
 </head>
 
@@ -169,6 +165,10 @@
   <!-- Footer Component -->
   <div id="footer-component"></div>
   <!-- End Footer Component -->
+
+  <!-- Cookie Consent Component -->
+  <div id="cookie-consent-component"></div>
+  <!-- End Cookie Consent Component -->
 
 </body>
 </html>

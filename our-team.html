@@ -6,15 +6,8 @@
 
   <meta name="robots" content="index">
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PY8ER15JZK"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-PY8ER15JZK');
-  </script>
+  <!-- Analytics Manager - Load BEFORE Google Analytics -->
+  <script src="js/analytics-manager.js"></script>
 
   <title>Meet Our Therapists | Licensed LICSWs Serving Worcester & Holden MA</title>
   <meta name="description" content="Meet our licensed therapists (LICSWs) in Princeton MA near Worcester & Holden. Expert counseling for anxiety, depression, grief, trauma. Accepting new clients.">
@@ -32,6 +25,9 @@
 
   <!-- Component Loader -->
   <script src="js/components.js"></script>
+
+  <!-- Cookie Consent Manager -->
+  <script src="js/cookie-consent.js"></script>
 
 </head>
 
@@ -56,6 +52,10 @@
   <!-- Footer Component -->
   <div id="footer-component"></div>
   <!-- End Footer Component -->
+
+  <!-- Cookie Consent Component -->
+  <div id="cookie-consent-component"></div>
+  <!-- End Cookie Consent Component -->
 
 </body>
 </html>

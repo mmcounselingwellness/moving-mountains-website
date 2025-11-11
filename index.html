@@ -6,15 +6,8 @@
 
   <meta name="robots" content="index">
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PY8ER15JZK"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-PY8ER15JZK');
-  </script>
+  <!-- Analytics Manager - Load BEFORE Google Analytics -->
+  <script src="js/analytics-manager.js"></script>
 
   <title>Therapist Princeton MA | Anxiety & Depression Counseling Near Worcester & Holden</title>
   <meta name="description" content="Licensed therapists in Princeton MA near Wachusett Mountain. Anxiety, depression, grief & trauma counseling. Serving Holden, Worcester, West Boylston, Sterling. In-person & MA telehealth.">
@@ -34,6 +27,9 @@
 
   <!-- Component Loader -->
   <script src="js/components.js"></script>
+
+  <!-- Cookie Consent Manager -->
+  <script src="js/cookie-consent.js"></script>
 
 </head>
 
@@ -153,6 +149,10 @@
   <!-- Footer Component -->
   <div id="footer-component"></div>
   <!-- End Footer Component -->
+
+  <!-- Cookie Consent Component -->
+  <div id="cookie-consent-component"></div>
+  <!-- End Cookie Consent Component -->
 
 </body>
 </html>
