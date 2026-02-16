@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @source "./*.html";
+@source "./components/*.html";
 
 @theme {
   --font-raleway: "Raleway", sans-serif;

@@ -29,6 +29,34 @@
   <!-- Cookie Consent Manager -->
   <script src="js/cookie-consent.js"></script>
 
+  <!-- BreadcrumbList Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://mmcounselingwellness.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Our Team",
+        "item": "https://mmcounselingwellness.com/our-team"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Kate Allain, LICSW",
+        "item": "https://mmcounselingwellness.com/kate-bio"
+      }
+    ]
+  }
+  </script>
+
 </head>
 
 <body class="font-raleway bg-custom">
@@ -40,6 +68,17 @@
   <!-- Kate bio content -->
   <div class="overflow-hidden bg-white py-24 sm:py-32">
     <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+      <!-- Breadcrumb -->
+      <nav aria-label="Breadcrumb" class="mb-8">
+        <ol class="flex items-center gap-x-2 text-sm text-gray-500">
+          <li><a href="/" class="hover:text-primary transition-colors">Home</a></li>
+          <li aria-hidden="true" class="text-gray-400">/</li>
+          <li><a href="our-team" class="hover:text-primary transition-colors">Our Team</a></li>
+          <li aria-hidden="true" class="text-gray-400">/</li>
+          <li class="text-gray-700 font-medium" aria-current="page">Kate Allain</li>
+        </ol>
+      </nav>
+
       <div class="max-w-4xl">
         <p class="text-base/7 font-semibold text-primary">Meet Kate</p>
         <h1 class="mt-2 text-4xl font-fraunces tracking-tight text-pretty text-heading sm:text-5xl">Kate Allain, LICSW</h1>

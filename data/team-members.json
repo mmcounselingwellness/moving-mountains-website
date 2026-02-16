@@ -18,5 +18,15 @@
     "bioPage": "kate-bio.html",
     "status": "waitlist",
     "order": 2
+  },
+  {
+    "id": "devon-lapierre",
+    "name": "Devon Lapierre, LMHC",
+    "title": "Licensed Mental Health Counselor",
+    "bio": "Devon brings a steady, grounded presence to help adults navigate anxiety, depression, trauma, life transitions, and OCD. Her collaborative approach focuses on real change, not just insight. Accepting new clients now.",
+    "image": "src/devon-office2.jpg",
+    "bioPage": "devon-bio.html",
+    "status": "accepting",
+    "order": 3
   }
 ]

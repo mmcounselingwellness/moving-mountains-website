@@ -32,6 +32,24 @@
                 <nav class="hidden md:flex items-center gap-6">
                     <a href="about-us" class="text-gray-700 hover:text-primary transition-colors">About us</a>
                     <a href="services" class="text-gray-700 hover:text-primary transition-colors">Our approach</a>
+
+                    <!-- Meet our therapists dropdown -->
+                    <div class="relative group">
+                      <a href="our-team" class="flex items-center gap-1 text-gray-700 hover:text-primary transition-colors">
+                        Meet our therapists
+                        <svg class="h-4 w-4 text-gray-400 group-hover:text-primary transition-colors" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                        </svg>
+                      </a>
+                      <div class="absolute left-0 top-full pt-2 hidden group-hover:block z-50 min-w-48">
+                        <div class="bg-white rounded-lg shadow-lg ring-1 ring-black/5 py-2">
+                          <a href="heather-bio" class="block px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-primary transition-colors">Heather Carcia, LICSW</a>
+                          <a href="kate-bio" class="block px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-primary transition-colors">Kate Allain, LICSW</a>
+                          <a href="devon-bio" class="block px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-primary transition-colors">Devon Lapierre, LMHC</a>
+                        </div>
+                      </div>
+                    </div>
+
                     <a href="work-with-us" class="text-gray-700 hover:text-primary transition-colors">Therapist opportunities</a>
                     <a href="#contact" class="text-primary font-semibold">Contact us <span aria-hidden="true">&rarr;</span></a>
                 </nav>
@@ -56,8 +74,19 @@
 
               </div>
               <div class="mt-6 space-y-2">
-                <a href="about-us" class="-mx-3 block rounded-lg px-3 py-2 text-base/7  text-gray-900 hover:bg-gray-50">About us</a>
+                <a href="about-us" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 text-gray-900 hover:bg-gray-50">About us</a>
                 <a href="services" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Services</a>
+
+                <!-- Meet our therapists section -->
+                <div class="-mx-3">
+                  <a href="our-team" class="block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Meet our therapists</a>
+                  <div class="pl-6 space-y-1">
+                    <a href="heather-bio" class="block rounded-lg px-3 py-1.5 text-sm text-gray-700 hover:bg-gray-50">Heather Carcia, LICSW</a>
+                    <a href="kate-bio" class="block rounded-lg px-3 py-1.5 text-sm text-gray-700 hover:bg-gray-50">Kate Allain, LICSW</a>
+                    <a href="devon-bio" class="block rounded-lg px-3 py-1.5 text-sm text-gray-700 hover:bg-gray-50">Devon Lapierre, LMHC</a>
+                  </div>
+                </div>
+
                 <a href="work-with-us" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Therapist opportunities</a>
                 <a href="#contact" onclick="document.getElementById('mobile-menu').close()" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Contact us <span aria-hidden="true">&rarr;</span></a>
               </div>
