@@ -2,7 +2,7 @@
   {
     "id": "heather-carcia",
     "name": "Heather Carcia, LICSW",
-    "title": "Clinical Social Work/Therapist",
+    "title": "Licensed Independant Clinical Social Work/Therapist",
     "bio": "Heather helps clients move from burnout and overwhelm to balance and connection through humor, compassion, and evidence-based care. Accepting new clients now.",
     "image": "src/heather-outside.jpg",
     "bioPage": "heather-bio.html",
@@ -12,7 +12,7 @@
   {
     "id": "kate-allain",
     "name": "Kate Allain, LICSW",
-    "title": "Clinical Social Work/Therapist",
+    "title": "Licensed Independant Clinical Social Work/Therapist",
     "bio": "Kate supports clients through grief, trauma, and life transitions, helping them heal and grow with empathy and self-compassion. Currently full; join the waitlist.",
     "image": "src/kate-outside.jpg",
     "bioPage": "kate-bio.html",
@@ -28,5 +28,15 @@
     "bioPage": "devon-bio.html",
     "status": "accepting",
     "order": 3
+  },
+  {
+    "id": "angela-oneil",
+    "name": "Angela O'Neil, LICSW",
+    "title": "Licensed Independent Clinical Social Worker/Therapist",
+    "bio": "Angela provides a compassionate, collaborative approach to help adults navigate anxiety, depression, bipolar disorder, grief, trauma, relationship stress, and life transitions. She integrates evidence-based and insight-focused therapies to help clients gain clarity, build resilience, and create meaningful change. Accepting new clients now.",
+    "image": "src/angela-office.jpg",
+    "bioPage": "angela-bio.html",
+    "status": "accepting",
+    "order": 4
   }
 ]
