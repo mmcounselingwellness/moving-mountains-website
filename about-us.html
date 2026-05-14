@@ -6,21 +6,17 @@
 
   <meta name="robots" content="index">
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PY8ER15JZK"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-PY8ER15JZK');
-  </script>
+  <!-- Analytics Manager - Load BEFORE Google Analytics -->
+  <script src="js/analytics-manager.js"></script>
 
   <title>About Our Princeton MA Therapists | Licensed Counselors Serving Worcester & Holden</title>
   <meta name="description" content="Meet our licensed therapists (LICSWs) near Worcester & Holden MA. Located in Princeton above Mountain Side Cafe. Anxiety, depression, grief therapy. In-person & telehealth.">
   <link rel="canonical" href="https://mmcounselingwellness.com/about-us" />
   <link href="dist/output.css" rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <script type="module" src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
 
@@ -31,6 +27,9 @@
 
   <!-- Component Loader -->
   <script src="js/components.js"></script>
+
+  <!-- Cookie Consent Manager -->
+  <script src="js/cookie-consent.js"></script>
 
 </head>
 
@@ -84,7 +83,7 @@
      <p class="italic mt-8 text-base/7 text-gray-600">At the heart of our work is one simple promise: we're here to listen, and we're here to walk with you.</p>
 
      <div class="mt-12 flex items-center gap-x-6">
-              <a href="services" class="bg-primary text-white hover:bg-secondary transition-colors px-5 py-2.5 text-sm font-medium focus:ring-4 focus:outline-none focus:ring-primary rounded-lg text-center">Explore our services</a>
+              <a href="services" class="bg-primary text-white hover:bg-secondary transition-colors px-5 py-2.5 text-sm font-medium focus:ring-4 focus:outline-heading focus:ring-primary rounded-lg text-center">Explore our services</a>
               <a href="our-team" class="text-sm/6 font-semibold text-secondary">Meet our team <span aria-hidden="true">&rarr;</span></a>
             </div>
           </div>
@@ -94,13 +93,13 @@
             </div>
             <div class="contents lg:col-span-2 lg:col-end-2 lg:ml-auto lg:flex lg:w-148 lg:items-start lg:justify-end lg:gap-x-8">
               <div class="order-first flex w-64 flex-none justify-end self-end max-sm:w-40 lg:w-auto">
-                <img src="src/sunbeams.jpg" alt="" class="aspect-4/3 w-[24rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover" />
+                <img src="src/inside-office-bright.jpg" alt="" class="aspect-4/3 w-[24rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover" />
               </div>
               <div class="flex w-96 flex-auto justify-end lg:w-auto lg:flex-none">
                 <img src="src/drone-photo-wachusett.jpg" alt="" class="aspect-7/5 w-148 max-w-none flex-none rounded-2xl bg-gray-50 object-cover max-sm:w-120" />
               </div>
               <div class="hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none">
-                <img src="src/inside-office-full.jpg" alt="" class="aspect-4/3 w-[24rem] max-w-none rounded-2xl bg-gray-50 object-cover" />
+                <img src="src/walk-and-talk-therapy.jpg" alt="walk and talk on a trail" class="aspect-4/3 w-[24rem] max-w-none rounded-2xl bg-gray-50 object-cover" />
               </div>
             </div>
           </div>
@@ -114,6 +113,10 @@
   <!-- Footer Component -->
   <div id="footer-component"></div>
   <!-- End Footer Component -->
+
+  <!-- Cookie Consent Component -->
+  <div id="cookie-consent-component"></div>
+  <!-- End Cookie Consent Component -->
 
 </body>
 </html>

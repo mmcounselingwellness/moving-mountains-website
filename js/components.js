@@ -39,7 +39,7 @@ async function loadTeamMembers() {
           <h3 class="text-lg/8 font-semibold tracking-tight text-gray-900">${member.name}</h3>
           <p class="text-base/7 text-gray-600">${member.title}</p>
           <p class="mt-6 text-base/7 text-gray-600">${member.bio}</p>
-          <a href="${member.bioPage}" class="text-sm/6 font-semibold text-heading hidden md:flex">Learn more <span aria-hidden="true">&rarr;</span></a>
+          <a href="${member.bioPage}" class="mt-4 inline-flex text-sm/6 font-semibold text-heading hover:text-primary transition-colors">Learn more <span aria-hidden="true">&rarr;</span></a>
         </div>
       </li>
     `).join('');
@@ -54,6 +54,14 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Load header and footer
   await loadComponent('header', 'header-component');
   await loadComponent('footer', 'footer-component');
+
+  // Hide footer contact section on the contact page (it's the page content there)
+  if (/\/contact-us(\.html)?$/.test(window.location.pathname)) {
+    document.getElementById('contact')?.remove();
+  }
+
+  // Load cookie consent banner
+  await loadComponent('cookie-consent', 'cookie-consent-component');
 
   // Load team members if on team page
   await loadTeamMembers();
