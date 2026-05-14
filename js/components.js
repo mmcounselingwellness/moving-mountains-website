@@ -55,6 +55,11 @@ document.addEventListener('DOMContentLoaded', async () => {
   await loadComponent('header', 'header-component');
   await loadComponent('footer', 'footer-component');
 
+  // Hide footer contact section on the contact page (it's the page content there)
+  if (/\/contact-us(\.html)?$/.test(window.location.pathname)) {
+    document.getElementById('contact')?.remove();
+  }
+
   // Load cookie consent banner
   await loadComponent('cookie-consent', 'cookie-consent-component');
 
