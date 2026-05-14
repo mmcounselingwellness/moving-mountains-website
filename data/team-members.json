@@ -38,10 +38,10 @@
     "bioPage": "angela-bio.html",
     "status": "accepting",
     "order": 4
-  }
+  },
   {
-    "id": "rachael-smith",
-    "name": "Rachael Smith, LMHC",
+    "id": "rachael-bottone",
+    "name": "Rachael Bottone, LMHC",
     "title": "Licensed Mental Health Counselor",
     "bio": "Rachael works with teens and adults navigating anxiety, depression, trauma, body image, and life transitions through a compassionate, holistic, mind-body approach. Accepting new clients now.",
     "image": "src/rachaelphoto.jpg",
