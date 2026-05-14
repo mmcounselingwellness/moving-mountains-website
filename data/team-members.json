@@ -39,4 +39,14 @@
     "status": "accepting",
     "order": 4
   }
+  {
+    "id": "rachael-smith",
+    "name": "Rachael Smith, LMHC",
+    "title": "Licensed Mental Health Counselor",
+    "bio": "Rachael works with teens and adults navigating anxiety, depression, trauma, body image, and life transitions through a compassionate, holistic, mind-body approach. Accepting new clients now.",
+    "image": "src/rachaelphoto.jpg",
+    "bioPage": "rachael-bio.html",
+    "status": "accepting",
+    "order": 5
+  }
 ]
