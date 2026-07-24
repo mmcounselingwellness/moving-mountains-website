@@ -179,6 +179,59 @@
               </div>
             </div>
 
+            <!-- How did you hear about us -->
+            <div class="sm:col-span-2">
+              <fieldset>
+                <legend class="block text-sm/6 font-semibold text-gray-900">How did you hear about us? <span class="text-primary">*</span></legend>
+                <div class="mt-3 flex flex-wrap gap-x-6 gap-y-2">
+                  <label class="flex items-center gap-x-2 cursor-pointer">
+                    <input type="radio" name="hear-about-us" value="Facebook" required class="h-4 w-4 border-gray-300 text-primary focus:ring-primary accent-primary" />
+                    <span class="text-sm/6 text-gray-900">Facebook</span>
+                  </label>
+                  <label class="flex items-center gap-x-2 cursor-pointer">
+                    <input type="radio" name="hear-about-us" value="Instagram" required class="h-4 w-4 border-gray-300 text-primary focus:ring-primary accent-primary" />
+                    <span class="text-sm/6 text-gray-900">Instagram</span>
+                  </label>
+                  <label class="flex items-center gap-x-2 cursor-pointer">
+                    <input type="radio" name="hear-about-us" value="Psychology Today" required class="h-4 w-4 border-gray-300 text-primary focus:ring-primary accent-primary" />
+                    <span class="text-sm/6 text-gray-900">Psychology Today</span>
+                  </label>
+                  <label class="flex items-center gap-x-2 cursor-pointer">
+                    <input type="radio" name="hear-about-us" value="Flyers in the community" required class="h-4 w-4 border-gray-300 text-primary focus:ring-primary accent-primary" />
+                    <span class="text-sm/6 text-gray-900">Flyers in the community</span>
+                  </label>
+                  <label class="flex items-center gap-x-2 cursor-pointer">
+                    <input type="radio" name="hear-about-us" value="Word of mouth" required class="h-4 w-4 border-gray-300 text-primary focus:ring-primary accent-primary" />
+                    <span class="text-sm/6 text-gray-900">Word of mouth</span>
+                  </label>
+                  <label class="flex items-center gap-x-2 cursor-pointer">
+                    <input type="radio" name="hear-about-us" value="Referral from another provider" required class="h-4 w-4 border-gray-300 text-primary focus:ring-primary accent-primary" />
+                    <span class="text-sm/6 text-gray-900">Referral from another provider</span>
+                  </label>
+                  <label class="flex items-center gap-x-2 cursor-pointer">
+                    <input type="radio" name="hear-about-us" value="Other" required class="h-4 w-4 border-gray-300 text-primary focus:ring-primary accent-primary" />
+                    <span class="text-sm/6 text-gray-900">Other</span>
+                  </label>
+                </div>
+              </fieldset>
+
+              <!-- Conditional: shown when Referral from another provider is selected -->
+              <div id="referral-provider-section" class="hidden mt-4">
+                <label for="referral-provider-name" class="block text-sm/6 font-semibold text-gray-900">Who referred you?</label>
+                <div class="mt-2.5">
+                  <input id="referral-provider-name" type="text" name="referral-provider-name" class="block w-full rounded-md bg-custom px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-primary" />
+                </div>
+              </div>
+
+              <!-- Conditional: shown when Other is selected -->
+              <div id="hear-about-us-other-section" class="hidden mt-4">
+                <label for="hear-about-us-other" class="block text-sm/6 font-semibold text-gray-900">Please specify</label>
+                <div class="mt-2.5">
+                  <input id="hear-about-us-other" type="text" name="hear-about-us-other" class="block w-full rounded-md bg-custom px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-primary" />
+                </div>
+              </div>
+            </div>
+
             <!-- Brief message -->
             <div class="sm:col-span-2">
               <label for="message" class="block text-sm/6 font-semibold text-gray-900">Brief message <span class="text-primary">*</span></label>
@@ -219,6 +272,17 @@
     bcbsRadios.forEach(radio => {
       radio.addEventListener('change', () => {
         thriserSection.classList.toggle('hidden', radio.value !== 'no');
+      });
+    });
+
+    const hearAboutUsRadios = document.querySelectorAll('input[name="hear-about-us"]');
+    const referralProviderSection = document.getElementById('referral-provider-section');
+    const hearAboutUsOtherSection = document.getElementById('hear-about-us-other-section');
+
+    hearAboutUsRadios.forEach(radio => {
+      radio.addEventListener('change', () => {
+        referralProviderSection.classList.toggle('hidden', radio.value !== 'Referral from another provider');
+        hearAboutUsOtherSection.classList.toggle('hidden', radio.value !== 'Other');
       });
     });
   </script>
