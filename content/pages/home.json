@@ -11,12 +11,12 @@
       "image": "/images/sunset-mountains.png",
       "imageAlt": "Sunset over mountain peaks representing hope and healing",
       "cta1": {
-        "label": "Take your first step",
-        "link": "/contact-us"
+        "label": "",
+        "link": ""
       },
       "cta2": {
-        "label": "Begin here",
-        "link": "#about"
+        "label": "",
+        "link": ""
       }
     },
     {
@@ -81,6 +81,24 @@
         }
       ],
       "type": "text_image"
+    },
+    {
+      "cta1": {
+        "label": "Click here",
+        "link": "#here"
+      },
+      "cta2": {
+        "label": "Secondary CTA (should not be required)",
+        "link": "Secondary CTA (should not be required)"
+      },
+      "body": "lknerlkn \n\nlenrlkjernglkenrgernerlkgmn\n\nlkemrlkermlk ;klmef lk lkm lkm lkm lkm lkm lkm lkmkjnergjenrfhjwebfu gewuwe kjeroerg",
+      "eyebrow": "Test",
+      "layout": "text-only",
+      "imageAlt": "lkmtb",
+      "headline": "Testing 123 Testing 123!",
+      "subline": "yo yo yo yo yo",
+      "type": "text_image",
+      "image": "/images/drone-photo-wachusett.jpg"
     }
   ]
 }
