@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { getSiteSettings } from "@/lib/content";
 import JsonLd from "./JsonLd";
+import PrivacySettingsButton from "./PrivacySettingsButton";
 
 export default function Footer() {
   const settings = getSiteSettings();
@@ -68,13 +69,7 @@ export default function Footer() {
               <a href="/privacy" className="text-white/90 hover:text-secondary transition-colors underline underline-offset-2">
                 Privacy Policy
               </a>
-              <button
-                type="button"
-                data-privacy-settings-trigger
-                className="text-white/90 hover:text-secondary transition-colors underline underline-offset-2"
-              >
-                Privacy Settings
-              </button>
+              <PrivacySettingsButton />
             </div>
           </div>
         </div>

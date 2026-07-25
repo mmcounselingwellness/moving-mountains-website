@@ -3,6 +3,7 @@ import { Fraunces, Raleway } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/chrome/Header";
 import Footer from "@/components/chrome/Footer";
+import ConsentBanner from "@/components/chrome/ConsentBanner";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -33,6 +34,7 @@ export default function RootLayout({
         <Header />
         <div id="main-content">{children}</div>
         <Footer />
+        <ConsentBanner />
       </body>
     </html>
   );
