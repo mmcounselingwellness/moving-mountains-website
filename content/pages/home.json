@@ -11,12 +11,12 @@
       "image": "/images/sunset-mountains.png",
       "imageAlt": "Sunset over mountain peaks representing hope and healing",
       "cta1": {
-        "label": "Take your first step",
-        "link": "/contact-us"
+        "label": "",
+        "link": ""
       },
       "cta2": {
-        "label": "Begin here",
-        "link": "#about"
+        "label": "",
+        "link": ""
       }
     },
     {
