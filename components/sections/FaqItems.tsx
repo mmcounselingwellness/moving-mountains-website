@@ -1,4 +1,5 @@
 import type { FaqItemsSection } from "@/lib/content";
+import Markdown from "@/components/Markdown";
 
 export default function FaqItems({ section }: { section: FaqItemsSection }) {
   const { heading, items } = section;
@@ -12,7 +13,9 @@ export default function FaqItems({ section }: { section: FaqItemsSection }) {
         {items.map((item, i) => (
           <div key={i} className={i > 0 ? "pt-8" : ""}>
             <dt className="text-lg font-fraunces font-semibold text-heading">{item.question}</dt>
-            <dd className="mt-3 text-base/7 text-gray-700">{item.answer}</dd>
+            <dd className="mt-3 text-base/7 text-gray-700">
+              <Markdown text={item.answer} />
+            </dd>
           </div>
         ))}
       </dl>

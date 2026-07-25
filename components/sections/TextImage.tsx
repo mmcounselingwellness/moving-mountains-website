@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { TextImageSection } from "@/lib/content";
+import Markdown from "@/components/Markdown";
 
 function Cta({ label, link, primary }: { label: string; link: string; primary: boolean }) {
   return primary ? (
@@ -16,18 +17,6 @@ function Cta({ label, link, primary }: { label: string; link: string; primary: b
   );
 }
 
-function Body({ text }: { text: string }) {
-  return (
-    <>
-      {text.split("\n\n").map((paragraph, i) => (
-        <p key={i} className="mt-6 text-base/7 text-gray-600 first:mt-0">
-          {paragraph}
-        </p>
-      ))}
-    </>
-  );
-}
-
 export default function TextImage({ section }: { section: TextImageSection }) {
   const { layout, eyebrow, headline, subline, body, image, imageAlt, images, cta1, cta2 } = section;
 
@@ -40,7 +29,7 @@ export default function TextImage({ section }: { section: TextImageSection }) {
         </h2>
       )}
       {subline && <p className="mt-6 text-xl/8 text-balance text-gray-700">{subline}</p>}
-      {body && <Body text={body} />}
+      {body && <Markdown text={body} />}
       {(cta1 || cta2) && (
         <div className="mt-8 flex items-center gap-x-6">
           {cta1 && <Cta label={cta1.label} link={cta1.link} primary />}

@@ -30,6 +30,7 @@ export type FeatureListSection = {
   intro?: string;
   style: "grid" | "checklist" | "plain-list";
   items: FeatureItem[];
+  cta?: CtaLink;
 };
 
 export type FaqItemsSection = {

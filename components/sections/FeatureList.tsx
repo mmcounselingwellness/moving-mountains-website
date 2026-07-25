@@ -1,7 +1,7 @@
 import type { FeatureListSection } from "@/lib/content";
 
 export default function FeatureList({ section }: { section: FeatureListSection }) {
-  const { eyebrow, heading, intro, style, items } = section;
+  const { eyebrow, heading, intro, style, items, cta } = section;
 
   return (
     <div className="relative isolate overflow-hidden bg-white py-24 sm:py-32">
@@ -66,6 +66,14 @@ export default function FeatureList({ section }: { section: FeatureListSection }
               </li>
             ))}
           </ul>
+        )}
+
+        {cta && (
+          <div className="mt-10">
+            <a href={cta.link} target={cta.link.startsWith("http") ? "_blank" : undefined} rel={cta.link.startsWith("http") ? "noopener noreferrer" : undefined} className="text-sm/6 font-semibold text-primary hover:text-secondary">
+              {cta.label} <span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
         )}
       </div>
     </div>
