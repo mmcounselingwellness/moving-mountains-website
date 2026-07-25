@@ -1,0 +1,235 @@
+backend:
+  name: github
+  repo: mmcounselingwellness/moving-mountains-website
+  branch: production
+
+local_backend: true
+
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  - name: "site_settings"
+    label: "Site Settings"
+    files:
+      - name: "settings"
+        label: "General Settings"
+        file: "content/settings/site.json"
+        fields:
+          - { label: "Banner Text", name: "bannerText", widget: "string" }
+          - { label: "Banner Link", name: "bannerLink", widget: "string", default: "/contact-us" }
+          - { label: "Logo (horizontal)", name: "logoHorizontal", widget: "image" }
+          - { label: "Logo (vertical)", name: "logoVertical", widget: "image" }
+          - { label: "Logo (white, footer)", name: "logoWhite", widget: "image" }
+          - { label: "Logo (tall, mobile menu)", name: "logoTall", widget: "image" }
+
+          - label: "Main Navigation"
+            name: "mainNav"
+            widget: "list"
+            summary: "{{fields.label}}"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - label: "Page"
+                name: "page"
+                widget: "relation"
+                required: false
+                collection: "pages"
+                search_fields: ["title"]
+                display_fields: ["title"]
+                value_field: "{{slug}}"
+              - { label: "Custom URL (for links outside the pages collection, e.g. bio pages)", name: "url", widget: "string", required: false }
+              - label: "Dropdown items"
+                name: "children"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Custom URL", name: "url", widget: "string" }
+
+          - label: "Footer Navigation"
+            name: "footerNav"
+            widget: "list"
+            summary: "{{fields.label}}"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - label: "Page"
+                name: "page"
+                widget: "relation"
+                required: false
+                collection: "pages"
+                search_fields: ["title"]
+                display_fields: ["title"]
+                value_field: "{{slug}}"
+              - { label: "Custom URL (for links outside the pages collection, e.g. /privacy)", name: "url", widget: "string", required: false }
+
+          - label: "Footer Contact CTA"
+            name: "footerCta"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Body", name: "body", widget: "text" }
+              - { label: "CTA Label", name: "ctaLabel", widget: "string" }
+              - { label: "CTA Link", name: "ctaLink", widget: "string", default: "/contact-us" }
+
+          - label: "Address"
+            name: "address"
+            widget: "object"
+            fields:
+              - { label: "Street", name: "street", widget: "string" }
+              - { label: "Street note (for schema, e.g. 'above Mountain Side Cafe')", name: "streetNote", widget: "string", required: false }
+              - { label: "City", name: "city", widget: "string" }
+              - { label: "State", name: "state", widget: "string" }
+              - { label: "Zip", name: "zip", widget: "string" }
+
+          - label: "Geo Coordinates"
+            name: "geo"
+            widget: "object"
+            fields:
+              - { label: "Latitude", name: "lat", widget: "number", value_type: "float" }
+              - { label: "Longitude", name: "lng", widget: "number", value_type: "float" }
+
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string", required: false }
+
+          - label: "Hours"
+            name: "hours"
+            widget: "list"
+            fields:
+              - { label: "Days (e.g. Monday-Friday)", name: "days", widget: "string" }
+              - { label: "Opens", name: "opens", widget: "string" }
+              - { label: "Closes", name: "closes", widget: "string" }
+
+          - label: "Areas Served"
+            name: "areaServed"
+            widget: "list"
+            field: { label: "City/Area", name: "name", widget: "string" }
+
+          - label: "Service Catalog (for schema.org)"
+            name: "serviceCatalog"
+            widget: "list"
+            field: { label: "Service Name", name: "name", widget: "string" }
+
+  - name: "pages"
+    label: "Pages"
+    folder: "content/pages"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "SEO Description", name: "description", widget: "text" }
+      - { label: "Show in search engines", name: "index", widget: "boolean", default: true }
+      - label: "Sections"
+        name: "sections"
+        widget: "list"
+        types:
+          - label: "Text + Image"
+            name: "text_image"
+            widget: "object"
+            summary: "Text + Image — {{fields.headline}}"
+            fields:
+              - { label: "Layout", name: "layout", widget: "select",
+                  options: ["text-only", "image-left", "image-right", "gallery"], default: "text-only" }
+              - { label: "Eyebrow", name: "eyebrow", widget: "string", required: false }
+              - { label: "Headline", name: "headline", widget: "string", required: false }
+              - { label: "Subline", name: "subline", widget: "text", required: false }
+              - { label: "Body", name: "body", widget: "markdown", required: false }
+              - { label: "Image", name: "image", widget: "image", required: false }
+              - { label: "Image alt text", name: "imageAlt", widget: "string", required: false }
+              - label: "Gallery images"
+                name: "images"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Image", name: "src", widget: "image" }
+                  - { label: "Alt text", name: "alt", widget: "string" }
+              - label: "Primary CTA"
+                name: "cta1"
+                widget: "object"
+                required: false
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Link", name: "link", widget: "string" }
+              - label: "Secondary CTA"
+                name: "cta2"
+                widget: "object"
+                required: false
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Link", name: "link", widget: "string" }
+
+          - label: "Feature List"
+            name: "feature_list"
+            widget: "object"
+            summary: "Feature List — {{fields.heading}}"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string", required: false }
+              - { label: "Heading", name: "heading", widget: "string", required: false }
+              - { label: "Intro", name: "intro", widget: "text", required: false }
+              - { label: "Style", name: "style", widget: "select", options: ["grid", "checklist", "plain-list"], default: "checklist" }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Description", name: "description", widget: "string", required: false }
+
+          - label: "FAQ Items"
+            name: "faq_items"
+            widget: "object"
+            summary: "FAQ — {{fields.heading}}"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string", required: false }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Question", name: "question", widget: "string" }
+                  - { label: "Answer", name: "answer", widget: "markdown" }
+
+  - name: "team"
+    label: "Team Members"
+    folder: "content/team"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Credentials", name: "credentials", widget: "string" }
+      - { label: "Order", name: "order", widget: "number" }
+      - { label: "Status", name: "status", widget: "select", options: ["accepting", "waitlist", "not_accepting"] }
+      - { label: "Status line", name: "statusLine", widget: "string", required: false }
+      - { label: "Photo", name: "photo", widget: "image" }
+      - { label: "Photo alt text", name: "photoAlt", widget: "string" }
+      - { label: "Eyebrow (e.g. 'Meet Kate')", name: "eyebrow", widget: "string" }
+      - { label: "Subtitle", name: "subtitle", widget: "string" }
+      - { label: "Card bio (short, for team listing)", name: "cardBio", widget: "text" }
+      - { label: "List section heading", name: "listSectionHeading", widget: "string" }
+      - label: "List items"
+        name: "listItems"
+        widget: "list"
+        field: { label: "Item", name: "item", widget: "string" }
+      - { label: "CTA label", name: "ctaLabel", widget: "string" }
+      - { label: "Body (long narrative bio)", name: "body", widget: "markdown" }
+
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Featured image", name: "featured_image", widget: "image" }
+      - { label: "Image alt text", name: "image_alt", widget: "string" }
+      - { label: "Excerpt", name: "excerpt", widget: "text" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: true }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Gallery images"
+        name: "galleryImages"
+        widget: "list"
+        required: false
+        fields:
+          - { label: "Image", name: "src", widget: "image" }
+          - { label: "Alt text", name: "alt", widget: "string" }

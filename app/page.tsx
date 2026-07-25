@@ -1,16 +1,16 @@
+import type { Metadata } from "next";
+import { getPage } from "@/lib/content";
+import SectionRenderer from "@/components/sections/SectionRenderer";
+
+const page = getPage("home")!;
+
+export const metadata: Metadata = {
+  title: page.title,
+  description: page.description,
+  robots: page.index ? "index" : "noindex",
+  alternates: { canonical: "/" },
+};
+
 export default function Home() {
-  return (
-    <main className="p-10">
-      <h1 className="font-fraunces text-4xl text-heading">
-        Moving Mountains Counseling &amp; Wellness
-      </h1>
-      <p className="mt-4">
-        Next.js scaffold placeholder &mdash; real homepage content lands once
-        the content model is approved and pages are ported.
-      </p>
-      <button className="mt-6 rounded-md bg-primary px-4 py-2 text-white hover:bg-secondary">
-        Theme token check
-      </button>
-    </main>
-  );
+  return <SectionRenderer sections={page.sections} />;
 }

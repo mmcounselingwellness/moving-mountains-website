@@ -1,0 +1,74 @@
+{
+  "bannerText": "Now welcoming new clients - let's begin your journey together.",
+  "bannerLink": "/contact-us",
+  "logoHorizontal": "/images/logo-horizontal.jpg",
+  "logoVertical": "/images/logo-vertical.jpg",
+  "logoWhite": "/images/logo-white.png",
+  "logoTall": "/images/logo-tall.jpg",
+  "mainNav": [
+    { "label": "About us", "url": "/about-us" },
+    { "label": "Our approach", "url": "/services" },
+    { "label": "FAQ", "url": "/faq" },
+    {
+      "label": "Meet our therapists",
+      "url": "/our-team",
+      "children": [
+        { "label": "Heather Carcia, LICSW", "url": "/heather-bio" },
+        { "label": "Kate Allain, LICSW", "url": "/kate-bio" },
+        { "label": "Devon Lapierre, LMHC", "url": "/devon-bio" },
+        { "label": "Angela O'Neil, LICSW", "url": "/angela-bio" }
+      ]
+    },
+    { "label": "Therapist opportunities", "url": "/work-with-us" },
+    { "label": "Contact us", "url": "/contact-us" }
+  ],
+  "footerNav": [
+    { "label": "About us", "url": "/about-us" },
+    { "label": "Our team", "url": "/our-team" },
+    { "label": "Services", "url": "/services" },
+    { "label": "FAQ", "url": "/faq" },
+    { "label": "Work With Us", "url": "/work-with-us" },
+    { "label": "Contact Us", "url": "/contact-us" },
+    { "label": "Privacy", "url": "/privacy" }
+  ],
+  "footerCta": {
+    "heading": "Reach out. Relief starts with a conversation.",
+    "body": "If you'd like to talk through what's been weighing on you, you're welcome to send us a message. We do our best to reply within one business day. No pressure, no scripts — just a real person ready to listen.",
+    "ctaLabel": "Get in touch",
+    "ctaLink": "/contact-us"
+  },
+  "address": {
+    "street": "213 Mountain Rd",
+    "streetNote": "above Mountain Side Cafe",
+    "city": "Princeton",
+    "state": "MA",
+    "zip": "01541"
+  },
+  "geo": {
+    "lat": 42.476003,
+    "lng": -71.883979
+  },
+  "email": "info@mmcounselingwellness.com",
+  "phone": "",
+  "hours": [
+    { "days": "Monday-Friday", "opens": "09:00", "closes": "17:00" }
+  ],
+  "areaServed": [
+    { "name": "Princeton" },
+    { "name": "Worcester" },
+    { "name": "Holden" },
+    { "name": "West Boylston" },
+    { "name": "Sterling" },
+    { "name": "Rutland" },
+    { "name": "Massachusetts" }
+  ],
+  "serviceCatalog": [
+    { "name": "Anxiety Therapy" },
+    { "name": "Depression Counseling" },
+    { "name": "Grief Counseling" },
+    { "name": "Trauma Therapy" },
+    { "name": "Burnout Therapy" },
+    { "name": "Telehealth Counseling" },
+    { "name": "Nature-Based Therapy" }
+  ]
+}

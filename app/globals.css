@@ -1,9 +1,11 @@
 @import "tailwindcss";
 
-@theme {
-  --font-raleway: "Raleway", sans-serif;
-  --font-fraunces: "Fraunces", serif;
+@theme inline {
+  --font-raleway: var(--raleway-font), sans-serif;
+  --font-fraunces: var(--fraunces-font), serif;
+}
 
+@theme {
   --color-custom: #FFF9F0;
   --color-heading: #406B6A;
   --color-primary: #D36139;
