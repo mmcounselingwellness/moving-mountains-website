@@ -1,0 +1,16 @@
+{
+  "title": "Thank You",
+  "description": "Thank you for reaching out to Moving Mountains Counseling & Wellness. We'll be in touch within one business day.",
+  "index": false,
+  "sections": [
+    {
+      "type": "text_image",
+      "layout": "text-only",
+      "eyebrow": "Message received",
+      "headline": "We're glad you reached out.",
+      "body": "Someone from our team will be in touch within one business day — no pressure, no scripts, just a real person ready to listen.\n\nIn the meantime, feel free to look around. You're already in the right place.",
+      "cta1": { "label": "Meet our therapists", "link": "/our-team" },
+      "cta2": { "label": "Explore our services", "link": "/services" }
+    }
+  ]
+}
