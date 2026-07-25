@@ -1,10 +1,24 @@
 import ReactMarkdown from "react-markdown";
+import { Fragment } from "react";
 
-export default function Markdown({ text, className = "" }: { text: string; className?: string }) {
+export default function Markdown({
+  text,
+  className = "",
+  inline = false,
+}: {
+  text: string;
+  className?: string;
+  inline?: boolean;
+}) {
   return (
     <ReactMarkdown
       components={{
-        p: ({ children }) => <p className={`mt-6 text-base/7 text-gray-600 first:mt-0 ${className}`}>{children}</p>,
+        p: ({ children }) =>
+          inline ? (
+            <Fragment>{children}</Fragment>
+          ) : (
+            <p className={`mt-6 text-base/7 text-gray-600 first:mt-0 ${className}`}>{children}</p>
+          ),
         ul: ({ children }) => <ul className="list-disc pl-6 mt-4 text-base/7 text-gray-600 space-y-1">{children}</ul>,
         ol: ({ children }) => <ol className="list-decimal pl-6 mt-4 text-base/7 text-gray-600 space-y-1">{children}</ol>,
         li: ({ children }) => <li>{children}</li>,
