@@ -56,6 +56,22 @@ export default function TextImage({ section }: { section: TextImageSection }) {
     );
   }
 
+  if (layout === "full-image") {
+    return (
+      <div className="bg-white px-6 py-8 lg:px-8">
+        {image && (
+          <Image
+            src={image}
+            alt={imageAlt ?? ""}
+            width={1200}
+            height={675}
+            className="aspect-video w-full rounded-xl bg-gray-50 object-cover"
+          />
+        )}
+      </div>
+    );
+  }
+
   if (layout === "gallery") {
     return (
       <div className="overflow-hidden py-16 sm:py-24">

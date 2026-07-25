@@ -11,7 +11,7 @@ export type FaqItem = { question: string; answer: string };
 
 export type TextImageSection = {
   type: "text_image";
-  layout: "text-only" | "image-left" | "image-right" | "gallery";
+  layout: "text-only" | "image-left" | "image-right" | "gallery" | "full-image";
   eyebrow?: string;
   headline?: string;
   subline?: string;

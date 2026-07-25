@@ -130,7 +130,7 @@ collections:
             summary: "Text + Image — {{fields.headline}}"
             fields:
               - { label: "Layout", name: "layout", widget: "select",
-                  options: ["text-only", "image-left", "image-right", "gallery"], default: "text-only" }
+                  options: ["text-only", "image-left", "image-right", "gallery", "full-image"], default: "text-only" }
               - { label: "Eyebrow", name: "eyebrow", widget: "string", required: false }
               - { label: "Headline", name: "headline", widget: "string", required: false }
               - { label: "Subline", name: "subline", widget: "text", required: false }
