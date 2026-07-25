@@ -116,6 +116,7 @@ collections:
     folder: "content/pages"
     create: true
     slug: "{{slug}}"
+    summary: "{{title}} — /{{slug}}"
     extension: "json"
     format: "json"
     fields:
@@ -202,6 +203,7 @@ collections:
     folder: "content/team"
     create: true
     slug: "{{slug}}"
+    summary: "{{name}} — /{{slug}}"
     fields:
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Credentials", name: "credentials", widget: "string" }
@@ -226,6 +228,7 @@ collections:
     folder: "content/blog"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{title}} — {{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
