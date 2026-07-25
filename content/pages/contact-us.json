@@ -1,0 +1,13 @@
+{
+  "title": "Contact Us",
+  "description": "Reach out to Moving Mountains Counseling & Wellness in Princeton, MA. We're in-network with BCBS and offer telehealth and in-person therapy. We reply within one business day.",
+  "index": true,
+  "sections": [
+    {
+      "type": "text_image",
+      "layout": "text-only",
+      "headline": "Reach out. Relief starts with a conversation.",
+      "body": "If you'd like to talk through what's been weighing on you, you're welcome to call us or send a message using the form. We do our best to reply within one business day. No pressure, no scripts — just a real person ready to listen."
+    }
+  ]
+}
