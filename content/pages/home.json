@@ -6,12 +6,18 @@
     {
       "type": "text_image",
       "layout": "image-right",
-      "headline": "Healing begins when you don't have to carry it alone",
+      "headline": "Healing begins when you don't have to carry it alone TEST",
       "body": "Life wasn't meant to feel like climbing Everest every single day.\n\nBetween burnout, challenges that come with relationships, grief, chronic illness, parenting chaos, demanding jobs, and endless to-do lists - it's no wonder you're exhausted. Therapy gives you a place to rest, reset, and find your footing again.",
       "image": "/images/sunset-mountains.png",
       "imageAlt": "Sunset over mountain peaks representing hope and healing",
-      "cta1": { "label": "Take your first step", "link": "/contact-us" },
-      "cta2": { "label": "Begin here", "link": "#about" }
+      "cta1": {
+        "label": "Take your first step",
+        "link": "/contact-us"
+      },
+      "cta2": {
+        "label": "Begin here",
+        "link": "#about"
+      }
     },
     {
       "type": "feature_list",
@@ -20,27 +26,61 @@
       "intro": "At Moving Mountains Counseling & Wellness in Princeton, MA, we believe healing comes from being truly understood. Our licensed therapists serve clients from Worcester, Holden, West Boylston, Sterling, Rutland, and throughout Central Massachusetts. Whether you're facing anxiety, depression, grief, or life transitions, we support you in finding your own strength through in-person therapy and Massachusetts telehealth counseling.",
       "style": "grid",
       "items": [
-        { "label": "Personalized Care", "description": "Therapy tailored to your needs, pace, and goals-because every journey is unique" },
-        { "label": "Experienced Clinicians", "description": "Licensed social workers with years of practice helping people move through life's hardest seasons" },
-        { "label": "Flexible Options", "description": "In-office, online, or nature-based sessions designed to meet you where you feel most comfortable" },
-        { "label": "Supportive Community", "description": "A warm, human-centered space where you can lay down what's heavy and reconnect with your strength" }
-      ]
+        {
+          "label": "Personalized Care",
+          "description": "Therapy tailored to your needs, pace, and goals-because every journey is unique"
+        },
+        {
+          "label": "Experienced Clinicians",
+          "description": "Licensed social workers with years of practice helping people move through life's hardest seasons"
+        },
+        {
+          "label": "Flexible Options",
+          "description": "In-office, online, or nature-based sessions designed to meet you where you feel most comfortable"
+        },
+        {
+          "label": "Supportive Community",
+          "description": "A warm, human-centered space where you can lay down what's heavy and reconnect with your strength"
+        }
+      ],
+      "cta": {
+        "label": "I can't save the edit because this field is required - it should not be",
+        "link": "I can't save the edit because this field is required - it should not be"
+      }
     },
     {
-      "type": "text_image",
-      "layout": "gallery",
+      "cta1": {
+        "label": "Explore our services",
+        "link": "/services"
+      },
+      "cta2": {
+        "label": "Meet our therapists",
+        "link": "/our-team"
+      },
+      "body": "Our name comes from the belief that while life's challenges can feel overwhelming, they are not immovable. With the right support, even the heaviest burdens can shift—one small step at a time.\n\nWe offer compassionate, evidence-based therapy for anxiety treatment, depression counseling, grief support, life transitions, burnout recovery, and trauma healing. Our Princeton MA office serves Worcester, Holden, West Boylston, Sterling, Rutland, and surrounding Central Massachusetts communities. We also provide telehealth counseling throughout Massachusetts and nature-based therapy sessions near Wachusett Mountain.",
       "eyebrow": "About Moving Mountains Counseling & Wellness",
+      "layout": "gallery",
       "headline": "Therapy that meets you where you are",
       "subline": "We believe healing is a journey-one that doesn't have to be taken alone. Whether you visit our Princeton office near Wachusett Mountain (just 15 minutes from Worcester and Holden, upstairs at Mountainside Cafe), connect virtually from anywhere in Massachusetts, or walk side by side on a Wachusett trail, we're here to meet you where you are and help guide you forward.",
-      "body": "Our name comes from the belief that while life's challenges can feel overwhelming, they are not immovable. With the right support, even the heaviest burdens can shift—one small step at a time.\n\nWe offer compassionate, evidence-based therapy for anxiety treatment, depression counseling, grief support, life transitions, burnout recovery, and trauma healing. Our Princeton MA office serves Worcester, Holden, West Boylston, Sterling, Rutland, and surrounding Central Massachusetts communities. We also provide telehealth counseling throughout Massachusetts and nature-based therapy sessions near Wachusett Mountain.",
       "images": [
-        { "src": "/images/kate-heather-in-office.jpg", "alt": "Two therapists sitting together in a warm, welcoming office space" },
-        { "src": "/images/outside-view-of-office.jpg", "alt": "Exterior view of Moving Mountains office building at 213 Mountain Road, Princeton MA" },
-        { "src": "/images/nature-therapy.jpg", "alt": "Therapy session outside on a parkbench by a pond" },
-        { "src": "/images/outside-laughing-600x900.jpg", "alt": "Therapists sharing a warm moment outdoors, reflecting the supportive community at Moving Mountains" }
+        {
+          "src": "/images/kate-heather-in-office.jpg",
+          "alt": "Two therapists sitting together in a warm, welcoming office space"
+        },
+        {
+          "src": "/images/outside-view-of-office.jpg",
+          "alt": "Exterior view of Moving Mountains office building at 213 Mountain Road, Princeton MA"
+        },
+        {
+          "src": "/images/nature-therapy.jpg",
+          "alt": "Therapy session outside on a parkbench by a pond"
+        },
+        {
+          "src": "/images/outside-laughing-600x900.jpg",
+          "alt": "Therapists sharing a warm moment outdoors, reflecting the supportive community at Moving Mountains"
+        }
       ],
-      "cta1": { "label": "Explore our services", "link": "/services" },
-      "cta2": { "label": "Meet our therapists", "link": "/our-team" }
+      "type": "text_image"
     }
   ]
 }
