@@ -46,7 +46,7 @@ collections:
                 required: false
                 fields:
                   - { label: "Label", name: "label", widget: "string" }
-                  - { label: "Custom URL", name: "url", widget: "string" }
+                  - { label: "Custom URL", name: "url", widget: "string", required: false }
 
           - label: "Footer Navigation"
             name: "footerNav"
@@ -151,15 +151,15 @@ collections:
                 widget: "object"
                 required: false
                 fields:
-                  - { label: "Label", name: "label", widget: "string" }
-                  - { label: "Link", name: "link", widget: "string" }
+                  - { label: "Label", name: "label", widget: "string", required: false }
+                  - { label: "Link", name: "link", widget: "string", required: false }
               - label: "Secondary CTA"
                 name: "cta2"
                 widget: "object"
                 required: false
                 fields:
-                  - { label: "Label", name: "label", widget: "string" }
-                  - { label: "Link", name: "link", widget: "string" }
+                  - { label: "Label", name: "label", widget: "string", required: false }
+                  - { label: "Link", name: "link", widget: "string", required: false }
 
           - label: "Feature List"
             name: "feature_list"
@@ -181,8 +181,8 @@ collections:
                 widget: "object"
                 required: false
                 fields:
-                  - { label: "Label", name: "label", widget: "string" }
-                  - { label: "Link", name: "link", widget: "string" }
+                  - { label: "Label", name: "label", widget: "string", required: false }
+                  - { label: "Link", name: "link", widget: "string", required: false }
 
           - label: "FAQ Items"
             name: "faq_items"
