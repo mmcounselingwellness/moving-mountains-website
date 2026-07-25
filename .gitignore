@@ -1,8 +1,9 @@
 # Node dependencies
 node_modules/
 
-# Build outputs
-#dist/output.css
+# Next.js build outputs
+.next/
+out/
 
 # Logs
 npm-debug.log*
