@@ -2,6 +2,8 @@ backend:
   name: github
   repo: mmcounselingwellness/moving-mountains-website
   branch: production
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
 
 local_backend: true
 
