@@ -1,0 +1,43 @@
+{
+  "title": "FAQ",
+  "description": "Find answers to common questions about therapy at Moving Mountains Counseling & Wellness in Princeton, MA - insurance, pricing, cancellation policy, and more.",
+  "index": true,
+  "sections": [
+    {
+      "type": "text_image",
+      "layout": "text-only",
+      "eyebrow": "Have Questions?",
+      "headline": "Frequently Asked Questions",
+      "body": "Below are some of the questions we hear most often from people considering therapy with our practice. If you have a question that isn't addressed here, feel free to [contact us](/contact-us) and send us a message - we're always happy to help."
+    },
+    {
+      "type": "faq_items",
+      "items": [
+        {
+          "question": "How do I get started?",
+          "answer": "Getting started is simple. You can reach out through our contact form, send us an email, or give us a call. We'll respond as soon as we can to learn a little about what you're looking for and help match you with the clinician who may be the best fit. From there, we'll help you schedule your first appointment and walk you through any next steps, including insurance questions or paperwork."
+        },
+        {
+          "question": "Do you accept insurance? How much does therapy cost?",
+          "answer": "Yes. We are in-network with Blue Cross Blue Shield (BCBS), one of the most widely used insurance plans in Massachusetts.\n\nIf you have a different insurance plan, we are considered out-of-network, which means your insurance may still reimburse you for a portion of your session cost depending on your benefits.\n\nTo make the out-of-network process easier, we partner with Thrizer, a service that helps submit claims and estimate what your insurance may reimburse. You can check your out-of-network benefits in about a minute using the Thrizer tool below this section.\n\nWe also offer private-pay options for clients who prefer not to use insurance. Our private-pay rates are:\n\n- $185 for the initial assessment\n- $165 for ongoing therapy sessions"
+        },
+        {
+          "question": "Can I switch between in-person, outdoor, and virtual sessions?",
+          "answer": "Absolutely. Life circumstances change, schedules shift, and sometimes the weather simply calls for a different setting. Many clients move between in-person sessions, walk-and-talk sessions outdoors, and virtual appointments depending on what feels most supportive at the time.\n\nWe're happy to stay flexible and find what works best for you."
+        },
+        {
+          "question": "Where are you located? Is there parking?",
+          "answer": "Our office is located in Princeton, Massachusetts, upstairs from Mountainside Café. There is convenient parking on site, and many clients enjoy grabbing a coffee before or after their session. We offer telehealth therapy to clients located anywhere in Massachusetts."
+        },
+        {
+          "question": "Can I do a walk-and-talk session if I'm not very outdoorsy?",
+          "answer": "Of course! Walk-and-talk therapy is meant to feel relaxed and accessible - not like an intense hike. Sessions can include a gentle walk, a short stroll, or simply sitting together outdoors. We'll tailor the experience to your comfort level so you can enjoy the benefits of being outside without any pressure."
+        },
+        {
+          "question": "What is your cancellation policy?",
+          "answer": "When you schedule a therapy session, that time is reserved specifically for you. Because only one client is scheduled per appointment slot, late cancellations and missed appointments prevent us from offering that time to another client who may need it. Additionally, insurance companies do not reimburse therapists for missed or late-cancelled sessions, which means we are unable to bill insurance for that time.\n\nFor this reason, we ask for at least 48 hours' notice if you need to cancel or reschedule your appointment. Sessions canceled with less than 48 hours' notice will be charged the full session fee. If you are able to reschedule your appointment within the same calendar week (based on availability), the fee may be waived.\n\nWe also understand that unexpected emergencies happen. Events beyond your control - including major snowstorms, car accidents, funerals, or hospitalizations - will not be charged a cancellation fee."
+        }
+      ]
+    }
+  ]
+}

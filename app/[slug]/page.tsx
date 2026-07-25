@@ -3,9 +3,13 @@ import { notFound } from "next/navigation";
 import { getPage, getPages } from "@/lib/content";
 import SectionRenderer from "@/components/sections/SectionRenderer";
 
+// Slugs with a dedicated app/<slug>/page.tsx route (custom logic beyond
+// generic sections) are excluded here so they aren't double-generated.
+const RESERVED_SLUGS = ["home", "faq"];
+
 export function generateStaticParams() {
   return getPages()
-    .filter((p) => p.slug !== "home")
+    .filter((p) => !RESERVED_SLUGS.includes(p.slug))
     .map((p) => ({ slug: p.slug }));
 }
 export const dynamicParams = false;

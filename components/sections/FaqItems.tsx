@@ -4,6 +4,16 @@ import Markdown from "@/components/Markdown";
 export default function FaqItems({ section }: { section: FaqItemsSection }) {
   const { heading, items } = section;
 
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
+  };
+
   return (
     <div className="mx-auto max-w-3xl px-6 py-16 lg:px-8">
       {heading && (
@@ -19,6 +29,7 @@ export default function FaqItems({ section }: { section: FaqItemsSection }) {
           </div>
         ))}
       </dl>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
     </div>
   );
 }
