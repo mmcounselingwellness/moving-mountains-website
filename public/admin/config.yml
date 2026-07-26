@@ -196,6 +196,22 @@ collections:
                       - { label: "Image", name: "image", widget: "image" }
                       - { label: "Image alt text", name: "imageAlt", widget: "string", required: false }
 
+                  - label: "Full Bleed, Text Overlay Left"
+                    name: "overlay-left"
+                    widget: "object"
+                    fields:
+                      - { label: "Layout", name: "label", widget: "hidden", default: "Full Bleed, Text Overlay Left" }
+                      - { label: "Image", name: "image", widget: "image" }
+                      - { label: "Image alt text", name: "imageAlt", widget: "string", required: false }
+
+                  - label: "Full Bleed, Text Overlay Right"
+                    name: "overlay-right"
+                    widget: "object"
+                    fields:
+                      - { label: "Layout", name: "label", widget: "hidden", default: "Full Bleed, Text Overlay Right" }
+                      - { label: "Image", name: "image", widget: "image" }
+                      - { label: "Image alt text", name: "imageAlt", widget: "string", required: false }
+
           - label: "Feature List"
             name: "feature_list"
             widget: "object"

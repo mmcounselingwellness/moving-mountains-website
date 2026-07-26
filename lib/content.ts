@@ -14,7 +14,9 @@ export type LayoutVariant =
   | { type: "image-left"; image: string; imageAlt?: string }
   | { type: "image-right"; image: string; imageAlt?: string }
   | { type: "gallery"; images: GalleryImage[] }
-  | { type: "full-image"; image: string; imageAlt?: string };
+  | { type: "full-image"; image: string; imageAlt?: string }
+  | { type: "overlay-left"; image: string; imageAlt?: string }
+  | { type: "overlay-right"; image: string; imageAlt?: string };
 
 export type TextImageSection = {
   type: "text_image";

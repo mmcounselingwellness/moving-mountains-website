@@ -16,6 +16,31 @@ export default function TextImage({ section }: { section: TextImageSection }) {
     </div>
   );
 
+  if (layout === "overlay-left" || layout === "overlay-right") {
+    return (
+      <div className="relative isolate flex min-h-[28rem] items-center overflow-hidden sm:min-h-[36rem]">
+        {image && (
+          <Image
+            src={image}
+            alt={imageAlt ?? ""}
+            fill
+            className="absolute inset-0 -z-20 size-full object-cover"
+          />
+        )}
+        <div
+          className={`absolute inset-0 -z-10 ${
+            layout === "overlay-left"
+              ? "bg-gradient-to-r from-black/70 via-black/40 to-transparent"
+              : "bg-gradient-to-l from-black/70 via-black/40 to-transparent"
+          }`}
+        />
+        <div className={`relative mx-auto w-full max-w-7xl px-6 lg:px-8 ${layout === "overlay-right" ? "flex justify-end" : ""}`}>
+          <div className="max-w-lg">{content && <Markdown text={content} theme="dark" />}</div>
+        </div>
+      </div>
+    );
+  }
+
   if (layout === "text-only") {
     return (
       <div className="mx-auto max-w-2xl px-6 py-16 lg:px-8">{textCol}</div>

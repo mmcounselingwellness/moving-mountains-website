@@ -50,6 +50,20 @@
     },
     {
       "type": "text_image",
+      "content": "### TEST 5b: layout=overlay-left, full bleed image with text overlaid on the left, dark theme\n\n# Overlay Left Headline\n\n#### Subline text over the image, should be white/light for contrast.\n\nBody paragraph over the image, also light-colored for readability against the dark gradient scrim.\n\n```cta\n{\"label\":\"Overlay CTA button\",\"link\":\"#\"}\n```\n\n[Overlay plain link →](#)",
+      "layout": [
+        { "type": "overlay-left", "image": "/images/drone-photo-wachusett.jpg", "imageAlt": "Test image for overlay-left layout" }
+      ]
+    },
+    {
+      "type": "text_image",
+      "content": "### TEST 5c: layout=overlay-right, full bleed image with text overlaid on the right\n\n## Overlay Right Headline (H2)\n\nBody paragraph over the image, text should sit on the right side this time with the gradient mirrored.",
+      "layout": [
+        { "type": "overlay-right", "image": "/images/nature-therapy.jpg", "imageAlt": "Test image for overlay-right layout" }
+      ]
+    },
+    {
+      "type": "text_image",
       "content": "TEST 6: layout=text-only, plain paragraph only, no headings at all - checking default spacing with nothing above it.",
       "layout": [{ "type": "text-only" }]
     },
