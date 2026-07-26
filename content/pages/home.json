@@ -5,7 +5,7 @@
   "sections": [
     {
       "type": "text_image",
-      "content": "# Healing begins when you don't have to carry it alone\n\nLife wasn't meant to feel like climbing Everest every single day.\n\nBetween burnout, challenges that come with relationships, grief, chronic illness, parenting chaos, demanding jobs, and endless to-do lists - it's no wonder you're exhausted. Therapy gives you a place to rest, reset, and find your footing again.\n\n```cta\n{\"label\":\"Take your first step\",\"link\":\"/contact-us\"}\n```\n\n[Begin here →](#about)",
+      "content": "# Healing begins when you don’t have to carry it alone\n\nLife wasn’t meant to feel like climbing Everest every single day.\n\nBetween burnout, challenges that come with relationships, grief, chronic illness, parenting chaos, demanding jobs, and endless to-do lists - it’s no wonder you’re exhausted. Therapy gives you a place to rest, reset, and find your footing again.\n\n```cta\n{\"label\":\"Take your first step\",\"link\":\"/contact-us\"}\n```\n\n[Begin here →](#about)",
       "layout": [
         { "type": "image-right", "image": "/images/sunset-mountains.png", "imageAlt": "Sunset over mountain peaks representing hope and healing" }
       ]
@@ -14,18 +14,18 @@
       "type": "feature_list",
       "eyebrow": "Why clients trust us",
       "heading": "A safe place to be seen, heard, and supported",
-      "intro": "At Moving Mountains Counseling & Wellness in Princeton, MA, we believe healing comes from being truly understood. Our licensed therapists serve clients from Worcester, Holden, West Boylston, Sterling, Rutland, and throughout Central Massachusetts. Whether you're facing anxiety, depression, grief, or life transitions, we support you in finding your own strength through in-person therapy and Massachusetts telehealth counseling.",
+      "intro": "At Moving Mountains Counseling & Wellness in Princeton, MA, we believe healing comes from being truly understood. Our licensed therapists serve clients from Worcester, Holden, West Boylston, Sterling, Rutland, and throughout Central Massachusetts. Whether you’re facing anxiety, depression, grief, or life transitions, we support you in finding your own strength through in-person therapy and Massachusetts telehealth counseling.",
       "style": "grid",
       "items": [
         { "label": "Personalized Care", "description": "Therapy tailored to your needs, pace, and goals-because every journey is unique" },
-        { "label": "Experienced Clinicians", "description": "Licensed social workers with years of practice helping people move through life's hardest seasons" },
+        { "label": "Experienced Clinicians", "description": "Licensed social workers with years of practice helping people move through life’s hardest seasons" },
         { "label": "Flexible Options", "description": "In-office, online, or nature-based sessions designed to meet you where you feel most comfortable" },
-        { "label": "Supportive Community", "description": "A warm, human-centered space where you can lay down what's heavy and reconnect with your strength" }
+        { "label": "Supportive Community", "description": "A warm, human-centered space where you can lay down what’s heavy and reconnect with your strength" }
       ]
     },
     {
       "type": "text_image",
-      "content": "### About Moving Mountains Counseling & Wellness\n\n## Therapy that meets you where you are\n\n#### We believe healing is a journey-one that doesn't have to be taken alone. Whether you visit our Princeton office near Wachusett Mountain (just 15 minutes from Worcester and Holden, upstairs at Mountainside Cafe), connect virtually from anywhere in Massachusetts, or walk side by side on a Wachusett trail, we're here to meet you where you are and help guide you forward.\n\nOur name comes from the belief that while life's challenges can feel overwhelming, they are not immovable. With the right support, even the heaviest burdens can shift—one small step at a time.\n\nWe offer compassionate, evidence-based therapy for anxiety treatment, depression counseling, grief support, life transitions, burnout recovery, and trauma healing. Our Princeton MA office serves Worcester, Holden, West Boylston, Sterling, Rutland, and surrounding Central Massachusetts communities. We also provide telehealth counseling throughout Massachusetts and nature-based therapy sessions near Wachusett Mountain.\n\n```cta\n{\"label\":\"Explore our services\",\"link\":\"/services\"}\n```\n\n[Meet our therapists →](/our-team)",
+      "content": "### About Moving Mountains Counseling & Wellness\n\n## Therapy that meets you where you are\n\n#### We believe healing is a journey-one that doesn’t have to be taken alone. Whether you visit our Princeton office near Wachusett Mountain (just 15 minutes from Worcester and Holden, upstairs at Mountainside Cafe), connect virtually from anywhere in Massachusetts, or walk side by side on a Wachusett trail, we’re here to meet you where you are and help guide you forward.\n\nOur name comes from the belief that while life’s challenges can feel overwhelming, they are not immovable. With the right support, even the heaviest burdens can shift—one small step at a time.\n\nWe offer compassionate, evidence-based therapy for anxiety treatment, depression counseling, grief support, life transitions, burnout recovery, and trauma healing. Our Princeton MA office serves Worcester, Holden, West Boylston, Sterling, Rutland, and surrounding Central Massachusetts communities. We also provide telehealth counseling throughout Massachusetts and nature-based therapy sessions near Wachusett Mountain.\n\n```cta\n{\"label\":\"Explore our services\",\"link\":\"/services\"}\n```\n\n[Meet our therapists →](/our-team)",
       "layout": [
         {
           "type": "gallery",
