@@ -20,7 +20,7 @@ export default function StyleGuide() {
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-5xl px-6 py-16 lg:px-8">
-        <div className="mb-12 border-t border-gray-200 pt-16">
+        <div className="mb-12">
           <h1 className="font-fraunces text-5xl font-bold text-heading mb-4">Style Guide</h1>
           <p className="text-lg text-gray-600">
             Design tokens and patterns actually in use in this codebase - not aspirational or ported from the old

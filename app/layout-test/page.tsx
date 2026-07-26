@@ -15,8 +15,13 @@ export const metadata: Metadata = {
 export default function LayoutTestPage() {
   return (
     <>
-      <SectionRenderer sections={page.sections} />
       <StyleGuide />
+      <div className="mx-auto max-w-5xl px-6 lg:px-8">
+        <h1 className="font-fraunces text-5xl font-bold text-heading border-t border-gray-200 pt-16">
+          Section &amp; Layout Tests
+        </h1>
+      </div>
+      <SectionRenderer sections={page.sections} />
     </>
   );
 }
