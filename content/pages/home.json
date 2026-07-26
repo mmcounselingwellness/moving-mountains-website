@@ -7,7 +7,7 @@
       "type": "text_image",
       "content": "# Healing begins when you don’t have to carry it alone\n\nLife wasn’t meant to feel like climbing Everest every single day.\n\nBetween burnout, challenges that come with relationships, grief, chronic illness, parenting chaos, demanding jobs, and endless to-do lists - it’s no wonder you’re exhausted. Therapy gives you a place to rest, reset, and find your footing again.\n\n```cta\n{\"label\":\"Take your first step\",\"link\":\"/contact-us\"}\n```\n\n[Begin here →](#about)",
       "layout": [
-        { "type": "image-right", "image": "/images/sunset-mountains.png", "imageAlt": "Sunset over mountain peaks representing hope and healing" }
+        { "type": "hero-image-right", "image": "/images/sunset-mountains.png", "imageAlt": "Sunset over mountain peaks representing hope and healing" }
       ]
     },
     {
@@ -15,6 +15,8 @@
       "eyebrow": "Why clients trust us",
       "heading": "A safe place to be seen, heard, and supported",
       "intro": "At Moving Mountains Counseling & Wellness in Princeton, MA, we believe healing comes from being truly understood. Our licensed therapists serve clients from Worcester, Holden, West Boylston, Sterling, Rutland, and throughout Central Massachusetts. Whether you’re facing anxiety, depression, grief, or life transitions, we support you in finding your own strength through in-person therapy and Massachusetts telehealth counseling.",
+      "bgImage": "/images/sunbeams.jpg",
+      "bgImageAlt": "Warm sunbeams filtering through clouds",
       "style": "grid",
       "items": [
         { "label": "Personalized Care", "description": "Therapy tailored to your needs, pace, and goals-because every journey is unique" },

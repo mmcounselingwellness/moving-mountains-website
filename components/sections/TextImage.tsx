@@ -16,6 +16,43 @@ export default function TextImage({ section }: { section: TextImageSection }) {
     </div>
   );
 
+  if (layout === "hero-image-right" || layout === "hero-image-left") {
+    const imageFirst = layout === "hero-image-left";
+    const heroTextCol = content && (
+      <div>
+        <Markdown text={content} headingSize="hero" />
+      </div>
+    );
+    const heroImageCol = (
+      <div
+        className={`relative lg:col-span-5 xl:absolute xl:inset-0 ${
+          imageFirst ? "lg:-ml-8 xl:right-1/2 xl:ml-0" : "lg:-mr-8 xl:left-1/2 xl:mr-0"
+        }`}
+      >
+        {image && (
+          <Image
+            src={image}
+            alt={imageAlt ?? ""}
+            width={1000}
+            height={667}
+            className="hidden aspect-3/2 w-full object-cover [mask-image:linear-gradient(to_bottom,transparent,black_15%,black)] [mask-repeat:no-repeat] [mask-size:100%_100%] md:block lg:absolute lg:inset-0 lg:aspect-auto lg:h-full"
+          />
+        )}
+      </div>
+    );
+    return (
+      <div className="relative pt-2">
+        <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
+          {imageFirst && heroImageCol}
+          <div className="px-6 pt-10 pb-24 sm:pb-32 lg:col-span-7 lg:px-0 lg:pt-35 lg:pb-48 xl:col-span-6">
+            <div className="mx-auto max-w-lg lg:mx-0">{heroTextCol}</div>
+          </div>
+          {!imageFirst && heroImageCol}
+        </div>
+      </div>
+    );
+  }
+
   if (layout === "overlay-left" || layout === "overlay-right") {
     return (
       <div className="relative isolate flex min-h-[28rem] items-center overflow-hidden sm:min-h-[36rem]">

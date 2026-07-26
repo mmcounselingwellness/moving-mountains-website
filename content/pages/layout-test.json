@@ -24,6 +24,20 @@
     },
     {
       "type": "text_image",
+      "content": "### TEST 3b: layout=hero-image-right, full-bleed hero treatment (H1/body/CTA)\n\n# Hero headline (H1), larger than other page headlines\n\nBody paragraph for the hero-image-right layout. Image should bleed to the true viewport edge on large screens with a top fade mask, no rounded corners.\n\n```cta\n{\"label\":\"Hero CTA button\",\"link\":\"#\"}\n```",
+      "layout": [
+        { "type": "hero-image-right", "image": "/images/sunset-mountains.png", "imageAlt": "Test image for hero-image-right layout" }
+      ]
+    },
+    {
+      "type": "text_image",
+      "content": "### TEST 3c: layout=hero-image-left, mirrored full-bleed hero treatment\n\n# Hero headline on the right side this time\n\nBody paragraph for the hero-image-left layout. Image should bleed to the left edge on large screens, text column on the right.",
+      "layout": [
+        { "type": "hero-image-left", "image": "/images/outside-view-of-office.jpg", "imageAlt": "Test image for hero-image-left layout" }
+      ]
+    },
+    {
+      "type": "text_image",
       "content": "### TEST 4: layout=gallery (4 images)\n\n## Gallery layout headline\n\nBody paragraph next to a 4-image gallery grid.\n\n```cta\n{\"label\":\"CTA in gallery\",\"link\":\"#\"}\n```",
       "layout": [
         {
@@ -76,6 +90,21 @@
       "eyebrow": "TEST 7",
       "heading": "feature_list style=grid",
       "intro": "Four items, each with a label and description, in a 4-column grid.",
+      "style": "grid",
+      "items": [
+        { "label": "Grid Item One", "description": "Description for item one" },
+        { "label": "Grid Item Two", "description": "Description for item two" },
+        { "label": "Grid Item Three", "description": "Description for item three" },
+        { "label": "Grid Item Four", "description": "Description for item four" }
+      ]
+    },
+    {
+      "type": "feature_list",
+      "eyebrow": "TEST 7b",
+      "heading": "feature_list style=grid with optional bgImage + decorative blob",
+      "intro": "Same as TEST 7 but with a background image and blurred color-blob decoration set - should show a faint photo behind the section and a soft orange/coral blur in the lower-left.",
+      "bgImage": "/images/sunbeams.jpg",
+      "bgImageAlt": "Warm sunbeams filtering through clouds",
       "style": "grid",
       "items": [
         { "label": "Grid Item One", "description": "Description for item one" },

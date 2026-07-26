@@ -214,6 +214,22 @@ collections:
                       - { label: "Image", name: "image", widget: "image" }
                       - { label: "Image alt text", name: "imageAlt", widget: "string", required: false }
 
+                  - label: "Hero (Full-Bleed, Image Right)"
+                    name: "hero-image-right"
+                    widget: "object"
+                    fields:
+                      - { label: "Layout", name: "label", widget: "hidden", default: "Hero (Full-Bleed, Image Right)" }
+                      - { label: "Image", name: "image", widget: "image" }
+                      - { label: "Image alt text", name: "imageAlt", widget: "string", required: false }
+
+                  - label: "Hero (Full-Bleed, Image Left)"
+                    name: "hero-image-left"
+                    widget: "object"
+                    fields:
+                      - { label: "Layout", name: "label", widget: "hidden", default: "Hero (Full-Bleed, Image Left)" }
+                      - { label: "Image", name: "image", widget: "image" }
+                      - { label: "Image alt text", name: "imageAlt", widget: "string", required: false }
+
           - label: "Feature List"
             name: "feature_list"
             widget: "object"
@@ -222,6 +238,8 @@ collections:
               - { label: "Eyebrow", name: "eyebrow", widget: "string", required: false }
               - { label: "Heading", name: "heading", widget: "string", required: false }
               - { label: "Intro", name: "intro", widget: "text", required: false }
+              - { label: "Background image (optional)", name: "bgImage", widget: "image", required: false }
+              - { label: "Background image alt text", name: "bgImageAlt", widget: "string", required: false }
               - { label: "Style", name: "style", widget: "select", options: ["grid", "checklist", "plain-list"], default: "checklist" }
               - label: "Items"
                 name: "items"

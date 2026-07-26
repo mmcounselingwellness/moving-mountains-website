@@ -16,7 +16,9 @@ export type LayoutVariant =
   | { type: "gallery"; images: GalleryImage[] }
   | { type: "full-image"; image: string; imageAlt?: string }
   | { type: "overlay-left"; image: string; imageAlt?: string }
-  | { type: "overlay-right"; image: string; imageAlt?: string };
+  | { type: "overlay-right"; image: string; imageAlt?: string }
+  | { type: "hero-image-right"; image: string; imageAlt?: string }
+  | { type: "hero-image-left"; image: string; imageAlt?: string };
 
 export type TextImageSection = {
   type: "text_image";
@@ -32,6 +34,8 @@ export type FeatureListSection = {
   style: "grid" | "checklist" | "plain-list";
   items: FeatureItem[];
   cta?: CtaLink;
+  bgImage?: string;
+  bgImageAlt?: string;
 };
 
 export type FaqItemsSection = {

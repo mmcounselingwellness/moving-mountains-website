@@ -7,6 +7,10 @@ const headlineClass: Record<Theme, string> = {
   light: "text-4xl font-fraunces tracking-tight text-pretty text-heading sm:text-5xl",
   dark: "text-4xl font-fraunces tracking-tight text-pretty text-white sm:text-5xl",
 };
+const heroHeadlineClass: Record<Theme, string> = {
+  light: "text-5xl font-fraunces tracking-tight text-pretty text-heading sm:text-6xl",
+  dark: "text-5xl font-fraunces tracking-tight text-pretty text-white sm:text-6xl",
+};
 const eyebrowClass: Record<Theme, string> = {
   light: "text-base/7 font-semibold text-primary",
   dark: "text-base/7 font-semibold text-secondary",
@@ -49,16 +53,20 @@ export default function Markdown({
   className = "",
   inline = false,
   theme = "light",
+  headingSize = "default",
 }: {
   text: string;
   className?: string;
   inline?: boolean;
   theme?: Theme;
+  headingSize?: "default" | "hero";
 }) {
+  const h1Class = headingSize === "hero" ? heroHeadlineClass[theme] : headlineClass[theme];
+
   return (
     <ReactMarkdown
       components={{
-        h1: ({ children }) => <h1 className={`${headlineClass[theme]} first:mt-0 mt-6`}>{children}</h1>,
+        h1: ({ children }) => <h1 className={`${h1Class} first:mt-0 mt-6`}>{children}</h1>,
         h2: ({ children }) => <h2 className={`${headlineClass[theme]} first:mt-0 mt-6`}>{children}</h2>,
         h3: ({ children }) => <p className={`${eyebrowClass[theme]} first:mt-0 mt-6`}>{children}</p>,
         h4: ({ children }) => <p className={`${sublineClass[theme]} first:mt-0 mt-6`}>{children}</p>,
