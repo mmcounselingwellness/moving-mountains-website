@@ -3,7 +3,12 @@ import type { TextImageSection } from "@/lib/content";
 import Markdown from "@/components/Markdown";
 
 export default function TextImage({ section }: { section: TextImageSection }) {
-  const { layout, content, image, imageAlt, images } = section;
+  const { content } = section;
+  const variant = section.layout?.[0] ?? { type: "text-only" as const };
+  const layout = variant.type;
+  const image = "image" in variant ? variant.image : undefined;
+  const imageAlt = "imageAlt" in variant ? variant.imageAlt : undefined;
+  const images = "images" in variant ? variant.images : undefined;
 
   const textCol = content && (
     <div>

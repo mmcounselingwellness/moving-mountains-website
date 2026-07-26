@@ -9,20 +9,39 @@
       "intro": "At Moving Mountains Counseling & Wellness, we're building a team of skilled, compassionate clinicians who share our vision: therapy should feel human, supportive, and accessible. If you're looking for a place to practice your craft, collaborate, and make a real impact, we'd love to meet you.",
       "style": "checklist",
       "items": [
-        { "label": "Competitive compensation" },
-        { "label": "Flexible work hours" },
-        { "label": "Paid time off" },
-        { "label": "401k" },
-        { "label": "Benefits for you and your family" },
-        { "label": "A great work environment" }
+        {
+          "label": "Competitive compensation"
+        },
+        {
+          "label": "Flexible work hours"
+        },
+        {
+          "label": "Paid time off"
+        },
+        {
+          "label": "401k"
+        },
+        {
+          "label": "Benefits for you and your family"
+        },
+        {
+          "label": "A great work environment"
+        }
       ],
-      "cta": { "label": "See our job postings", "link": "https://www.indeed.com/viewjob?jk=e1768ab14526f451&from=shareddesktop_copy" }
+      "cta": {
+        "label": "See our job postings",
+        "link": "https://www.indeed.com/viewjob?jk=e1768ab14526f451&from=shareddesktop_copy"
+      }
     },
     {
       "type": "text_image",
-      "layout": "full-image",
-      "image": "/images/nature-therapy.jpg",
-      "imageAlt": "Wide view of welcoming therapy office interior with comfortable seating and natural light"
+      "layout": [
+        {
+          "type": "full-image",
+          "image": "/images/nature-therapy.jpg",
+          "imageAlt": "Wide view of welcoming therapy office interior with comfortable seating and natural light"
+        }
+      ]
     }
   ]
 }

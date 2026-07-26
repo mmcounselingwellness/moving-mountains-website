@@ -139,25 +139,62 @@ collections:
           - label: "Text + Image"
             name: "text_image"
             widget: "object"
-            summary: "Text + Image — {{fields.layout}}"
+            summary: "Text + Image"
             fields:
-              - { label: "Layout", name: "layout", widget: "select",
-                  options: ["text-only", "image-left", "image-right", "gallery", "full-image"], default: "text-only" }
               - label: "Content"
                 name: "content"
                 widget: "markdown"
                 required: false
                 hint: "Use Heading 2 for the headline, Heading 3 for the eyebrow label, Heading 4 for the subline. Regular paragraphs become body text. Use the image button to add inline images, and the CTA Button toolbar button to add a button anywhere in the flow."
                 editor_components: ["cta-button"]
-              - { label: "Image (for image-left/image-right layout)", name: "image", widget: "image", required: false }
-              - { label: "Image alt text", name: "imageAlt", widget: "string", required: false }
-              - label: "Gallery images"
-                name: "images"
+              - label: "Layout"
+                name: "layout"
                 widget: "list"
-                required: false
-                fields:
-                  - { label: "Image", name: "src", widget: "image" }
-                  - { label: "Alt text", name: "alt", widget: "string" }
+                min: 1
+                max: 1
+                summary: "{{fields.label}}"
+                types:
+                  - label: "Text Only (no image)"
+                    name: "text-only"
+                    widget: "object"
+                    fields:
+                      - { label: "Layout", name: "label", widget: "hidden", default: "Text Only" }
+
+                  - label: "Image Left"
+                    name: "image-left"
+                    widget: "object"
+                    fields:
+                      - { label: "Layout", name: "label", widget: "hidden", default: "Image Left" }
+                      - { label: "Image", name: "image", widget: "image" }
+                      - { label: "Image alt text", name: "imageAlt", widget: "string", required: false }
+
+                  - label: "Image Right"
+                    name: "image-right"
+                    widget: "object"
+                    fields:
+                      - { label: "Layout", name: "label", widget: "hidden", default: "Image Right" }
+                      - { label: "Image", name: "image", widget: "image" }
+                      - { label: "Image alt text", name: "imageAlt", widget: "string", required: false }
+
+                  - label: "Gallery"
+                    name: "gallery"
+                    widget: "object"
+                    fields:
+                      - { label: "Layout", name: "label", widget: "hidden", default: "Gallery" }
+                      - label: "Gallery images"
+                        name: "images"
+                        widget: "list"
+                        fields:
+                          - { label: "Image", name: "src", widget: "image" }
+                          - { label: "Alt text", name: "alt", widget: "string" }
+
+                  - label: "Full Width Image"
+                    name: "full-image"
+                    widget: "object"
+                    fields:
+                      - { label: "Layout", name: "label", widget: "hidden", default: "Full Width Image" }
+                      - { label: "Image", name: "image", widget: "image" }
+                      - { label: "Image alt text", name: "imageAlt", widget: "string", required: false }
 
           - label: "Feature List"
             name: "feature_list"

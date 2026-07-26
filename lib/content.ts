@@ -9,13 +9,17 @@ export type GalleryImage = { src: string; alt: string };
 export type FeatureItem = { label: string; description?: string };
 export type FaqItem = { question: string; answer: string };
 
+export type LayoutVariant =
+  | { type: "text-only" }
+  | { type: "image-left"; image: string; imageAlt?: string }
+  | { type: "image-right"; image: string; imageAlt?: string }
+  | { type: "gallery"; images: GalleryImage[] }
+  | { type: "full-image"; image: string; imageAlt?: string };
+
 export type TextImageSection = {
   type: "text_image";
-  layout: "text-only" | "image-left" | "image-right" | "gallery" | "full-image";
   content?: string;
-  image?: string;
-  imageAlt?: string;
-  images?: GalleryImage[];
+  layout: LayoutVariant[];
 };
 
 export type FeatureListSection = {

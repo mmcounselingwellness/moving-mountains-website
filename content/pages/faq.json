@@ -5,10 +5,11 @@
   "sections": [
     {
       "type": "text_image",
-      "layout": "text-only",
-      "eyebrow": "Have Questions?",
-      "headline": "Frequently Asked Questions",
-      "body": "Below are some of the questions we hear most often from people considering therapy with our practice. If you have a question that isn't addressed here, feel free to [contact us](/contact-us) and send us a message - we're always happy to help."
+      "layout": [
+        {
+          "type": "text-only"
+        }
+      ]
     },
     {
       "type": "faq_items",
