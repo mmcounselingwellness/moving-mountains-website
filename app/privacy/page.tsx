@@ -49,7 +49,14 @@ export default function PrivacyPage() {
                 <li>Phone number (if provided)</li>
                 <li>Your message</li>
               </ul>
-              <p className="mt-3">This information is sent to us via a third-party form processing service and is used only to respond to your inquiry.</p>
+              <p className="mt-3">This information is sent to us via Web3Forms and is used only to respond to your inquiry.</p>
+
+              <h3 className="text-lg font-semibold text-gray-900 mt-6 mb-3">Insurance Eligibility Check</h3>
+              <p className="mb-3">
+                If you choose to check your out-of-network insurance benefits using the Thrizer tool on our
+                contact and FAQ pages, the information you enter there is sent directly to Thrizer and is
+                subject to their privacy policy, not this one.
+              </p>
             </section>
 
             <section>
@@ -90,7 +97,18 @@ export default function PrivacyPage() {
                   )
                 </li>
                 <li>
-                  <strong>Form processing service:</strong> Used to deliver contact form submissions to our practice
+                  <strong>Web3Forms:</strong> Contact form processing service (
+                  <a href="https://web3forms.com/privacy" className="text-primary hover:text-secondary underline" target="_blank" rel="noopener noreferrer">
+                    Web3Forms Privacy Policy
+                  </a>
+                  )
+                </li>
+                <li>
+                  <strong>Thrizer:</strong> Insurance eligibility checking tool, available on our contact and FAQ pages (
+                  <a href="https://thrizer.com/legal/privacy-policy" className="text-primary hover:text-secondary underline" target="_blank" rel="noopener noreferrer">
+                    Thrizer Privacy Policy
+                  </a>
+                  )
                 </li>
                 <li>
                   <strong>Google Fonts:</strong> Typography service (
