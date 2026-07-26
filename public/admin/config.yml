@@ -5,6 +5,8 @@ backend:
   base_url: https://api.netlify.com
   auth_endpoint: auth
 
+publish_mode: editorial_workflow
+
 local_backend: true
 
 media_folder: "public/images"
