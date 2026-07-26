@@ -1,0 +1,111 @@
+{
+  "title": "Layout Test",
+  "description": "Internal QA page - not for public use.",
+  "index": false,
+  "sections": [
+    {
+      "type": "text_image",
+      "content": "### TEST 1: layout=text-only, full stack (eyebrow/H1/subline/body/list/inline image/CTA button/plain link)\n\n# This is the headline (H1)\n\n#### This is the subline (H4), a longer intro sentence that sits below the headline and above the body copy.\n\nThis is a regular body paragraph with **bold text** and *italic text* to check inline formatting.\n\n- Bullet one\n- Bullet two with **bold** inside it\n\n![Inline test image](/images/sunset-mountains.png)\n\n```cta\n{\"label\":\"CTA Button (primary)\",\"link\":\"/contact-us\"}\n```\n\n[Plain markdown link (secondary style) →](/services)",
+      "layout": [{ "type": "text-only" }]
+    },
+    {
+      "type": "text_image",
+      "content": "### TEST 2: layout=image-left, H2 headline (not H1)\n\n## Headline using H2 instead of H1\n\nBody paragraph for the image-left layout test. The image should appear on the left, this text column on the right.\n\n```cta\n{\"label\":\"CTA in image-left\",\"link\":\"#\"}\n```",
+      "layout": [
+        { "type": "image-left", "image": "/images/kate-heather-in-office.jpg", "imageAlt": "Test image for image-left layout" }
+      ]
+    },
+    {
+      "type": "text_image",
+      "content": "### TEST 3: layout=image-right\n\n## Headline for image-right test\n\nBody paragraph for the image-right layout. The image should appear on the right, this text column on the left.",
+      "layout": [
+        { "type": "image-right", "image": "/images/outside-view-of-office.jpg", "imageAlt": "Test image for image-right layout" }
+      ]
+    },
+    {
+      "type": "text_image",
+      "content": "### TEST 4: layout=gallery (4 images)\n\n## Gallery layout headline\n\nBody paragraph next to a 4-image gallery grid.\n\n```cta\n{\"label\":\"CTA in gallery\",\"link\":\"#\"}\n```",
+      "layout": [
+        {
+          "type": "gallery",
+          "images": [
+            { "src": "/images/kate-heather-in-office.jpg", "alt": "Gallery test image 1" },
+            { "src": "/images/outside-view-of-office.jpg", "alt": "Gallery test image 2" },
+            { "src": "/images/nature-therapy.jpg", "alt": "Gallery test image 3" },
+            { "src": "/images/inside-office-bright.jpg", "alt": "Gallery test image 4" }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "text_image",
+      "content": "### TEST 5: layout=full-image (no text, just image)",
+      "layout": [
+        { "type": "full-image", "image": "/images/inside-office-wide.jpg", "imageAlt": "Test image for full-image layout" }
+      ]
+    },
+    {
+      "type": "text_image",
+      "layout": [{ "type": "full-image" }]
+    },
+    {
+      "type": "text_image",
+      "content": "TEST 6: layout=text-only, plain paragraph only, no headings at all - checking default spacing with nothing above it.",
+      "layout": [{ "type": "text-only" }]
+    },
+    {
+      "type": "text_image",
+      "layout": [{ "type": "text-only" }]
+    },
+    {
+      "type": "feature_list",
+      "eyebrow": "TEST 7",
+      "heading": "feature_list style=grid",
+      "intro": "Four items, each with a label and description, in a 4-column grid.",
+      "style": "grid",
+      "items": [
+        { "label": "Grid Item One", "description": "Description for item one" },
+        { "label": "Grid Item Two", "description": "Description for item two" },
+        { "label": "Grid Item Three", "description": "Description for item three" },
+        { "label": "Grid Item Four", "description": "Description for item four" }
+      ]
+    },
+    {
+      "type": "feature_list",
+      "eyebrow": "TEST 8",
+      "heading": "feature_list style=checklist, mixed items (with and without descriptions)",
+      "style": "checklist",
+      "items": [
+        { "label": "Checklist item with a description", "description": "This item has a description shown after a bold label." },
+        { "label": "Checklist item with no description at all" }
+      ],
+      "cta": { "label": "Checklist CTA link", "link": "#" }
+    },
+    {
+      "type": "feature_list",
+      "eyebrow": "TEST 9",
+      "heading": "feature_list style=plain-list",
+      "style": "plain-list",
+      "items": [
+        { "label": "Plain list item one" },
+        { "label": "Plain list item two", "description": "with a description" }
+      ]
+    },
+    {
+      "type": "feature_list",
+      "eyebrow": "TEST 10",
+      "heading": "feature_list with zero items (edge case - should not crash, just show heading/intro)",
+      "intro": "This section intentionally has an empty items list.",
+      "style": "checklist",
+      "items": []
+    },
+    {
+      "type": "faq_items",
+      "heading": "TEST 11: faq_items with markdown formatting in answers",
+      "items": [
+        { "question": "Does bold and a list work in an answer?", "answer": "Yes - here's **bold text** and a list:\n\n- point one\n- point two" },
+        { "question": "Second question, plain answer", "answer": "Just a plain sentence answer with no special formatting." }
+      ]
+    }
+  ]
+}
