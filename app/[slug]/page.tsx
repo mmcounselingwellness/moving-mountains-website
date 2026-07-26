@@ -6,7 +6,7 @@ import TeamBio from "@/components/TeamBio";
 
 // Slugs with a dedicated app/<slug>/page.tsx route (custom logic beyond
 // generic sections) are excluded here so they aren't double-generated.
-const RESERVED_SLUGS = ["home", "faq", "contact-us"];
+const RESERVED_SLUGS = ["home", "faq", "contact-us", "layout-test"];
 
 export function generateStaticParams() {
   const pageSlugs = getPages()
