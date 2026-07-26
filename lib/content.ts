@@ -92,6 +92,19 @@ export type TeamMember = {
   body: string;
 };
 
+export type BlogPost = {
+  slug: string;
+  title: string;
+  date: string;
+  author: string;
+  featured_image: string;
+  image_alt: string;
+  excerpt: string;
+  draft: boolean;
+  galleryImages?: GalleryImage[];
+  body: string;
+};
+
 export function getSiteSettings(): SiteSettings {
   const raw = fs.readFileSync(path.join(contentDir, "settings/site.json"), "utf8");
   return JSON.parse(raw);
@@ -133,4 +146,29 @@ export function getTeamMembers(): TeamMember[] {
 
 export function getTeamMember(slug: string): TeamMember | undefined {
   return getTeamMembers().find((m) => m.slug === slug);
+}
+
+export function getBlogPosts(): BlogPost[] {
+  const dir = path.join(contentDir, "blog");
+  if (!fs.existsSync(dir)) return [];
+  return fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith(".md"))
+    .map((file) => {
+      const raw = fs.readFileSync(path.join(dir, file), "utf8");
+      const { data, content } = matter(raw);
+      return { slug: file.replace(/\.md$/, ""), ...data, body: content.trim() } as BlogPost;
+    })
+    .filter((post) => !post.draft)
+    .sort((a, b) => (a.date < b.date ? 1 : -1));
+}
+
+export function getBlogPost(slug: string): BlogPost | undefined {
+  const dir = path.join(contentDir, "blog");
+  const file = path.join(dir, `${slug}.md`);
+  if (!fs.existsSync(file)) return undefined;
+  const raw = fs.readFileSync(file, "utf8");
+  const { data, content } = matter(raw);
+  const post = { slug, ...data, body: content.trim() } as BlogPost;
+  return post.draft ? undefined : post;
 }
