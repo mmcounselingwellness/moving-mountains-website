@@ -6,12 +6,9 @@
     {
       "type": "text_image",
       "layout": "image-right",
-      "headline": "Healing begins when you don't have to carry it alone",
-      "body": "Life wasn't meant to feel like climbing Everest every single day.\n\nBetween burnout, challenges that come with relationships, grief, chronic illness, parenting chaos, demanding jobs, and endless to-do lists - it's no wonder you're exhausted. Therapy gives you a place to rest, reset, and find your footing again.",
+      "content": "# Healing begins when you don't have to carry it alone\n\nLife wasn't meant to feel like climbing Everest every single day.\n\nBetween burnout, challenges that come with relationships, grief, chronic illness, parenting chaos, demanding jobs, and endless to-do lists - it's no wonder you're exhausted. Therapy gives you a place to rest, reset, and find your footing again.\n\n```cta\n{\"label\":\"Take your first step\",\"link\":\"/contact-us\"}\n```\n\n[Begin here →](#about)",
       "image": "/images/sunset-mountains.png",
-      "imageAlt": "Sunset over mountain peaks representing hope and healing",
-      "cta1": { "label": "Take your first step", "link": "/contact-us" },
-      "cta2": { "label": "Begin here", "link": "#about" }
+      "imageAlt": "Sunset over mountain peaks representing hope and healing"
     },
     {
       "type": "feature_list",
@@ -29,18 +26,13 @@
     {
       "type": "text_image",
       "layout": "gallery",
-      "eyebrow": "About Moving Mountains Counseling & Wellness",
-      "headline": "Therapy that meets you where you are",
-      "subline": "We believe healing is a journey-one that doesn't have to be taken alone. Whether you visit our Princeton office near Wachusett Mountain (just 15 minutes from Worcester and Holden, upstairs at Mountainside Cafe), connect virtually from anywhere in Massachusetts, or walk side by side on a Wachusett trail, we're here to meet you where you are and help guide you forward.",
-      "body": "Our name comes from the belief that while life's challenges can feel overwhelming, they are not immovable. With the right support, even the heaviest burdens can shift—one small step at a time.\n\nWe offer compassionate, evidence-based therapy for anxiety treatment, depression counseling, grief support, life transitions, burnout recovery, and trauma healing. Our Princeton MA office serves Worcester, Holden, West Boylston, Sterling, Rutland, and surrounding Central Massachusetts communities. We also provide telehealth counseling throughout Massachusetts and nature-based therapy sessions near Wachusett Mountain.",
+      "content": "### About Moving Mountains Counseling & Wellness\n\n## Therapy that meets you where you are\n\n#### We believe healing is a journey-one that doesn't have to be taken alone. Whether you visit our Princeton office near Wachusett Mountain (just 15 minutes from Worcester and Holden, upstairs at Mountainside Cafe), connect virtually from anywhere in Massachusetts, or walk side by side on a Wachusett trail, we're here to meet you where you are and help guide you forward.\n\nOur name comes from the belief that while life's challenges can feel overwhelming, they are not immovable. With the right support, even the heaviest burdens can shift—one small step at a time.\n\nWe offer compassionate, evidence-based therapy for anxiety treatment, depression counseling, grief support, life transitions, burnout recovery, and trauma healing. Our Princeton MA office serves Worcester, Holden, West Boylston, Sterling, Rutland, and surrounding Central Massachusetts communities. We also provide telehealth counseling throughout Massachusetts and nature-based therapy sessions near Wachusett Mountain.\n\n```cta\n{\"label\":\"Explore our services\",\"link\":\"/services\"}\n```\n\n[Meet our therapists →](/our-team)",
       "images": [
         { "src": "/images/kate-heather-in-office.jpg", "alt": "Two therapists sitting together in a warm, welcoming office space" },
         { "src": "/images/outside-view-of-office.jpg", "alt": "Exterior view of Moving Mountains office building at 213 Mountain Road, Princeton MA" },
         { "src": "/images/nature-therapy.jpg", "alt": "Therapy session outside on a parkbench by a pond" },
         { "src": "/images/outside-laughing-600x900.jpg", "alt": "Therapists sharing a warm moment outdoors, reflecting the supportive community at Moving Mountains" }
-      ],
-      "cta1": { "label": "Explore our services", "link": "/services" },
-      "cta2": { "label": "Meet our therapists", "link": "/our-team" }
+      ]
     }
   ]
 }

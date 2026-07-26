@@ -6,29 +6,25 @@
     {
       "type": "text_image",
       "layout": "image-left",
-      "eyebrow": "About Moving Mountains Counseling & Wellness",
-      "headline": "Transforming Challenges Into Growth, One Step at a Time",
-      "subline": "At Moving Mountains Counseling & Wellness in Princeton, MA—conveniently located just 15 minutes from Worcester and Holden—we believe healing is a journey that doesn't have to be taken alone. Whether you're sitting across from us in our office above Mountain Side Cafe, joining us virtually from anywhere in Massachusetts via telehealth, or walking side by side on wooded trails near Wachusett Mountain, our licensed therapists meet you where you are and help guide you forward.",
+      "content": "### About Moving Mountains Counseling & Wellness\n\n# Transforming Challenges Into Growth, One Step at a Time\n\n#### At Moving Mountains Counseling & Wellness in Princeton, MA—conveniently located just 15 minutes from Worcester and Holden—we believe healing is a journey that doesn't have to be taken alone. Whether you're sitting across from us in our office above Mountain Side Cafe, joining us virtually from anywhere in Massachusetts via telehealth, or walking side by side on wooded trails near Wachusett Mountain, our licensed therapists meet you where you are and help guide you forward.",
       "image": "/images/outside-view-of-office.jpg",
       "imageAlt": "Exterior view of Moving Mountains office building at 213 Mountain Road, Princeton MA"
     },
     {
       "type": "text_image",
       "layout": "text-only",
-      "body": "We created this practice to be more than just a therapy office. We wanted to build a space—indoors, online, and outdoors—that feels safe, compassionate, and deeply human. A place where your story is heard, your struggles are honored, and your strengths are celebrated.\n\nOur name, Moving Mountains, comes from the belief that while life's challenges can feel overwhelming, they are not immovable. With the right support, even the heaviest burdens can shift. Sometimes that means exploring painful experiences. Sometimes it means finding clarity in the quiet of nature. And often, it means taking one small step at a time toward a lighter, freer way of being."
+      "content": "We created this practice to be more than just a therapy office. We wanted to build a space—indoors, online, and outdoors—that feels safe, compassionate, and deeply human. A place where your story is heard, your struggles are honored, and your strengths are celebrated.\n\nOur name, Moving Mountains, comes from the belief that while life's challenges can feel overwhelming, they are not immovable. With the right support, even the heaviest burdens can shift. Sometimes that means exploring painful experiences. Sometimes it means finding clarity in the quiet of nature. And often, it means taking one small step at a time toward a lighter, freer way of being."
     },
     {
       "type": "text_image",
       "layout": "gallery",
-      "body": "We work with clients from Worcester, Holden, West Boylston, Sterling, Rutland, and throughout Central Massachusetts experiencing anxiety, depression, stress, life transitions, grief, trauma, burnout, relationship challenges, and those seeking greater balance and meaning. We offer:\n\n- In-Person Therapy in Princeton, MA (15 minutes from Worcester & Holden, above Mountain Side Cafe near Wachusett Mountain)\n- Telehealth Counseling throughout Massachusetts (online therapy for anxiety, depression, grief)\n- Nature-Based Therapy including walk & talk sessions near Wachusett Mountain and seated outdoor sessions\n\n*At the heart of our work is one simple promise: we're here to listen, and we're here to walk with you.*",
+      "content": "We work with clients from Worcester, Holden, West Boylston, Sterling, Rutland, and throughout Central Massachusetts experiencing anxiety, depression, stress, life transitions, grief, trauma, burnout, relationship challenges, and those seeking greater balance and meaning. We offer:\n\n- In-Person Therapy in Princeton, MA (15 minutes from Worcester & Holden, above Mountain Side Cafe near Wachusett Mountain)\n- Telehealth Counseling throughout Massachusetts (online therapy for anxiety, depression, grief)\n- Nature-Based Therapy including walk & talk sessions near Wachusett Mountain and seated outdoor sessions\n\n*At the heart of our work is one simple promise: we're here to listen, and we're here to walk with you.*\n\n```cta\n{\"label\":\"Explore our services\",\"link\":\"/services\"}\n```\n\n[Meet our team →](/our-team)",
       "images": [
         { "src": "/images/kate-heather-in-office.jpg", "alt": "Two therapists sitting together in a warm, welcoming office space" },
         { "src": "/images/inside-office-bright.jpg", "alt": "Bright, welcoming therapy office interior" },
         { "src": "/images/drone-photo-wachusett.jpg", "alt": "Aerial view of Wachusett Mountain area" },
         { "src": "/images/walk-and-talk-therapy.jpg", "alt": "walk and talk on a trail" }
-      ],
-      "cta1": { "label": "Explore our services", "link": "/services" },
-      "cta2": { "label": "Meet our team", "link": "/our-team" }
+      ]
     }
   ]
 }

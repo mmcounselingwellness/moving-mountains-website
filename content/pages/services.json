@@ -6,14 +6,12 @@
     {
       "type": "text_image",
       "layout": "text-only",
-      "headline": "Life is heavy.",
-      "body": "For many of our clients, it's not one big crisis, but the steady build-up of stress, responsibilities, and emotions that leaves them feeling overwhelmed, exhausted, or disconnected from themselves. You don't have to hit \"rock bottom\" to seek support — therapy can be a place to breathe, reset, and remember you don't have to carry everything alone."
+      "content": "# Life is heavy.\n\nFor many of our clients, it's not one big crisis, but the steady build-up of stress, responsibilities, and emotions that leaves them feeling overwhelmed, exhausted, or disconnected from themselves. You don't have to hit \"rock bottom\" to seek support — therapy can be a place to breathe, reset, and remember you don't have to carry everything alone."
     },
     {
       "type": "text_image",
       "layout": "text-only",
-      "eyebrow": "Our Approach",
-      "body": "Therapy with us isn't one-size-fits-all. Sometimes it looks like focused conversations in the office; other times it's walking side-by-side outdoors, letting nature hold some of the weight. However it unfolds, our role is to listen deeply, sit with you in the hard parts, and help you leave with more clarity, steadiness, and hope than when you came in.\n\nBecause therapy isn't about \"fixing\" you — it's about supporting you, reminding you of your strength, and helping you take the next step forward."
+      "content": "### Our Approach\n\nTherapy with us isn't one-size-fits-all. Sometimes it looks like focused conversations in the office; other times it's walking side-by-side outdoors, letting nature hold some of the weight. However it unfolds, our role is to listen deeply, sit with you in the hard parts, and help you leave with more clarity, steadiness, and hope than when you came in.\n\nBecause therapy isn't about \"fixing\" you — it's about supporting you, reminding you of your strength, and helping you take the next step forward."
     },
     {
       "type": "feature_list",

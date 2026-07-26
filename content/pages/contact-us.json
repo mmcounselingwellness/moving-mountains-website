@@ -6,8 +6,7 @@
     {
       "type": "text_image",
       "layout": "text-only",
-      "headline": "Reach out. Relief starts with a conversation.",
-      "body": "If you'd like to talk through what's been weighing on you, you're welcome to call us or send a message using the form. We do our best to reply within one business day. No pressure, no scripts — just a real person ready to listen."
+      "content": "# Reach out. Relief starts with a conversation.\n\nIf you'd like to talk through what's been weighing on you, you're welcome to call us or send a message using the form. We do our best to reply within one business day. No pressure, no scripts — just a real person ready to listen."
     }
   ]
 }

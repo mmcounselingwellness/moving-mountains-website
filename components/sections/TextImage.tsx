@@ -2,40 +2,12 @@ import Image from "next/image";
 import type { TextImageSection } from "@/lib/content";
 import Markdown from "@/components/Markdown";
 
-function Cta({ label, link, primary }: { label: string; link: string; primary: boolean }) {
-  return primary ? (
-    <a
-      href={link}
-      className="bg-primary text-white hover:bg-secondary transition-colors px-5 py-2.5 text-sm font-medium focus:ring-4 focus:outline-heading focus:ring-primary rounded-lg text-center"
-    >
-      {label}
-    </a>
-  ) : (
-    <a href={link} className="text-sm/6 font-semibold text-heading">
-      {label} <span aria-hidden="true">&rarr;</span>
-    </a>
-  );
-}
-
 export default function TextImage({ section }: { section: TextImageSection }) {
-  const { layout, eyebrow, headline, subline, body, image, imageAlt, images, cta1, cta2 } = section;
+  const { layout, content, image, imageAlt, images } = section;
 
-  const textCol = (
+  const textCol = content && (
     <div>
-      {eyebrow && <p className="text-base/7 font-semibold text-primary">{eyebrow}</p>}
-      {headline && (
-        <h2 className="mt-2 text-4xl font-fraunces tracking-tight text-pretty text-heading sm:text-5xl">
-          {headline}
-        </h2>
-      )}
-      {subline && <p className="mt-6 text-xl/8 text-balance text-gray-700">{subline}</p>}
-      {body && <Markdown text={body} />}
-      {(cta1 || cta2) && (
-        <div className="mt-8 flex items-center gap-x-6">
-          {cta1 && <Cta label={cta1.label} link={cta1.link} primary />}
-          {cta2 && <Cta label={cta2.label} link={cta2.link} primary={false} />}
-        </div>
-      )}
+      <Markdown text={content} />
     </div>
   );
 

@@ -5,8 +5,7 @@ import ContactForm from "@/components/ContactForm";
 
 const page = getPage("contact-us")!;
 const intro = page.sections[0];
-const headline = "headline" in intro ? intro.headline : undefined;
-const body = "body" in intro ? intro.body : undefined;
+const introContent = "content" in intro ? intro.content : undefined;
 
 export const metadata: Metadata = {
   title: page.title,
@@ -24,10 +23,7 @@ export default function ContactUsPage() {
         <div className="relative px-6 pt-24 pb-20 sm:pt-32 lg:static lg:px-8 lg:py-48">
           <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden bg-orange-50 ring-1 ring-orange-50/10 lg:w-1/2" />
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
-            {headline && (
-              <h2 className="text-4xl font-fraunces font-semibold tracking-tight text-heading sm:text-5xl">{headline}</h2>
-            )}
-            {body && <Markdown text={body} />}
+            {introContent && <Markdown text={introContent} />}
             <dl className="mt-10 space-y-4 text-base/7 text-gray-600">
               <div className="flex gap-x-4">
                 <dt className="sr-only">Address</dt>

@@ -139,15 +139,17 @@ collections:
           - label: "Text + Image"
             name: "text_image"
             widget: "object"
-            summary: "Text + Image — {{fields.headline}}"
+            summary: "Text + Image — {{fields.layout}}"
             fields:
               - { label: "Layout", name: "layout", widget: "select",
                   options: ["text-only", "image-left", "image-right", "gallery", "full-image"], default: "text-only" }
-              - { label: "Eyebrow", name: "eyebrow", widget: "string", required: false }
-              - { label: "Headline", name: "headline", widget: "string", required: false }
-              - { label: "Subline", name: "subline", widget: "text", required: false }
-              - { label: "Body", name: "body", widget: "markdown", required: false }
-              - { label: "Image", name: "image", widget: "image", required: false }
+              - label: "Content"
+                name: "content"
+                widget: "markdown"
+                required: false
+                hint: "Use Heading 2 for the headline, Heading 3 for the eyebrow label, Heading 4 for the subline. Regular paragraphs become body text. Use the image button to add inline images, and the CTA Button toolbar button to add a button anywhere in the flow."
+                editor_components: ["cta-button"]
+              - { label: "Image (for image-left/image-right layout)", name: "image", widget: "image", required: false }
               - { label: "Image alt text", name: "imageAlt", widget: "string", required: false }
               - label: "Gallery images"
                 name: "images"
@@ -156,20 +158,6 @@ collections:
                 fields:
                   - { label: "Image", name: "src", widget: "image" }
                   - { label: "Alt text", name: "alt", widget: "string" }
-              - label: "Primary CTA"
-                name: "cta1"
-                widget: "object"
-                required: false
-                fields:
-                  - { label: "Label", name: "label", widget: "string", required: false }
-                  - { label: "Link", name: "link", widget: "string", required: false }
-              - label: "Secondary CTA"
-                name: "cta2"
-                widget: "object"
-                required: false
-                fields:
-                  - { label: "Label", name: "label", widget: "string", required: false }
-                  - { label: "Link", name: "link", widget: "string", required: false }
 
           - label: "Feature List"
             name: "feature_list"

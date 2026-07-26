@@ -8,5 +8,30 @@
   </head>
   <body>
     <script src="https://unpkg.com/decap-cms@^3/dist/decap-cms.js"></script>
+    <script>
+      CMS.registerEditorComponent({
+        id: "cta-button",
+        label: "CTA Button",
+        fields: [
+          { name: "label", label: "Button Label", widget: "string" },
+          { name: "link", label: "Link", widget: "string" },
+        ],
+        pattern: /^```cta\n([\s\S]*?)\n```$/,
+        fromBlock: function (match) {
+          try {
+            var data = JSON.parse(match[1]);
+            return { label: data.label, link: data.link };
+          } catch (e) {
+            return { label: "", link: "" };
+          }
+        },
+        toBlock: function (obj) {
+          return "```cta\n" + JSON.stringify({ label: obj.label, link: obj.link }) + "\n```";
+        },
+        toPreview: function (obj) {
+          return 'Button: "' + obj.label + '" → ' + obj.link;
+        },
+      });
+    </script>
   </body>
 </html>
