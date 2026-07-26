@@ -54,7 +54,7 @@ export default function Footer() {
               <Image src={settings.logoWhite} alt="Moving Mountains Counseling & Wellness logo" width={200} height={60} className="h-15 w-auto" />
             </div>
             <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm justify-center md:justify-end">
-              {settings.footerNav.map((item) => (
+              {(settings.footerNav ?? []).map((item) => (
                 <a key={item.label} href={item.url} className="hover:text-secondary transition-colors">
                   {item.label}
                 </a>

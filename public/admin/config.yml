@@ -104,12 +104,14 @@ collections:
           - label: "Areas Served"
             name: "areaServed"
             widget: "list"
-            field: { label: "City/Area", name: "name", widget: "string" }
+            fields:
+              - { label: "City/Area", name: "name", widget: "string" }
 
           - label: "Service Catalog (for schema.org)"
             name: "serviceCatalog"
             widget: "list"
-            field: { label: "Service Name", name: "name", widget: "string" }
+            fields:
+              - { label: "Service Name", name: "name", widget: "string" }
 
   - name: "pages"
     label: "Pages"
@@ -220,7 +222,8 @@ collections:
       - label: "List items"
         name: "listItems"
         widget: "list"
-        field: { label: "Item", name: "item", widget: "string" }
+        fields:
+          - { label: "Item", name: "item", widget: "string" }
       - { label: "CTA label", name: "ctaLabel", widget: "string" }
       - { label: "Body (long narrative bio)", name: "body", widget: "markdown" }
 

@@ -60,19 +60,23 @@ export default function TeamBio({ member }: { member: TeamMember }) {
               <Markdown text={member.body} />
             </div>
 
-            <div className="mt-12">
-              <h2 className="text-2xl font-fraunces tracking-tight text-heading">{member.listSectionHeading}</h2>
-              <ul className="mt-6 space-y-3 text-base/7 text-gray-700">
-                {member.listItems.map((li, i) => (
-                  <li key={i} className="flex gap-x-3">
-                    <svg className="h-6 w-5 flex-none text-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                      <path fillRule="evenodd" clipRule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" />
-                    </svg>
-                    <span><Markdown text={li.item} inline /></span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            {member.listItems && member.listItems.length > 0 && (
+              <div className="mt-12">
+                {member.listSectionHeading && (
+                  <h2 className="text-2xl font-fraunces tracking-tight text-heading">{member.listSectionHeading}</h2>
+                )}
+                <ul className="mt-6 space-y-3 text-base/7 text-gray-700">
+                  {member.listItems.map((li, i) => (
+                    <li key={i} className="flex gap-x-3">
+                      <svg className="h-6 w-5 flex-none text-primary" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fillRule="evenodd" clipRule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z" />
+                      </svg>
+                      <span><Markdown text={li.item} inline /></span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
 
             <div className="mt-10">
               <a href="/contact-us" className="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">

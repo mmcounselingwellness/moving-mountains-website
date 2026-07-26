@@ -2,7 +2,8 @@ import type { FaqItemsSection } from "@/lib/content";
 import Markdown from "@/components/Markdown";
 
 export default function FaqItems({ section }: { section: FaqItemsSection }) {
-  const { heading, items } = section;
+  const { heading } = section;
+  const items = section.items ?? [];
 
   const schema = {
     "@context": "https://schema.org",

@@ -1,7 +1,8 @@
 import type { FeatureListSection } from "@/lib/content";
 
 export default function FeatureList({ section }: { section: FeatureListSection }) {
-  const { eyebrow, heading, intro, style, items, cta } = section;
+  const { eyebrow, heading, intro, style, cta } = section;
+  const items = section.items ?? [];
 
   return (
     <div className="relative isolate overflow-hidden bg-white py-24 sm:py-32">

@@ -25,17 +25,17 @@ export default function JsonLd({ settings }: { settings: SiteSettings }) {
       latitude: geo.lat,
       longitude: geo.lng,
     },
-    openingHoursSpecification: hours.map((h) => ({
+    openingHoursSpecification: (hours ?? []).map((h) => ({
       "@type": "OpeningHoursSpecification",
       dayOfWeek: h.days,
       opens: h.opens,
       closes: h.closes,
     })),
-    areaServed: areaServed.map((a) => ({ "@type": "City", name: a.name, addressRegion: "MA" })),
+    areaServed: (areaServed ?? []).map((a) => ({ "@type": "City", name: a.name, addressRegion: "MA" })),
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Therapy Services",
-      itemListElement: serviceCatalog.map((s) => ({
+      itemListElement: (serviceCatalog ?? []).map((s) => ({
         "@type": "Offer",
         itemOffered: { "@type": "MedicalTherapy", name: s.name },
       })),

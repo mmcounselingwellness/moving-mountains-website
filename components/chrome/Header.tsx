@@ -31,7 +31,7 @@ export default function Header() {
               <Image src={settings.logoVertical} alt="Moving Mountains Counseling & Wellness" width={160} height={120} className="h-30 md:hidden w-auto" />
             </a>
             <nav className="hidden md:flex items-center gap-6">
-              {settings.mainNav.map((item) =>
+              {(settings.mainNav ?? []).map((item) =>
                 item.children ? (
                   <div key={item.label} className="relative group">
                     <a href={item.url} className="flex items-center gap-1 text-gray-700 hover:text-primary transition-colors">

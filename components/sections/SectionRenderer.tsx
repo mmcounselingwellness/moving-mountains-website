@@ -6,7 +6,7 @@ import FaqItems from "./FaqItems";
 export default function SectionRenderer({ sections }: { sections: Section[] }) {
   return (
     <>
-      {sections.map((section, i) => {
+      {(sections ?? []).map((section, i) => {
         switch (section.type) {
           case "text_image":
             return <TextImage key={i} section={section} />;
