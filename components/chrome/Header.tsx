@@ -1,9 +1,10 @@
 import Image from "next/image";
-import { getSiteSettings } from "@/lib/content";
+import { getSiteSettings, getNavigation } from "@/lib/content";
 import MobileMenu from "./MobileMenu";
 
 export default function Header() {
   const settings = getSiteSettings();
+  const nav = getNavigation();
 
   return (
     <>
@@ -25,13 +26,13 @@ export default function Header() {
       <header className="bg-white border-b border-gray-200">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-center md:justify-between relative">
-            <MobileMenu settings={settings} />
+            <MobileMenu settings={settings} nav={nav} />
             <a href="/" className="flex items-center gap-2">
               <Image src={settings.logoHorizontal} alt="Moving Mountains Counseling & Wellness" width={200} height={72} className="h-18 hidden md:block w-auto" />
               <Image src={settings.logoVertical} alt="Moving Mountains Counseling & Wellness" width={160} height={120} className="h-30 md:hidden w-auto" />
             </a>
             <nav className="hidden md:flex items-center gap-6">
-              {(settings.mainNav ?? []).map((item) =>
+              {(nav.mainNav ?? []).map((item) =>
                 item.children ? (
                   <div key={item.label} className="relative group">
                     <a href={item.url} className="flex items-center gap-1 text-gray-700 hover:text-primary transition-colors">

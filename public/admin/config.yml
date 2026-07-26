@@ -25,45 +25,6 @@ collections:
           - { label: "Logo (white, footer)", name: "logoWhite", widget: "image" }
           - { label: "Logo (tall, mobile menu)", name: "logoTall", widget: "image" }
 
-          - label: "Main Navigation"
-            name: "mainNav"
-            widget: "list"
-            summary: "{{fields.label}}"
-            fields:
-              - { label: "Label", name: "label", widget: "string" }
-              - label: "Page"
-                name: "page"
-                widget: "relation"
-                required: false
-                collection: "pages"
-                search_fields: ["title"]
-                display_fields: ["title"]
-                value_field: "{{slug}}"
-              - { label: "Custom URL (for links outside the pages collection, e.g. bio pages)", name: "url", widget: "string", required: false }
-              - label: "Dropdown items"
-                name: "children"
-                widget: "list"
-                required: false
-                fields:
-                  - { label: "Label", name: "label", widget: "string" }
-                  - { label: "Custom URL", name: "url", widget: "string", required: false }
-
-          - label: "Footer Navigation"
-            name: "footerNav"
-            widget: "list"
-            summary: "{{fields.label}}"
-            fields:
-              - { label: "Label", name: "label", widget: "string" }
-              - label: "Page"
-                name: "page"
-                widget: "relation"
-                required: false
-                collection: "pages"
-                search_fields: ["title"]
-                display_fields: ["title"]
-                value_field: "{{slug}}"
-              - { label: "Custom URL (for links outside the pages collection, e.g. /privacy)", name: "url", widget: "string", required: false }
-
           - label: "Footer Contact CTA"
             name: "footerCta"
             widget: "object"
@@ -112,6 +73,52 @@ collections:
             widget: "list"
             fields:
               - { label: "Service Name", name: "name", widget: "string" }
+
+  - name: "navigation"
+    label: "Navigation"
+    files:
+      - name: "nav"
+        label: "Navigation"
+        file: "content/settings/navigation.json"
+        fields:
+          - label: "Main Navigation"
+            name: "mainNav"
+            widget: "list"
+            summary: "{{fields.label}}"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - label: "Page"
+                name: "page"
+                widget: "relation"
+                required: false
+                collection: "pages"
+                search_fields: ["title"]
+                display_fields: ["title"]
+                value_field: "{{slug}}"
+              - { label: "Custom URL (for links outside the pages collection, e.g. bio pages)", name: "url", widget: "string", required: false }
+              - label: "Dropdown items"
+                name: "children"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Custom URL", name: "url", widget: "string", required: false }
+
+          - label: "Footer Navigation"
+            name: "footerNav"
+            widget: "list"
+            summary: "{{fields.label}}"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - label: "Page"
+                name: "page"
+                widget: "relation"
+                required: false
+                collection: "pages"
+                search_fields: ["title"]
+                display_fields: ["title"]
+                value_field: "{{slug}}"
+              - { label: "Custom URL (for links outside the pages collection, e.g. /privacy)", name: "url", widget: "string", required: false }
 
   - name: "pages"
     label: "Pages"

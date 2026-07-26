@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import type { NavItem, SiteSettings } from "@/lib/content";
+import type { NavItem, Navigation, SiteSettings } from "@/lib/content";
 
-export default function MobileMenu({ settings }: { settings: SiteSettings }) {
+export default function MobileMenu({ settings, nav }: { settings: SiteSettings; nav: Navigation }) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -39,7 +39,7 @@ export default function MobileMenu({ settings }: { settings: SiteSettings }) {
               </a>
             </div>
             <div className="mt-6 space-y-2">
-              {(settings.mainNav ?? []).map((item: NavItem) => (
+              {(nav.mainNav ?? []).map((item: NavItem) => (
                 <div key={item.label}>
                   <a href={item.url} className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
                     {item.label}

@@ -1,10 +1,11 @@
 import Image from "next/image";
-import { getSiteSettings } from "@/lib/content";
+import { getSiteSettings, getNavigation } from "@/lib/content";
 import JsonLd from "./JsonLd";
 import PrivacySettingsButton from "./PrivacySettingsButton";
 
 export default function Footer() {
   const settings = getSiteSettings();
+  const nav = getNavigation();
   const { footerCta, address, email } = settings;
   const year = new Date().getFullYear();
 
@@ -54,7 +55,7 @@ export default function Footer() {
               <Image src={settings.logoWhite} alt="Moving Mountains Counseling & Wellness logo" width={200} height={60} className="h-15 w-auto" />
             </div>
             <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm justify-center md:justify-end">
-              {(settings.footerNav ?? []).map((item) => (
+              {(nav.footerNav ?? []).map((item) => (
                 <a key={item.label} href={item.url} className="hover:text-secondary transition-colors">
                   {item.label}
                 </a>

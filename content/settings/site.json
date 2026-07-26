@@ -5,32 +5,6 @@
   "logoVertical": "/images/logo-vertical.jpg",
   "logoWhite": "/images/logo-white.png",
   "logoTall": "/images/logo-tall.jpg",
-  "mainNav": [
-    { "label": "About us", "url": "/about-us" },
-    { "label": "Our approach", "url": "/services" },
-    { "label": "FAQ", "url": "/faq" },
-    {
-      "label": "Meet our therapists",
-      "url": "/our-team",
-      "children": [
-        { "label": "Heather Carcia, LICSW", "url": "/heather-bio" },
-        { "label": "Kate Allain, LICSW", "url": "/kate-bio" },
-        { "label": "Devon Lapierre, LMHC", "url": "/devon-bio" },
-        { "label": "Angela O'Neil, LICSW", "url": "/angela-bio" }
-      ]
-    },
-    { "label": "Therapist opportunities", "url": "/work-with-us" },
-    { "label": "Contact us", "url": "/contact-us" }
-  ],
-  "footerNav": [
-    { "label": "About us", "url": "/about-us" },
-    { "label": "Our team", "url": "/our-team" },
-    { "label": "Services", "url": "/services" },
-    { "label": "FAQ", "url": "/faq" },
-    { "label": "Work With Us", "url": "/work-with-us" },
-    { "label": "Contact Us", "url": "/contact-us" },
-    { "label": "Privacy", "url": "/privacy" }
-  ],
   "footerCta": {
     "heading": "Reach out. Relief starts with a conversation.",
     "body": "If you'd like to talk through what's been weighing on you, you're welcome to send us a message. We do our best to reply within one business day. No pressure, no scripts — just a real person ready to listen.",

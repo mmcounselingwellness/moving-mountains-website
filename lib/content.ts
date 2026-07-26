@@ -59,8 +59,6 @@ export type SiteSettings = {
   logoVertical: string;
   logoWhite: string;
   logoTall: string;
-  mainNav: NavItem[];
-  footerNav: NavItem[];
   footerCta: { heading: string; body: string; ctaLabel: string; ctaLink: string };
   address: { street: string; streetNote?: string; city: string; state: string; zip: string };
   geo: { lat: number; lng: number };
@@ -69,6 +67,11 @@ export type SiteSettings = {
   hours: { days: string; opens: string; closes: string }[];
   areaServed: { name: string }[];
   serviceCatalog: { name: string }[];
+};
+
+export type Navigation = {
+  mainNav: NavItem[];
+  footerNav: NavItem[];
 };
 
 export type TeamMember = {
@@ -91,6 +94,11 @@ export type TeamMember = {
 
 export function getSiteSettings(): SiteSettings {
   const raw = fs.readFileSync(path.join(contentDir, "settings/site.json"), "utf8");
+  return JSON.parse(raw);
+}
+
+export function getNavigation(): Navigation {
+  const raw = fs.readFileSync(path.join(contentDir, "settings/navigation.json"), "utf8");
   return JSON.parse(raw);
 }
 
