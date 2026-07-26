@@ -83,7 +83,7 @@ export type TeamMember = {
   eyebrow: string;
   subtitle: string;
   cardBio: string;
-  listSectionHeading: string;
+  listSectionHeading?: string;
   listItems: { item: string }[];
   ctaLabel: string;
   body: string;

@@ -218,7 +218,7 @@ collections:
       - { label: "Eyebrow (e.g. 'Meet Kate')", name: "eyebrow", widget: "string" }
       - { label: "Subtitle", name: "subtitle", widget: "string" }
       - { label: "Card bio (short, for team listing)", name: "cardBio", widget: "text" }
-      - { label: "List section heading", name: "listSectionHeading", widget: "string" }
+      - { label: "List section heading", name: "listSectionHeading", widget: "string", required: false }
       - label: "List items"
         name: "listItems"
         widget: "list"
