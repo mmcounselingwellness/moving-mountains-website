@@ -49,7 +49,7 @@ export default function PrivacyPage() {
                 <li>Phone number (if provided)</li>
                 <li>Your message</li>
               </ul>
-              <p className="mt-3">This information is sent to us via Web3Forms and is used only to respond to your inquiry.</p>
+              <p className="mt-3">This information is sent to us via a third-party form processing service and is used only to respond to your inquiry.</p>
             </section>
 
             <section>
@@ -90,11 +90,7 @@ export default function PrivacyPage() {
                   )
                 </li>
                 <li>
-                  <strong>Web3Forms:</strong> Contact form processing service (
-                  <a href="https://web3forms.com/privacy" className="text-primary hover:text-secondary underline" target="_blank" rel="noopener noreferrer">
-                    Web3Forms Privacy Policy
-                  </a>
-                  )
+                  <strong>Form processing service:</strong> Used to deliver contact form submissions to our practice
                 </li>
                 <li>
                   <strong>Google Fonts:</strong> Typography service (
