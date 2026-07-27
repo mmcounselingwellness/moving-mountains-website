@@ -132,6 +132,7 @@ collections:
     format: "json"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "SEO Title (browser tab / Google search results)", name: "seoTitle", widget: "string", required: false, hint: "Defaults to Title if left blank. Keep it distinct and keyword-rich - this is what shows up in search results, separate from any on-page heading." }
       - { label: "SEO Description", name: "description", widget: "text" }
       - { label: "Show in search engines", name: "index", widget: "boolean", default: true }
       - label: "Sections"

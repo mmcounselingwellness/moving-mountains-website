@@ -6,7 +6,7 @@ import ThrizerWidget from "@/components/ThrizerWidget";
 const page = getPage("faq")!;
 
 export const metadata: Metadata = {
-  title: page.title,
+  title: page.seoTitle || page.title,
   description: page.description,
   robots: page.index ? "index" : "noindex",
   alternates: { canonical: "/faq" },

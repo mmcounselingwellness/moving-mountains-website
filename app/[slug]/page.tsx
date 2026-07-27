@@ -36,7 +36,7 @@ export async function generateMetadata({
   const page = getPage(slug);
   if (!page) return {};
   return {
-    title: page.title,
+    title: page.seoTitle || page.title,
     description: page.description,
     robots: page.index ? "index" : "noindex",
     alternates: { canonical: `/${slug}` },

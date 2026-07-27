@@ -49,6 +49,7 @@ export type Section = TextImageSection | FeatureListSection | FaqItemsSection;
 export type Page = {
   slug: string;
   title: string;
+  seoTitle?: string;
   description: string;
   index: boolean;
   sections: Section[];

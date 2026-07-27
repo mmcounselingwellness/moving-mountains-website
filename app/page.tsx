@@ -5,7 +5,7 @@ import SectionRenderer from "@/components/sections/SectionRenderer";
 const page = getPage("home")!;
 
 export const metadata: Metadata = {
-  title: page.title,
+  title: page.seoTitle || page.title,
   description: page.description,
   robots: page.index ? "index" : "noindex",
   alternates: { canonical: "/" },

@@ -1,5 +1,6 @@
 {
   "title": "Home",
+  "seoTitle": "Therapist Princeton MA | Anxiety & Depression Counseling Near Worcester & Holden",
   "description": "Licensed therapists in Princeton MA near Wachusett Mountain. Anxiety, depression, grief & trauma counseling. Serving Holden, Worcester, West Boylston, Sterling. In-person & MA telehealth.",
   "index": true,
   "sections": [
@@ -7,7 +8,11 @@
       "type": "text_image",
       "content": "# Healing begins when you don’t have to carry it alone\n\nLife wasn’t meant to feel like climbing Everest every single day.\n\nBetween burnout, challenges that come with relationships, grief, chronic illness, parenting chaos, demanding jobs, and endless to-do lists - it’s no wonder you’re exhausted. Therapy gives you a place to rest, reset, and find your footing again.\n\n```cta\n{\"label\":\"Take your first step\",\"link\":\"/contact-us\"}\n```\n\n[Begin here →](#about)",
       "layout": [
-        { "type": "hero-image-right", "image": "/images/sunset-mountains.png", "imageAlt": "Sunset over mountain peaks representing hope and healing" }
+        {
+          "type": "hero-image-right",
+          "image": "/images/sunset-mountains.png",
+          "imageAlt": "Sunset over mountain peaks representing hope and healing"
+        }
       ]
     },
     {
@@ -19,10 +24,22 @@
       "bgImageAlt": "Warm sunbeams filtering through clouds",
       "style": "grid",
       "items": [
-        { "label": "Personalized Care", "description": "Therapy tailored to your needs, pace, and goals-because every journey is unique" },
-        { "label": "Experienced Clinicians", "description": "Licensed social workers with years of practice helping people move through life’s hardest seasons" },
-        { "label": "Flexible Options", "description": "In-office, online, or nature-based sessions designed to meet you where you feel most comfortable" },
-        { "label": "Supportive Community", "description": "A warm, human-centered space where you can lay down what’s heavy and reconnect with your strength" }
+        {
+          "label": "Personalized Care",
+          "description": "Therapy tailored to your needs, pace, and goals-because every journey is unique"
+        },
+        {
+          "label": "Experienced Clinicians",
+          "description": "Licensed social workers with years of practice helping people move through life’s hardest seasons"
+        },
+        {
+          "label": "Flexible Options",
+          "description": "In-office, online, or nature-based sessions designed to meet you where you feel most comfortable"
+        },
+        {
+          "label": "Supportive Community",
+          "description": "A warm, human-centered space where you can lay down what’s heavy and reconnect with your strength"
+        }
       ]
     },
     {
@@ -32,10 +49,22 @@
         {
           "type": "gallery",
           "images": [
-            { "src": "/images/kate-heather-in-office.jpg", "alt": "Two therapists sitting together in a warm, welcoming office space" },
-            { "src": "/images/outside-view-of-office.jpg", "alt": "Exterior view of Moving Mountains office building at 213 Mountain Road, Princeton MA" },
-            { "src": "/images/nature-therapy.jpg", "alt": "Therapy session outside on a parkbench by a pond" },
-            { "src": "/images/outside-laughing-600x900.jpg", "alt": "Therapists sharing a warm moment outdoors, reflecting the supportive community at Moving Mountains" }
+            {
+              "src": "/images/kate-heather-in-office.jpg",
+              "alt": "Two therapists sitting together in a warm, welcoming office space"
+            },
+            {
+              "src": "/images/outside-view-of-office.jpg",
+              "alt": "Exterior view of Moving Mountains office building at 213 Mountain Road, Princeton MA"
+            },
+            {
+              "src": "/images/nature-therapy.jpg",
+              "alt": "Therapy session outside on a parkbench by a pond"
+            },
+            {
+              "src": "/images/outside-laughing-600x900.jpg",
+              "alt": "Therapists sharing a warm moment outdoors, reflecting the supportive community at Moving Mountains"
+            }
           ]
         }
       ]

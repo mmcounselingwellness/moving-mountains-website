@@ -8,7 +8,7 @@ const intro = page.sections[0];
 const introContent = "content" in intro ? intro.content : undefined;
 
 export const metadata: Metadata = {
-  title: page.title,
+  title: page.seoTitle || page.title,
   description: page.description,
   robots: page.index ? "index" : "noindex",
   alternates: { canonical: "/contact-us" },
