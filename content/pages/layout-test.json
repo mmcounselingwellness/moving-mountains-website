@@ -5,7 +5,7 @@
   "sections": [
     {
       "type": "text_image",
-      "content": "### TEST 1: layout=text-only, full stack (eyebrow/H1/subline/body/list/inline image/CTA button/plain link)\n\n# This is the headline (H1)\n\n#### This is the subline (H4), a longer intro sentence that sits below the headline and above the body copy.\n\nThis is a regular body paragraph with **bold text** and *italic text* to check inline formatting.\n\n- Bullet one\n- Bullet two with **bold** inside it\n\n![Inline test image](/images/sunset-mountains.png)\n\n```cta\n{\"label\":\"CTA Button (primary)\",\"link\":\"/contact-us\"}\n```\n\n[Plain markdown link (secondary style) →](/services)",
+      "content": "### TEST 1: layout=text-only, full stack (eyebrow/H1/subline/body/list/inline image/CTA button/plain link)\n\n# This is the headline (H1)\n\n#### This is the subline (H4), a longer intro sentence that sits below the headline and above the body copy.\n\nThis is a regular body paragraph with **bold text** and *italic text* to check inline formatting.\n\n- Bullet one\n- Bullet two with **bold** inside it\n\n![Inline test image](/images/sunset-mountains.jpg)\n\n```cta\n{\"label\":\"CTA Button (primary)\",\"link\":\"/contact-us\"}\n```\n\n[Plain markdown link (secondary style) →](/services)",
       "layout": [{ "type": "text-only" }]
     },
     {
@@ -26,7 +26,7 @@
       "type": "text_image",
       "content": "### TEST 3b: layout=hero-image-right, full-bleed hero treatment (H1/body/CTA)\n\n# Hero headline (H1), larger than other page headlines\n\nBody paragraph for the hero-image-right layout. Image should bleed to the true viewport edge on large screens with a top fade mask, no rounded corners.\n\n```cta\n{\"label\":\"Hero CTA button\",\"link\":\"#\"}\n```",
       "layout": [
-        { "type": "hero-image-right", "image": "/images/sunset-mountains.png", "imageAlt": "Test image for hero-image-right layout" }
+        { "type": "hero-image-right", "image": "/images/sunset-mountains.jpg", "imageAlt": "Test image for hero-image-right layout" }
       ]
     },
     {
