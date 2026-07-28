@@ -38,6 +38,20 @@
     },
     {
       "type": "text_image",
+      "content": "### TEST 3d: layout=icon-list, content paired with a bulleted list using the brand icon\n\nBody paragraph on the left, icon-bulleted list on the right.\n\n**Items with bold labels and descriptions:**",
+      "layout": [
+        {
+          "type": "icon-list",
+          "items": [
+            { "label": "Item With A Label", "description": "This item has both a bold label and a description, separated by an en-dash." },
+            { "label": "Another Labeled Item", "description": "Second item to check spacing between list entries." },
+            { "label": "Plain item with no description at all, just the label text on its own" }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "text_image",
       "content": "### TEST 4: layout=gallery (4 images)\n\n## Gallery layout headline\n\nBody paragraph next to a 4-image gallery grid.\n\n```cta\n{\"label\":\"CTA in gallery\",\"link\":\"#\"}\n```",
       "layout": [
         {

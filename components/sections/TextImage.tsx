@@ -9,6 +9,7 @@ export default function TextImage({ section, bgColor }: { section: TextImageSect
   const image = "image" in variant ? variant.image : undefined;
   const imageAlt = "imageAlt" in variant ? variant.imageAlt : undefined;
   const images = "images" in variant ? variant.images : undefined;
+  const iconListItems = "items" in variant ? variant.items : undefined;
   const bgStyle = bgColor ? { backgroundColor: bgColor } : undefined;
 
   const textCol = content && (
@@ -131,6 +132,44 @@ export default function TextImage({ section, bgColor }: { section: TextImageSect
                 </div>
               </div>
             )}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (layout === "icon-list") {
+    return (
+      <div style={bgStyle}>
+        <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
+          <div className="grid grid-cols-1 items-start gap-y-10 lg:grid-cols-12 lg:gap-x-8">
+            <div className="lg:col-span-5">{textCol}</div>
+            <div className="lg:col-span-7">
+              {iconListItems && iconListItems.length > 0 && (
+                <ul role="list" className="space-y-8">
+                  {iconListItems.map((item, i) => (
+                    <li key={i} className="flex items-start gap-x-3">
+                      <Image
+                        src="/images/icon-20x20.jpg"
+                        alt=""
+                        width={20}
+                        height={20}
+                        className="mt-1 w-5 h-5 flex-none object-contain"
+                      />
+                      <span className="text-base/7 text-gray-600">
+                        {item.description ? (
+                          <>
+                            <strong className="font-semibold text-gray-900">{item.label}</strong> &ndash; {item.description}
+                          </>
+                        ) : (
+                          item.label
+                        )}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
           </div>
         </div>
       </div>

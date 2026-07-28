@@ -16,53 +16,48 @@
     },
     {
       "type": "text_image",
-      "content": "### Our Approach\n\nTherapy with us isn’t one-size-fits-all. Sometimes it looks like focused conversations in the office; other times it’s walking side-by-side outdoors, letting nature hold some of the weight. However it unfolds, our role is to listen deeply, sit with you in the hard parts, and help you leave with more clarity, steadiness, and hope than when you came in.\n\nBecause therapy isn’t about \"fixing\" you — it’s about supporting you, reminding you of your strength, and helping you take the next step forward.",
+      "content": "### Our Approach\n\nTherapy with us isn’t one-size-fits-all. Sometimes it looks like focused conversations in the office; other times it’s walking side-by-side outdoors, letting nature hold some of the weight. However it unfolds, our role is to listen deeply, sit with you in the hard parts, and help you leave with more clarity, steadiness, and hope than when you came in.\n\nBecause therapy isn’t about \"fixing\" you — it’s about supporting you, reminding you of your strength, and helping you take the next step forward.\n\n**We’ll support you at our office at Princeton, MA or by telehealth from anywhere Massachusetts for:**",
       "layout": [
         {
-          "type": "text-only"
-        }
-      ]
-    },
-    {
-      "type": "feature_list",
-      "heading": "We’ll support you at our office at Princeton, MA or by telehealth from anywhere Massachusetts for:",
-      "style": "checklist",
-      "items": [
-        {
-          "label": "Anxiety Therapy",
-          "description": "Anxiety can show up as racing thoughts, restlessness, or feeling like your brain never shuts off. Our therapy for anxiety helps you learn calming techniques, regulate your nervous system, and feel more in control of your mind and body."
-        },
-        {
-          "label": "Grief Counseling",
-          "description": "Grief is heavy and unpredictable, whether your loss is recent or years old. We offer grief therapy to help you process loss at your own pace, honor your loved one, and find ways to live with grief without being consumed by it."
-        },
-        {
-          "label": "Burnout Therapy",
-          "description": "Whether it’s from work, parenting, or caregiving, burnout leaves you feeling drained and running on fumes. Our therapy for burnout focuses on stress management, boundaries, and restoring balance so you can function without feeling constantly depleted."
-        },
-        {
-          "label": "Depression Counseling",
-          "description": "Depression isn’t just sadness — it can feel like exhaustion, emptiness, or moving through life on autopilot. We provide counseling for depression that helps you find energy, reconnect with joy, and rebuild a sense of purpose."
-        },
-        {
-          "label": "Trauma Informed Therapy",
-          "description": "Many people carry quiet hurts that still shape how they think, feel, and relate. We help you explore those imprints gently — in relationships, work, or your own inner dialogue — so you can build a steadier connection to yourself and others."
-        },
-        {
-          "label": "Disordered Eating & Body Image Therapy",
-          "description": "Struggles with food, dieting, or body shame can take over your life. Our therapy for disordered eating and body image focuses on developing a healthier relationship between your body and yourself."
-        },
-        {
-          "label": "Relationship & Parenting Stress Therapy",
-          "description": "From conflict and communication struggles to the pressures of parenting, relationships can be overwhelming. We provide relationship and parenting therapy that helps you strengthen connections, set healthy boundaries, and reduce the stress of trying to do it all."
-        },
-        {
-          "label": "Self-Esteem & Self-Worth Therapy",
-          "description": "If you often feel inadequate, perfectionistic, or \"never enough,\" self-esteem counseling can help. We work with you to challenge negative self-talk, build confidence, and embrace who you are without constant self-criticism."
-        },
-        {
-          "label": "Cancer & Life-Altering Diagnosis Support",
-          "description": "Facing a serious diagnosis—whether your own or a loved one’s—can upend every sense of normal. We offer therapy for those navigating cancer or chronic illness to help you process fear, loss, and uncertainty, while reclaiming agency and meaning in a life that has changed."
+          "type": "icon-list",
+          "items": [
+            {
+              "label": "Anxiety Therapy",
+              "description": "Anxiety can show up as racing thoughts, restlessness, or feeling like your brain never shuts off. Our therapy for anxiety helps you learn calming techniques, regulate your nervous system, and feel more in control of your mind and body."
+            },
+            {
+              "label": "Grief Counseling",
+              "description": "Grief is heavy and unpredictable, whether your loss is recent or years old. We offer grief therapy to help you process loss at your own pace, honor your loved one, and find ways to live with grief without being consumed by it."
+            },
+            {
+              "label": "Burnout Therapy",
+              "description": "Whether it’s from work, parenting, or caregiving, burnout leaves you feeling drained and running on fumes. Our therapy for burnout focuses on stress management, boundaries, and restoring balance so you can function without feeling constantly depleted."
+            },
+            {
+              "label": "Depression Counseling",
+              "description": "Depression isn’t just sadness — it can feel like exhaustion, emptiness, or moving through life on autopilot. We provide counseling for depression that helps you find energy, reconnect with joy, and rebuild a sense of purpose."
+            },
+            {
+              "label": "Trauma Informed Therapy",
+              "description": "Many people carry quiet hurts that still shape how they think, feel, and relate. We help you explore those imprints gently — in relationships, work, or your own inner dialogue — so you can build a steadier connection to yourself and others."
+            },
+            {
+              "label": "Disordered Eating & Body Image Therapy",
+              "description": "Struggles with food, dieting, or body shame can take over your life. Our therapy for disordered eating and body image focuses on developing a healthier relationship between your body and yourself."
+            },
+            {
+              "label": "Relationship & Parenting Stress Therapy",
+              "description": "From conflict and communication struggles to the pressures of parenting, relationships can be overwhelming. We provide relationship and parenting therapy that helps you strengthen connections, set healthy boundaries, and reduce the stress of trying to do it all."
+            },
+            {
+              "label": "Self-Esteem & Self-Worth Therapy",
+              "description": "If you often feel inadequate, perfectionistic, or \"never enough,\" self-esteem counseling can help. We work with you to challenge negative self-talk, build confidence, and embrace who you are without constant self-criticism."
+            },
+            {
+              "label": "Cancer & Life-Altering Diagnosis Support",
+              "description": "Facing a serious diagnosis—whether your own or a loved one’s—can upend every sense of normal. We offer therapy for those navigating cancer or chronic illness to help you process fear, loss, and uncertainty, while reclaiming agency and meaning in a life that has changed."
+            }
+          ]
         }
       ]
     },
@@ -77,31 +72,34 @@
       ]
     },
     {
-      "type": "feature_list",
-      "heading": "How We Help",
-      "intro": "We meet you where you are. Some people come to us for short-term support around stress and overwhelm, while others need space to process deeper wounds like trauma, grief, or long-standing patterns of anxiety and depression. Both are welcome here.\n\nTogether, we’ll:",
-      "style": "checklist",
-      "items": [
+      "type": "text_image",
+      "content": "## How We Help\n\nWe meet you where you are. Some people come to us for short-term support around stress and overwhelm, while others need space to process deeper wounds like trauma, grief, or long-standing patterns of anxiety and depression. Both are welcome here.\n\nTogether, we’ll:",
+      "layout": [
         {
-          "label": "Identify what’s weighing you down and create strategies to lighten the load"
-        },
-        {
-          "label": "Explore patterns keeping you stuck and practice healthier ways of responding"
-        },
-        {
-          "label": "Learn calming tools and nervous system regulation skills to reduce anxiety and reactivity"
-        },
-        {
-          "label": "Build coping strategies for depression, grief, trauma, and burnout that work in daily life"
-        },
-        {
-          "label": "Strengthen your relationships and boundaries so you don’t feel pulled in every direction"
-        },
-        {
-          "label": "Reconnect with yourself — your values, your needs, your strength — outside of roles and expectations"
-        },
-        {
-          "label": "Create space for emotions like sadness, anger, or shame, without judgment"
+          "type": "icon-list",
+          "items": [
+            {
+              "label": "Identify what’s weighing you down and create strategies to lighten the load"
+            },
+            {
+              "label": "Explore patterns keeping you stuck and practice healthier ways of responding"
+            },
+            {
+              "label": "Learn calming tools and nervous system regulation skills to reduce anxiety and reactivity"
+            },
+            {
+              "label": "Build coping strategies for depression, grief, trauma, and burnout that work in daily life"
+            },
+            {
+              "label": "Strengthen your relationships and boundaries so you don’t feel pulled in every direction"
+            },
+            {
+              "label": "Reconnect with yourself — your values, your needs, your strength — outside of roles and expectations"
+            },
+            {
+              "label": "Create space for emotions like sadness, anger, or shame, without judgment"
+            }
+          ]
         }
       ]
     },

@@ -232,6 +232,18 @@ collections:
                       - { label: "Image", name: "image", widget: "image" }
                       - { label: "Image alt text", name: "imageAlt", widget: "string", required: false }
 
+                  - label: "Icon List (content + bulleted list with brand icon)"
+                    name: "icon-list"
+                    widget: "object"
+                    fields:
+                      - { label: "Layout", name: "label", widget: "hidden", default: "Icon List" }
+                      - label: "Items"
+                        name: "items"
+                        widget: "list"
+                        fields:
+                          - { label: "Label", name: "label", widget: "string" }
+                          - { label: "Description", name: "description", widget: "text", required: false }
+
               - { label: "Background Color Override", name: "bgColor", widget: "color", required: false, allowInput: true, hint: "Overrides the page-level background color for just this section. Leave blank to inherit." }
 
           - label: "Feature List"

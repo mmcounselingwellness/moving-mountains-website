@@ -18,7 +18,8 @@ export type LayoutVariant =
   | { type: "overlay-left"; image: string; imageAlt?: string }
   | { type: "overlay-right"; image: string; imageAlt?: string }
   | { type: "hero-image-right"; image: string; imageAlt?: string }
-  | { type: "hero-image-left"; image: string; imageAlt?: string };
+  | { type: "hero-image-left"; image: string; imageAlt?: string }
+  | { type: "icon-list"; items: FeatureItem[] };
 
 export type TextImageSection = {
   type: "text_image";
