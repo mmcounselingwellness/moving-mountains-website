@@ -1,12 +1,15 @@
 import Image from "next/image";
 import type { FeatureListSection } from "@/lib/content";
 
-export default function FeatureList({ section }: { section: FeatureListSection }) {
+export default function FeatureList({ section, bgColor }: { section: FeatureListSection; bgColor?: string }) {
   const { eyebrow, heading, intro, style, cta, bgImage, bgImageAlt } = section;
   const items = section.items ?? [];
 
   return (
-    <div className="relative isolate overflow-hidden bg-white py-24 sm:py-32">
+    <div
+      className="relative isolate overflow-hidden bg-white py-24 sm:py-32"
+      style={bgColor ? { backgroundColor: bgColor } : undefined}
+    >
       {bgImage && (
         <Image
           src={bgImage}

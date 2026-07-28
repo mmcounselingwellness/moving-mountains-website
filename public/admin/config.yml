@@ -135,6 +135,7 @@ collections:
       - { label: "SEO Title (browser tab / Google search results)", name: "seoTitle", widget: "string", required: false, hint: "Defaults to Title if left blank. Keep it distinct and keyword-rich - this is what shows up in search results, separate from any on-page heading." }
       - { label: "SEO Description", name: "description", widget: "text" }
       - { label: "Show in search engines", name: "index", widget: "boolean", default: true }
+      - { label: "Background Color", name: "bgColor", widget: "color", required: false, allowInput: true, hint: "Default background for every section on this page. Leave blank for the standard cream background. A section can override this individually below." }
       - label: "Sections"
         name: "sections"
         widget: "list"
@@ -231,6 +232,8 @@ collections:
                       - { label: "Image", name: "image", widget: "image" }
                       - { label: "Image alt text", name: "imageAlt", widget: "string", required: false }
 
+              - { label: "Background Color Override", name: "bgColor", widget: "color", required: false, allowInput: true, hint: "Overrides the page-level background color for just this section. Leave blank to inherit." }
+
           - label: "Feature List"
             name: "feature_list"
             widget: "object"
@@ -255,6 +258,7 @@ collections:
                 fields:
                   - { label: "Label", name: "label", widget: "string", required: false }
                   - { label: "Link", name: "link", widget: "string", required: false }
+              - { label: "Background Color Override", name: "bgColor", widget: "color", required: false, allowInput: true, hint: "Overrides the page-level background color for just this section. Leave blank to inherit." }
 
           - label: "FAQ Items"
             name: "faq_items"
@@ -268,6 +272,7 @@ collections:
                 fields:
                   - { label: "Question", name: "question", widget: "string" }
                   - { label: "Answer", name: "answer", widget: "markdown" }
+              - { label: "Background Color Override", name: "bgColor", widget: "color", required: false, allowInput: true, hint: "Overrides the page-level background color for just this section. Leave blank to inherit." }
 
   - name: "team"
     label: "Team Members"

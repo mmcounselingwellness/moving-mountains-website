@@ -2,13 +2,14 @@ import Image from "next/image";
 import type { TextImageSection } from "@/lib/content";
 import Markdown from "@/components/Markdown";
 
-export default function TextImage({ section }: { section: TextImageSection }) {
+export default function TextImage({ section, bgColor }: { section: TextImageSection; bgColor?: string }) {
   const { content } = section;
   const variant = section.layout?.[0] ?? { type: "text-only" as const };
   const layout = variant.type;
   const image = "image" in variant ? variant.image : undefined;
   const imageAlt = "imageAlt" in variant ? variant.imageAlt : undefined;
   const images = "images" in variant ? variant.images : undefined;
+  const bgStyle = bgColor ? { backgroundColor: bgColor } : undefined;
 
   const textCol = content && (
     <div>
@@ -41,7 +42,7 @@ export default function TextImage({ section }: { section: TextImageSection }) {
       </div>
     );
     return (
-      <div className="relative pt-2">
+      <div className="relative pt-2" style={bgStyle}>
         <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
           {imageFirst && heroImageCol}
           <div className="px-6 pt-10 pb-24 sm:pb-32 lg:col-span-7 lg:px-0 lg:pt-35 lg:pb-48 xl:col-span-6">
@@ -55,7 +56,7 @@ export default function TextImage({ section }: { section: TextImageSection }) {
 
   if (layout === "overlay-left" || layout === "overlay-right") {
     return (
-      <div className="relative isolate flex min-h-[28rem] items-center overflow-hidden sm:min-h-[36rem]">
+      <div className="relative isolate flex min-h-[28rem] items-center overflow-hidden sm:min-h-[36rem]" style={bgStyle}>
         {image && (
           <Image
             src={image}
@@ -80,13 +81,15 @@ export default function TextImage({ section }: { section: TextImageSection }) {
 
   if (layout === "text-only") {
     return (
-      <div className="mx-auto max-w-2xl px-6 py-16 lg:px-8">{textCol}</div>
+      <div style={bgStyle}>
+        <div className="mx-auto max-w-2xl px-6 py-16 lg:px-8">{textCol}</div>
+      </div>
     );
   }
 
   if (layout === "full-image") {
     return (
-      <div className="bg-white px-6 py-8 lg:px-8">
+      <div className="bg-white px-6 py-8 lg:px-8" style={bgStyle}>
         {image && (
           <Image
             src={image}
@@ -102,7 +105,7 @@ export default function TextImage({ section }: { section: TextImageSection }) {
 
   if (layout === "gallery") {
     return (
-      <div className="overflow-hidden py-16 sm:py-24">
+      <div className="overflow-hidden py-16 sm:py-24" style={bgStyle}>
         <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-8">
             <div className="lg:pr-8">{textCol}</div>
@@ -147,19 +150,21 @@ export default function TextImage({ section }: { section: TextImageSection }) {
   );
 
   return (
-    <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
-      <div className="grid grid-cols-1 items-center gap-y-10 lg:grid-cols-2 lg:gap-x-8">
-        {layout === "image-left" ? (
-          <>
-            {imageCol}
-            {textCol}
-          </>
-        ) : (
-          <>
-            {textCol}
-            {imageCol}
-          </>
-        )}
+    <div style={bgStyle}>
+      <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
+        <div className="grid grid-cols-1 items-center gap-y-10 lg:grid-cols-2 lg:gap-x-8">
+          {layout === "image-left" ? (
+            <>
+              {imageCol}
+              {textCol}
+            </>
+          ) : (
+            <>
+              {textCol}
+              {imageCol}
+            </>
+          )}
+        </div>
       </div>
     </div>
   );

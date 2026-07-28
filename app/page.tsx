@@ -12,5 +12,5 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  return <SectionRenderer sections={page.sections} />;
+  return <SectionRenderer sections={page.sections} pageBgColor={page.bgColor} />;
 }

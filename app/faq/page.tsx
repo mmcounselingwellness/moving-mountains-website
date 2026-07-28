@@ -17,10 +17,10 @@ export default function FaqPage() {
 
   return (
     <>
-      <SectionRenderer sections={[intro]} />
-      <SectionRenderer sections={[faqSection]} />
+      <SectionRenderer sections={[intro]} pageBgColor={page.bgColor} />
+      <SectionRenderer sections={[faqSection]} pageBgColor={page.bgColor} />
       <ThrizerWidget />
-      <SectionRenderer sections={rest} />
+      <SectionRenderer sections={rest} pageBgColor={page.bgColor} />
     </>
   );
 }

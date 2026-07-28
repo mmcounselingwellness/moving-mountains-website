@@ -24,6 +24,7 @@ export type TextImageSection = {
   type: "text_image";
   content?: string;
   layout: LayoutVariant[];
+  bgColor?: string;
 };
 
 export type FeatureListSection = {
@@ -36,12 +37,14 @@ export type FeatureListSection = {
   cta?: CtaLink;
   bgImage?: string;
   bgImageAlt?: string;
+  bgColor?: string;
 };
 
 export type FaqItemsSection = {
   type: "faq_items";
   heading?: string;
   items: FaqItem[];
+  bgColor?: string;
 };
 
 export type Section = TextImageSection | FeatureListSection | FaqItemsSection;
@@ -52,6 +55,7 @@ export type Page = {
   seoTitle?: string;
   description: string;
   index: boolean;
+  bgColor?: string;
   sections: Section[];
 };
 

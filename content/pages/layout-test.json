@@ -149,6 +149,12 @@
         { "question": "Does bold and a list work in an answer?", "answer": "Yes - here's **bold text** and a list:\n\n- point one\n- point two" },
         { "question": "Second question, plain answer", "answer": "Just a plain sentence answer with no special formatting." }
       ]
+    },
+    {
+      "type": "text_image",
+      "content": "### TEST 12: section-level Background Color Override (light gray)\n\n## This section has its own bgColor set\n\nIt should show a light gray background regardless of the page-level Background Color field, since a section-level override always wins.",
+      "bgColor": "#F3F4F6",
+      "layout": [{ "type": "text-only" }]
     }
   ]
 }

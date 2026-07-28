@@ -3,6 +3,7 @@
   "seoTitle": "About Our Princeton MA Therapists | Licensed Counselors Serving Worcester & Holden",
   "description": "Meet our licensed therapists (LICSWs) near Worcester & Holden MA. Located in Princeton above Mountain Side Cafe. Anxiety, depression, grief therapy. In-person & telehealth.",
   "index": true,
+  "bgColor": "#FFFFFF",
   "sections": [
     {
       "type": "text_image",

@@ -21,7 +21,7 @@ export default function LayoutTestPage() {
           Section &amp; Layout Tests
         </h1>
       </div>
-      <SectionRenderer sections={page.sections} />
+      <SectionRenderer sections={page.sections} pageBgColor={page.bgColor} />
     </>
   );
 }

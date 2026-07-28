@@ -56,5 +56,5 @@ export default async function GenericPage({
   const page = getPage(slug);
   if (!page) notFound();
 
-  return <SectionRenderer sections={page.sections} />;
+  return <SectionRenderer sections={page.sections} pageBgColor={page.bgColor} />;
 }
