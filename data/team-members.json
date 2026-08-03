@@ -38,5 +38,15 @@
     "bioPage": "angela-bio.html",
     "status": "accepting",
     "order": 4
+  },
+  {
+    "id": "nada-plooster",
+    "name": "Nada Plooster, LICSW",
+    "title": "Licensed Independent Clinical Social Worker/Therapist",
+    "bio": "Nada draws on trauma-informed, culturally humble care to help adults, children, and teens work through trauma, attachment wounds, grief, and other heavy burdens using EMDR, IFS, ACT, and Trauma-Sensitive Yoga. Accepting new clients now.",
+    "image": "src/nada-plooster.jpg",
+    "bioPage": "nada-bio.html",
+    "status": "accepting",
+    "order": 5
   }
 ]
