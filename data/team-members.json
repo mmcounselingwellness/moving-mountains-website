@@ -48,5 +48,15 @@
     "bioPage": "nada-bio.html",
     "status": "accepting",
     "order": 5
+  },
+  {
+    "id": "maggie-foster",
+    "name": "Maggie Foster, LICSW",
+    "title": "Licensed Independent Clinical Social Worker/Therapist",
+    "bio": "Maggie draws on six years of outpatient, psychiatric, and clinical leadership experience to help clients explore attachment, complex trauma, and relationship patterns with warmth, curiosity, and humor. Accepting new clients now.",
+    "image": "src/maggie-foster.jpg",
+    "bioPage": "maggie-bio.html",
+    "status": "accepting",
+    "order": 6
   }
 ]
